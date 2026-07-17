@@ -1,0 +1,15 @@
+{
+  "brand": "ICLC",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "iclc",
+      "name": "ICLC",
+      "url": "https://iclc.toplap.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "JavaLand",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "javaland",
+      "name": "JavaLand",
+      "url": "https://www.javaland.eu",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

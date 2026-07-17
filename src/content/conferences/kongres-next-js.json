@@ -1,0 +1,15 @@
+{
+  "brand": "Kongres Next.js",
+  "instances": [
+    {
+      "id": "kongres-next-js",
+      "name": "Kongres Next.js",
+      "url": "https://kongresnextjs.pl",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

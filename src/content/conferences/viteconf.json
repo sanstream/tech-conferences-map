@@ -1,0 +1,15 @@
+{
+  "brand": "ViteConf",
+  "instances": [
+    {
+      "id": "viteconf",
+      "name": "ViteConf",
+      "url": "https://viteconf.amsterdam",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Turing Fest",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "turing-fest",
+      "name": "Turing Fest",
+      "url": "https://turingfest.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Visual Studio Live! (VSLive!) Chicago",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "visual-studio-live-vslive-chicago",
+      "name": "Visual Studio Live! (VSLive!) Chicago",
+      "url": "https://vslive.com/events/chicago-2024/home.aspx",
+      "subjects": [
+        "typescript",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

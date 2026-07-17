@@ -1,0 +1,15 @@
+{
+  "brand": "React Finland",
+  "instances": [
+    {
+      "id": "react-finland",
+      "name": "React Finland",
+      "url": "https://react-finland.fi",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

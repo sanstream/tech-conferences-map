@@ -1,0 +1,16 @@
+{
+  "brand": "MozFest",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "mozfest",
+      "name": "MozFest",
+      "url": "https://www.mozillafestival.org",
+      "subjects": [
+        "web",
+        "accessibility",
+        "frontend"
+      ]
+    }
+  ]
+}

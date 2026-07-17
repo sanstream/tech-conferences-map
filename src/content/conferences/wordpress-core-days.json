@@ -1,0 +1,16 @@
+{
+  "brand": "WordPress Core Days",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "wordpress-core-days",
+      "name": "WordPress Core Days",
+      "url": "https://events.wordpress.org/rome/2024/coredays",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

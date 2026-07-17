@@ -1,0 +1,15 @@
+{
+  "brand": "Eyeo Festival",
+  "instances": [
+    {
+      "id": "eyeo-festival",
+      "name": "Eyeo Festival",
+      "url": "https://eyeofestival.com",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "data-visualization"
+      ]
+    }
+  ]
+}

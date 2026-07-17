@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 /**
- * One-off builder: seed confs.tech niche topics + supplements → conferences.json
+ * One-off builder: seed confs.tech niche topics + supplements → src/content/conferences/
  */
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import {
+  applyBrandInstances,
+  formatConference,
+  sortInstances,
+  validateInstances,
+} from "./lib/brand-instances.mjs"
+import { conferencesDir, writeBrandDir } from "./lib/conference-io.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const seedDir = path.join(__dirname, ".conf-seed")
-const outPath = path.join(__dirname, "../content/data/conferences.json")
 
 const TOPIC_SUBJECTS = {
   javascript: ["javascript", "frontend", "web"],
@@ -275,56 +281,16 @@ const SUPPLEMENTS = [
   { name: "!!Con", url: "https://bangbangcon.com", subjects: ["web", "javascript", "creative-coding"] },
 ]
 
-function normalizeUrl(url) {
-  try {
-    const u = new URL(url)
-    u.hash = ""
-    u.search = ""
-    let host = u.hostname.replace(/^www\./, "").toLowerCase()
-    let p = u.pathname.replace(/\/+$/, "") || ""
-    // strip year path segments for brand-level
-    p = p.replace(/\/20\d{2}(\/|$)/g, "/").replace(/\/+$/, "")
-    return `${u.protocol}//${host}${p}`
-  } catch {
-    return url?.trim() || ""
-  }
-}
-
-/** Hosts that are one brand regardless of city/edition in the name */
-const HOST_BRAND = {
-  "smashingconf.com": "SmashingConf",
-  "javascript-conference.com": "International JavaScript Conference",
-  "javascript-days.de": "JavaScript Days",
-  "cityjsconf.org": "CityJS",
-  "halfstackconf.com": "HalfStack",
-  "fitc.ca": "FITC",
-  "config.figma.com": "Config",
-  "leadershipateliers.com": "Leadership Ateliers",
-  "hatchconference.com": "Hatch Conference",
-  "gitnation.com": null, // keep per-event names under gitnation when different hosts
-  "reactsummit.com": "React Summit",
-  "reactsummit.us": "React Summit US",
-  "jsnation.com": "JSNation",
-  "jsnation.us": "JSNation US",
-  "vuejsnation.com": "Vue.js Nation",
-  "frontendnation.com": "Frontend Nation",
-}
-
 function brandKey(name, url) {
   try {
     const host = new URL(url).hostname.replace(/^www\./, "").toLowerCase()
-    if (HOST_BRAND[host]) return `host::${host}`
-    // Collapse city editions: "Foo London", "Foo Munich" → same key when host matches parent path
+    const path = new URL(url).pathname.replace(/\/+$/, "") || "/"
     const n = name
       .toLowerCase()
       .replace(/\s*20\d{2}\s*/g, " ")
-      .replace(
-        /\b(london|munich|new york|nyc|san diego|amsterdam|freiburg|antwerp|toronto|online|us|eu|asia)\b/gi,
-        "",
-      )
       .replace(/[^a-z0-9]+/g, "")
-      .slice(0, 48)
-    return `${host}::${n}`
+      .slice(0, 64)
+    return `${host}${path}::${n}`
   } catch {
     return name.toLowerCase().replace(/[^a-z0-9]+/g, "")
   }
@@ -387,23 +353,11 @@ function loadSeed() {
         const key = brandKey(name, url)
         const base = TOPIC_SUBJECTS[topic] || ["web"]
         const subjects = mergeSubjects(base, subjectsFromName(name))
-        let displayName = name
-        try {
-          const host = new URL(url).hostname.replace(/^www\./, "").toLowerCase()
-          if (HOST_BRAND[host]) displayName = HOST_BRAND[host]
-        } catch {
-          /* ignore */
-        }
         const existing = byKey.get(key)
         if (existing) {
           existing.subjects = mergeSubjects(existing.subjects, subjects)
-          // prefer shorter brand homepage URLs
-          if (normalizeUrl(url).length < normalizeUrl(existing.url).length) {
-            existing.url = url
-            existing.name = displayName
-          }
         } else {
-          byKey.set(key, { name: displayName, url, subjects })
+          byKey.set(key, { name, url, subjects })
         }
       }
     }
@@ -468,64 +422,25 @@ function main() {
   applySupplements(byKey)
   enrichKnown(byKey)
 
-  // Force canonical host brand names
-  for (const conf of byKey.values()) {
-    try {
-      const host = new URL(conf.url).hostname.replace(/^www\./, "").toLowerCase()
-      if (HOST_BRAND[host]) conf.name = HOST_BRAND[host]
-    } catch {
-      /* ignore */
-    }
-  }
   console.log(`After supplements: ${byKey.size}`)
 
-  const list = [...byKey.values()]
+  const seedList = [...byKey.values()]
     .filter((c) => c.name && c.url?.startsWith("http") && c.subjects?.length >= 1)
     .map((c) => ({
       name: c.name,
       url: c.url,
       subjects: c.subjects.slice(0, 10),
     }))
-    .sort((a, b) => a.name.localeCompare(b.name, "en"))
 
-  // Dedupe: one entry per HOST_BRAND host; otherwise one per host+name; also one per exact name
-  const final = []
-  const seenHost = new Set()
-  const seenHostName = new Set()
-  const seenName = new Set()
-  for (const c of list) {
-    let host = ""
-    try {
-      host = new URL(c.url).hostname.replace(/^www\./, "").toLowerCase()
-    } catch {
-      continue
-    }
-    if (HOST_BRAND[host]) {
-      if (seenHost.has(host)) continue
-      seenHost.add(host)
-    }
-    const nk = `${host}::${c.name.toLowerCase().replace(/[^a-z0-9]/g, "")}`
-    const nameKey = c.name.toLowerCase().replace(/[^a-z0-9]+/g, "")
-    if (seenHostName.has(nk) || seenName.has(nameKey)) continue
-    seenHostName.add(nk)
-    seenName.add(nameKey)
-    final.push(c)
-  }
+  const final = sortInstances(applyBrandInstances(seedList).map(formatConference))
 
-  fs.mkdirSync(path.dirname(outPath), { recursive: true })
-  fs.writeFileSync(outPath, JSON.stringify(final, null, 2) + "\n")
-  console.log(`Wrote ${final.length} conferences → ${outPath}`)
+  writeBrandDir(final, conferencesDir)
+  console.log(`Wrote ${final.length} conference instances → ${conferencesDir}`)
 
-  const bad = final.filter(
-    (c) =>
-      !c.name ||
-      !/^https?:\/\//.test(c.url) ||
-      !Array.isArray(c.subjects) ||
-      c.subjects.length < 1 ||
-      c.subjects.length > 10,
-  )
-  if (bad.length) {
-    console.error("Validation failures:", bad.length)
+  const errors = validateInstances(final)
+  if (errors.length) {
+    console.error("Validation failures:", errors.length)
+    for (const e of errors) console.error(`  - ${e}`)
     process.exit(1)
   }
   if (final.length < 300) {

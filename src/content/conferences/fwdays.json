@@ -1,0 +1,37 @@
+{
+  "brand": "fwdays",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "fwdays",
+      "name": "fwdays",
+      "url": "https://fwdays.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "fwdays-javascript-fwdays",
+      "name": "JavaScript fwdays",
+      "url": "https://fwdays.com/en/event/javascript-fwdays-2024",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "fwdays-react-fwdays",
+      "name": "React+ fwdays",
+      "url": "https://fwdays.com/event/react-fwdays-2024",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "react"
+      ]
+    }
+  ]
+}

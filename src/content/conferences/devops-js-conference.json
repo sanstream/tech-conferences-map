@@ -1,0 +1,16 @@
+{
+  "brand": "DevOps.js Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "devops-js-conference",
+      "name": "DevOps.js Conference",
+      "url": "https://devopsjsconf.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

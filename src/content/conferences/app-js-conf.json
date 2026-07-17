@@ -1,0 +1,27 @@
+{
+  "brand": "App.js Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "app-js-conf",
+      "name": "App.js Conf",
+      "url": "https://appjs.co",
+      "subjects": [
+        "javascript",
+        "react",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-27",
+          "endDate": "2026-05-29"
+        }
+      ],
+      "location": {
+        "city": "Kraków",
+        "country": "Poland"
+      }
+    }
+  ]
+}

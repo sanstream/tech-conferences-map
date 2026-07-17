@@ -1,0 +1,16 @@
+{
+  "brand": "xCoAx",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "xcoax",
+      "name": "xCoAx",
+      "url": "https://xcoax.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "research"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Asynconf",
+  "instances": [
+    {
+      "id": "asynconf",
+      "name": "Asynconf",
+      "url": "https://asynconf.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-27",
+          "endDate": "2026-06-27"
+        }
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France"
+      },
+      "isOnline": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "OFFF Barcelona",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "offf-barcelona",
+      "name": "OFFF Barcelona",
+      "url": "https://offf.barcelona",
+      "subjects": [
+        "ui-design",
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Webflow Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "webflow-conf",
+      "name": "Webflow Conf",
+      "url": "https://webflow.com/webflow-conf",
+      "subjects": [
+        "web",
+        "ui-design",
+        "frontend"
+      ]
+    }
+  ]
+}

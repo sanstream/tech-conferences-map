@@ -1,0 +1,23 @@
+{
+  "brand": "betterCode() ArchDoc",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "bettercode-archdoc",
+      "name": "betterCode() ArchDoc",
+      "url": "https://archdoc.bettercode.eu",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-20",
+          "endDate": "2026-05-20"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

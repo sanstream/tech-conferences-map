@@ -1,0 +1,14 @@
+{
+  "brand": "Revision Demoparty",
+  "instances": [
+    {
+      "id": "revision-demoparty",
+      "name": "Revision Demoparty",
+      "url": "https://www.revision-party.net",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

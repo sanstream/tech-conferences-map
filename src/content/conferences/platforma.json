@@ -1,0 +1,15 @@
+{
+  "brand": "PlatforMa",
+  "instances": [
+    {
+      "id": "platforma",
+      "name": "PlatforMa",
+      "url": "https://platfor-ma.com",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

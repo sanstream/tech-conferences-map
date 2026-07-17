@@ -1,0 +1,128 @@
+{
+  "brand": "JSConf",
+  "instances": [
+    {
+      "id": "jsconf-armenia",
+      "name": "JSConf Armenia",
+      "url": "https://jsconf.am",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-asia",
+      "name": "JSConf Asia",
+      "url": "https://jsconf.asia",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-australia",
+      "name": "JSConf Australia",
+      "url": "https://jsconfau.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-budapest",
+      "name": "JSConf Budapest",
+      "url": "https://jsconfbp.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "css",
+        "typescript"
+      ]
+    },
+    {
+      "id": "jsconf-chile",
+      "name": "JSConf Chile",
+      "url": "https://jsconf.cl",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-espana",
+      "name": "JSConf España",
+      "url": "https://jsconf.es",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-eu",
+      "name": "JSConf EU",
+      "url": "https://jsconf.eu",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-hawai-i",
+      "name": "JSConf Hawaiʻi",
+      "url": "https://www.jsconfhi.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-ireland",
+      "name": "JSConf Ireland",
+      "url": "https://www.jsconf.ie",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ]
+    },
+    {
+      "id": "jsconf-japan",
+      "name": "JSConf Japan",
+      "url": "https://jsconf.jp",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-korea",
+      "name": "JSConf Korea",
+      "url": "https://jsconf.kr",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "jsconf-mexico",
+      "name": "JSConf México",
+      "url": "https://jsconfmx.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

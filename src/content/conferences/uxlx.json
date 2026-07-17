@@ -1,0 +1,26 @@
+{
+  "brand": "UXLx",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "uxlx",
+      "name": "UXLx",
+      "url": "https://ux-lx.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-12",
+          "endDate": "2026-05-15"
+        }
+      ],
+      "location": {
+        "city": "Lisbon",
+        "country": "Portugal"
+      }
+    }
+  ]
+}

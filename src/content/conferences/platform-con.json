@@ -1,0 +1,16 @@
+{
+  "brand": "Platform Con",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "platform-con",
+      "name": "Platform Con",
+      "url": "https://platformcon.com",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript"
+      ]
+    }
+  ]
+}

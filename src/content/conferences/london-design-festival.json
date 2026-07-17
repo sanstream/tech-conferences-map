@@ -1,0 +1,15 @@
+{
+  "brand": "London Design Festival",
+  "instances": [
+    {
+      "id": "london-design-festival",
+      "name": "London Design Festival",
+      "url": "https://www.londondesignfestival.com",
+      "subjects": [
+        "ui-design",
+        "product-design",
+        "ux"
+      ]
+    }
+  ]
+}

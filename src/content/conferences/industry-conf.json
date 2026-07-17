@@ -1,0 +1,15 @@
+{
+  "brand": "Industry Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "industry-conf",
+      "name": "Industry Conf",
+      "url": "https://industryconference.com",
+      "subjects": [
+        "product-design",
+        "ux"
+      ]
+    }
+  ]
+}

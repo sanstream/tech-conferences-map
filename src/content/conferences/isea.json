@@ -1,0 +1,16 @@
+{
+  "brand": "ISEA",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "isea",
+      "name": "ISEA",
+      "url": "https://isea-international.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "research"
+      ]
+    }
+  ]
+}

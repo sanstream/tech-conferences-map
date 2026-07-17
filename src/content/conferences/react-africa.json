@@ -1,0 +1,16 @@
+{
+  "brand": "React Africa",
+  "instances": [
+    {
+      "id": "react-africa",
+      "name": "React Africa",
+      "url": "https://react-africa.com",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

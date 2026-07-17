@@ -1,0 +1,16 @@
+{
+  "brand": "Into Design Systems",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "into-design-systems",
+      "name": "Into Design Systems",
+      "url": "https://intodesignsystems.com",
+      "subjects": [
+        "design-systems",
+        "ux",
+        "ui-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Inclusive Design 24",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "inclusive-design-24",
+      "name": "Inclusive Design 24",
+      "url": "https://inclusivedesign24.org",
+      "subjects": [
+        "accessibility",
+        "ux",
+        "web",
+        "ui-design"
+      ]
+    }
+  ]
+}

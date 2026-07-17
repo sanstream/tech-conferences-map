@@ -1,0 +1,14 @@
+{
+  "brand": "ResearchOps Community Events",
+  "instances": [
+    {
+      "id": "researchops-community-events",
+      "name": "ResearchOps Community Events",
+      "url": "https://researchops.community",
+      "subjects": [
+        "ux",
+        "research"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "User Research London",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "user-research-london",
+      "name": "User Research London",
+      "url": "https://userresearchlondon.com",
+      "subjects": [
+        "ux",
+        "research",
+        "product-design"
+      ]
+    }
+  ]
+}

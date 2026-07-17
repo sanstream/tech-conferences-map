@@ -1,0 +1,19 @@
+{
+  "brand": "Fest.dev Krakow JavaScript Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "fest-dev-krakow-javascript-conference",
+      "name": "Fest.dev Krakow JavaScript Conference",
+      "url": "https://fest.dev/events/js/krakow-2024",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

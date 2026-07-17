@@ -1,0 +1,16 @@
+{
+  "brand": "performance.now()",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "performance-now",
+      "name": "performance.now()",
+      "url": "https://perfnow.nl",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

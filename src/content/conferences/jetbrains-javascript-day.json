@@ -1,0 +1,18 @@
+{
+  "brand": "JetBrains JavaScript Day",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "jetbrains-javascript-day",
+      "name": "JetBrains JavaScript Day",
+      "url": "https://jb.gg/JSD24_confs",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "css",
+        "typescript"
+      ]
+    }
+  ]
+}

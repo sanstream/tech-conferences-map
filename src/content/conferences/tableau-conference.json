@@ -1,0 +1,14 @@
+{
+  "brand": "Tableau Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "tableau-conference",
+      "name": "Tableau Conference",
+      "url": "https://www.tableau.com/events/conference",
+      "subjects": [
+        "data-visualization"
+      ]
+    }
+  ]
+}

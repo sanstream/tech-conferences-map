@@ -1,0 +1,16 @@
+{
+  "brand": "Interaction",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "interaction",
+      "name": "Interaction",
+      "url": "https://interaction26.ixda.org",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

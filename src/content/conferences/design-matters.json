@@ -1,0 +1,17 @@
+{
+  "brand": "Design Matters",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "design-matters",
+      "name": "Design Matters",
+      "url": "https://designmatters.io",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "brand": "React Day Berlin",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "react-day-berlin",
+      "name": "React Day Berlin",
+      "url": "https://reactday.berlin",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-12-04",
+          "endDate": "2026-12-07"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "isOnline": true
+    }
+  ]
+}

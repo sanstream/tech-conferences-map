@@ -1,0 +1,16 @@
+{
+  "brand": "Hackaday Supercon",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "hackaday-supercon",
+      "name": "Hackaday Supercon",
+      "url": "https://hackaday.com/supercon",
+      "subjects": [
+        "creative-coding",
+        "hardware",
+        "web"
+      ]
+    }
+  ]
+}

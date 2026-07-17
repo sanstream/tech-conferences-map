@@ -1,0 +1,14 @@
+{
+  "brand": "Evoke Demoparty",
+  "instances": [
+    {
+      "id": "evoke-demoparty",
+      "name": "Evoke Demoparty",
+      "url": "https://www.evoke.eu",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "UX & Product Design Week",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ux-product-design-week",
+      "name": "UX & Product Design Week",
+      "url": "https://futurelondonacademy.co.uk/en/course/ux-and-digital-design",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

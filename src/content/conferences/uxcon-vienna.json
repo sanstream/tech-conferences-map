@@ -1,0 +1,30 @@
+{
+  "brand": "uxcon vienna",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "uxcon-vienna",
+      "name": "uxcon vienna",
+      "url": "https://www.uxcon.io",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "accessibility",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-16",
+          "endDate": "2026-09-17"
+        }
+      ],
+      "location": {
+        "city": "Vienna",
+        "country": "Austria"
+      },
+      "isOnline": true
+    }
+  ]
+}

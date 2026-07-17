@@ -1,0 +1,15 @@
+{
+  "brand": "State of the Browser",
+  "instances": [
+    {
+      "id": "state-of-the-browser",
+      "name": "State of the Browser",
+      "url": "https://stateofthebrowser.com",
+      "subjects": [
+        "web",
+        "frontend",
+        "browsers"
+      ]
+    }
+  ]
+}

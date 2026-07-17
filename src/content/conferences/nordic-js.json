@@ -1,0 +1,16 @@
+{
+  "brand": "Nordic.js",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "nordic-js",
+      "name": "Nordic.js",
+      "url": "https://nordicjs.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

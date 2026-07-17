@@ -1,0 +1,15 @@
+{
+  "brand": "CSSConf Budapest",
+  "instances": [
+    {
+      "id": "cssconf-budapest",
+      "name": "CSSConf Budapest",
+      "url": "https://cssconfbp.hu",
+      "subjects": [
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

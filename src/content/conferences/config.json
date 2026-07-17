@@ -1,0 +1,17 @@
+{
+  "brand": "Config",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "config",
+      "name": "Config",
+      "url": "https://config.figma.com",
+      "subjects": [
+        "ui-design",
+        "ux",
+        "design-systems",
+        "product-design"
+      ]
+    }
+  ]
+}

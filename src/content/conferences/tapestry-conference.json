@@ -1,0 +1,14 @@
+{
+  "brand": "Tapestry Conference",
+  "instances": [
+    {
+      "id": "tapestry-conference",
+      "name": "Tapestry Conference",
+      "url": "https://tapestryconference.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

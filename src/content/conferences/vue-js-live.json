@@ -1,0 +1,16 @@
+{
+  "brand": "Vue.js Live",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "vue-js-live",
+      "name": "Vue.js Live",
+      "url": "https://vuejslive.com",
+      "subjects": [
+        "vue",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

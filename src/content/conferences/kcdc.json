@@ -1,0 +1,15 @@
+{
+  "brand": "KCDC",
+  "instances": [
+    {
+      "id": "kcdc",
+      "name": "KCDC",
+      "url": "https://www.kcdc.info",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "HolyJS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "holyjs",
+      "name": "HolyJS",
+      "url": "https://holyjs.ru",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

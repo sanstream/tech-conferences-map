@@ -1,0 +1,18 @@
+{
+  "brand": "StrapiConf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "strapiconf",
+      "name": "StrapiConf",
+      "url": "https://www.strapi.io/strapiconf",
+      "subjects": [
+        "javascript",
+        "web",
+        "cms",
+        "frontend",
+        "typescript"
+      ]
+    }
+  ]
+}

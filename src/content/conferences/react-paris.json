@@ -1,0 +1,31 @@
+{
+  "brand": "React Paris",
+  "instances": [
+    {
+      "id": "react-paris",
+      "name": "React Paris",
+      "url": "https://react.paris",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web",
+        "ux",
+        "ui-design",
+        "product-design",
+        "performance"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-03-26",
+          "endDate": "2026-03-27"
+        }
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France"
+      },
+      "isOnline": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Future Product Days",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "future-product-days",
+      "name": "Future Product Days",
+      "url": "https://www.futureproductdays.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-22",
+          "endDate": "2026-09-24"
+        }
+      ],
+      "location": {
+        "city": "Copenhagen",
+        "country": "Denmark"
+      }
+    }
+  ]
+}

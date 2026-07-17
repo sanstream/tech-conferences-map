@@ -1,0 +1,27 @@
+{
+  "brand": "VueconfUS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "vueconfus",
+      "name": "VueconfUS",
+      "url": "https://vueconf.us",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "vue"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-19",
+          "endDate": "2026-05-21"
+        }
+      ],
+      "location": {
+        "city": "Atlanta, GA",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

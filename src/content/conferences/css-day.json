@@ -1,0 +1,16 @@
+{
+  "brand": "CSS Day",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "css-day",
+      "name": "CSS Day",
+      "url": "https://cssday.nl",
+      "subjects": [
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "brand": "axe-con",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "axe-con",
+      "name": "axe-con",
+      "url": "https://www.deque.com/axe-con",
+      "subjects": [
+        "accessibility",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-24",
+          "endDate": "2026-02-25"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

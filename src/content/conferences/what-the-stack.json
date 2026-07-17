@@ -1,0 +1,16 @@
+{
+  "brand": "What The Stack",
+  "instances": [
+    {
+      "id": "what-the-stack",
+      "name": "What The Stack",
+      "url": "https://wts.sh",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend",
+        "css"
+      ]
+    }
+  ]
+}

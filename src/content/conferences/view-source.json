@@ -1,0 +1,16 @@
+{
+  "brand": "View Source",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "view-source",
+      "name": "View Source",
+      "url": "https://viewsourceconf.org",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript"
+      ]
+    }
+  ]
+}

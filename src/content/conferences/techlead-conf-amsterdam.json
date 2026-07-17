@@ -1,0 +1,27 @@
+{
+  "brand": "TechLead Conf Amsterdam",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "techlead-conf-amsterdam",
+      "name": "TechLead Conf Amsterdam",
+      "url": "https://techleadconf.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-11",
+          "endDate": "2026-06-12"
+        }
+      ],
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands"
+      },
+      "isOnline": true
+    }
+  ]
+}

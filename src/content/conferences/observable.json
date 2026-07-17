@@ -1,0 +1,16 @@
+{
+  "brand": "Observable",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "observable",
+      "name": "Observable",
+      "url": "https://observablehq.com",
+      "subjects": [
+        "data-visualization",
+        "javascript",
+        "web"
+      ]
+    }
+  ]
+}

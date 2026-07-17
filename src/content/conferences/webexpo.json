@@ -1,0 +1,17 @@
+{
+  "brand": "WebExpo",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "webexpo",
+      "name": "WebExpo",
+      "url": "https://www.webexpo.net",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript",
+        "ux"
+      ]
+    }
+  ]
+}

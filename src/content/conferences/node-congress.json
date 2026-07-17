@@ -1,0 +1,24 @@
+{
+  "brand": "Node Congress",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "node-congress",
+      "name": "Node Congress",
+      "url": "https://nodecongress.com",
+      "subjects": [
+        "javascript",
+        "web",
+        "frontend",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-03-26",
+          "endDate": "2026-03-27"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

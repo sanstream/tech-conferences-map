@@ -1,0 +1,17 @@
+{
+  "brand": "Reasons to",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "reasons-to",
+      "name": "Reasons to",
+      "url": "https://reasons.to",
+      "subjects": [
+        "web",
+        "frontend",
+        "ux",
+        "creative-coding"
+      ]
+    }
+  ]
+}

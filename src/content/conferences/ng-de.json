@@ -1,0 +1,15 @@
+{
+  "brand": "NG-DE",
+  "instances": [
+    {
+      "id": "ng-de",
+      "name": "NG-DE",
+      "url": "https://ng-de.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

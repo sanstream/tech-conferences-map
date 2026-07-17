@@ -1,0 +1,16 @@
+{
+  "brand": "Dutch Design Week",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "dutch-design-week",
+      "name": "Dutch Design Week",
+      "url": "https://www.ddw.nl",
+      "subjects": [
+        "ui-design",
+        "product-design",
+        "ux"
+      ]
+    }
+  ]
+}

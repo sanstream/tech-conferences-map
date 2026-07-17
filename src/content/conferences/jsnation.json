@@ -1,0 +1,48 @@
+{
+  "brand": "JSNation",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "jsnation",
+      "name": "JSNation",
+      "url": "https://jsnation.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-11",
+          "endDate": "2026-06-15"
+        }
+      ],
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands"
+      },
+      "isOnline": true
+    },
+    {
+      "id": "jsnation-us",
+      "name": "JSNation US",
+      "url": "https://jsnation.us",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-19"
+        }
+      ],
+      "location": {
+        "city": "New York, NY",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

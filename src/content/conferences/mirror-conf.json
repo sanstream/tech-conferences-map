@@ -1,0 +1,17 @@
+{
+  "brand": "Mirror Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "mirror-conf",
+      "name": "Mirror Conf",
+      "url": "https://www.mirrorconf.com",
+      "subjects": [
+        "ux",
+        "frontend",
+        "web",
+        "design-systems"
+      ]
+    }
+  ]
+}

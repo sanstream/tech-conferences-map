@@ -1,0 +1,14 @@
+{
+  "brand": "Paris Web",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "paris-web",
+      "name": "Paris Web",
+      "url": "https://www.paris-web.fr",
+      "subjects": [
+        "web"
+      ]
+    }
+  ]
+}

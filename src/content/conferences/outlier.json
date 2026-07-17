@@ -1,0 +1,15 @@
+{
+  "brand": "Outlier",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "outlier",
+      "name": "Outlier",
+      "url": "https://outlierconf.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

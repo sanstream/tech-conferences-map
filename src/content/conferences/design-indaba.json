@@ -1,0 +1,16 @@
+{
+  "brand": "Design Indaba",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "design-indaba",
+      "name": "Design Indaba",
+      "url": "https://www.designindaba.com",
+      "subjects": [
+        "ui-design",
+        "ux",
+        "creative-coding"
+      ]
+    }
+  ]
+}

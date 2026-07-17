@@ -1,0 +1,15 @@
+{
+  "brand": "Chaos Communication Congress",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "chaos-communication-congress",
+      "name": "Chaos Communication Congress",
+      "url": "https://events.ccc.de",
+      "subjects": [
+        "web",
+        "creative-coding"
+      ]
+    }
+  ]
+}

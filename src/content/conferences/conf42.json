@@ -1,0 +1,16 @@
+{
+  "brand": "Conf42",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "conf42-javascript",
+      "name": "Conf42 JavaScript",
+      "url": "https://www.conf42.com/js",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

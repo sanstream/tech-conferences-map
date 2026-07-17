@@ -1,0 +1,15 @@
+{
+  "brand": "Schema",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "schema",
+      "name": "Schema",
+      "url": "https://www.schema.conf",
+      "subjects": [
+        "design-systems",
+        "ux"
+      ]
+    }
+  ]
+}

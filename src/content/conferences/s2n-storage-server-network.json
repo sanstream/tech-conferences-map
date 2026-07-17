@@ -1,0 +1,25 @@
+{
+  "brand": "S2N: Storage Server Network",
+  "instances": [
+    {
+      "id": "s2n-storage-server-network",
+      "name": "S2N: Storage Server Network",
+      "url": "https://s2n.heise.de",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-03",
+          "endDate": "2026-11-04"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    }
+  ]
+}

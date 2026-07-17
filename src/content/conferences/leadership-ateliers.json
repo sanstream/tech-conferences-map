@@ -1,0 +1,15 @@
+{
+  "brand": "Leadership Ateliers",
+  "instances": [
+    {
+      "id": "leadership-ateliers",
+      "name": "Leadership Ateliers",
+      "url": "https://www.leadershipateliers.com/lisbon",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

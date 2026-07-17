@@ -1,0 +1,17 @@
+{
+  "brand": "Vercel Ship",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "vercel-ship",
+      "name": "Vercel Ship",
+      "url": "https://vercel.com/ship",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript",
+        "react"
+      ]
+    }
+  ]
+}

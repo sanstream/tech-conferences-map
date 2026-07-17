@@ -1,0 +1,19 @@
+{
+  "brand": "Code & Coffee: A Virtual Coffee Conference",
+  "instances": [
+    {
+      "id": "code-coffee-a-virtual-coffee-conference",
+      "name": "Code & Coffee: A Virtual Coffee Conference",
+      "url": "https://cfe.dev/events/virtual-coffee-conf-2025",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "ux",
+        "ui-design",
+        "product-design",
+        "accessibility"
+      ]
+    }
+  ]
+}

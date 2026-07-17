@@ -1,0 +1,17 @@
+{
+  "brand": "Micro Frontends Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "micro-frontends-conference",
+      "name": "Micro Frontends Conference",
+      "url": "https://conference.microfrontends.cloud",
+      "subjects": [
+        "frontend",
+        "javascript",
+        "web",
+        "typescript"
+      ]
+    }
+  ]
+}

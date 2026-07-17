@@ -1,0 +1,110 @@
+{
+  "brand": "NDC Conferences",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ndc-copenhagen",
+      "name": "NDC Copenhagen",
+      "url": "https://ndccopenhagen.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2026-06-04"
+        }
+      ],
+      "location": {
+        "city": "Copenhagen",
+        "country": "Denmark"
+      }
+    },
+    {
+      "id": "ndc-london",
+      "name": "NDC London",
+      "url": "https://ndclondon.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-01-26",
+          "endDate": "2026-01-30"
+        },
+        {
+          "startDate": "2027-01-25",
+          "endDate": "2027-01-29"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      }
+    },
+    {
+      "id": "ndc-oslo",
+      "name": "NDC Oslo",
+      "url": "https://ndcoslo.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-14",
+          "endDate": "2026-09-18"
+        }
+      ],
+      "location": {
+        "city": "Oslo",
+        "country": "Norway"
+      }
+    },
+    {
+      "id": "ndc-porto",
+      "name": "NDC Porto",
+      "url": "https://ndcporto.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-17",
+          "endDate": "2026-11-20"
+        }
+      ],
+      "location": {
+        "city": "Porto",
+        "country": "Portugal"
+      }
+    },
+    {
+      "id": "ndc-sydney",
+      "name": "NDC Sydney",
+      "url": "https://ndcsydney.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-22",
+          "endDate": "2026-04-24"
+        }
+      ],
+      "location": {
+        "city": "Sydney",
+        "country": "Australia"
+      }
+    }
+  ]
+}

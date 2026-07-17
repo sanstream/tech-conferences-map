@@ -1,0 +1,17 @@
+{
+  "brand": "DesignOps Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "designops-summit",
+      "name": "DesignOps Summit",
+      "url": "https://designopssummit.com",
+      "subjects": [
+        "design-systems",
+        "ux",
+        "product-design",
+        "ui-design"
+      ]
+    }
+  ]
+}

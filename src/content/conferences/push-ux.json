@@ -1,0 +1,27 @@
+{
+  "brand": "PUSH UX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "push-ux",
+      "name": "PUSH UX",
+      "url": "https://push-conference.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-22",
+          "endDate": "2026-10-23"
+        }
+      ],
+      "location": {
+        "city": "Munich",
+        "country": "Germany"
+      }
+    }
+  ]
+}

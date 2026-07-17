@@ -1,0 +1,16 @@
+{
+  "brand": "Design It. Build it. (DIBI)",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "design-it-build-it-dibi",
+      "name": "Design It. Build it. (DIBI)",
+      "url": "https://dibiconference.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

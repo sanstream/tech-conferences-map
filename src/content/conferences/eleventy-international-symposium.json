@@ -1,0 +1,15 @@
+{
+  "brand": "Eleventy International Symposium",
+  "instances": [
+    {
+      "id": "eleventy-international-symposium",
+      "name": "Eleventy International Symposium",
+      "url": "https://conf.11ty.dev",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript"
+      ]
+    }
+  ]
+}

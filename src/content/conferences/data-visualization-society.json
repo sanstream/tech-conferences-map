@@ -1,0 +1,15 @@
+{
+  "brand": "Data Visualization Society",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "data-visualization-society",
+      "name": "Data Visualization Society",
+      "url": "https://www.datavisualizationsociety.org",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

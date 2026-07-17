@@ -1,0 +1,15 @@
+{
+  "brand": "KIKK Festival",
+  "instances": [
+    {
+      "id": "kikk-festival",
+      "name": "KIKK Festival",
+      "url": "https://www.kikk.be",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "web"
+      ]
+    }
+  ]
+}

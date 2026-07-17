@@ -1,0 +1,16 @@
+{
+  "brand": "Vuejs.de Conf",
+  "instances": [
+    {
+      "id": "vuejs-de-conf",
+      "name": "Vuejs.de Conf",
+      "url": "https://conf.vuejs.de",
+      "subjects": [
+        "vue",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

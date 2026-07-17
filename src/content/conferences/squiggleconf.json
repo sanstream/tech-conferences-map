@@ -1,0 +1,17 @@
+{
+  "brand": "SquiggleConf",
+  "instances": [
+    {
+      "id": "squiggleconf",
+      "name": "SquiggleConf",
+      "url": "https://squiggleconf.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "tooling",
+        "frontend",
+        "typescript"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Visual Studio Live! (VSLive!) @ Microsoft HQ",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "visual-studio-live-vslive-microsoft-hq",
+      "name": "Visual Studio Live! (VSLive!) @ Microsoft HQ",
+      "url": "https://vslive.com/events/microsofthq-2024/home.aspx",
+      "subjects": [
+        "typescript",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

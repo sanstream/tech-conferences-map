@@ -1,0 +1,17 @@
+{
+  "brand": "Frontend Nation",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "frontend-nation",
+      "name": "Frontend Nation",
+      "url": "https://frontendnation.com",
+      "subjects": [
+        "frontend",
+        "javascript",
+        "web",
+        "typescript"
+      ]
+    }
+  ]
+}

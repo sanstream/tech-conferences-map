@@ -1,0 +1,17 @@
+{
+  "brand": "React Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "react-conf",
+      "name": "React Conf",
+      "url": "https://conf.react.dev",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

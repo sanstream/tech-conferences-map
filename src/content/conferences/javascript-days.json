@@ -1,0 +1,18 @@
+{
+  "brand": "JavaScript Days",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "javascript-days",
+      "name": "JavaScript Days",
+      "url": "https://javascript-days.de",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript",
+        "react"
+      ]
+    }
+  ]
+}

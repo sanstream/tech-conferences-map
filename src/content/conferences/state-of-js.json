@@ -1,0 +1,16 @@
+{
+  "brand": "State of JS",
+  "instances": [
+    {
+      "id": "state-of-js",
+      "name": "State of JS",
+      "url": "https://stateofjs.com",
+      "subjects": [
+        "javascript",
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "brand": "NACIS",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "nacis",
+      "name": "NACIS",
+      "url": "https://nacis.org",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

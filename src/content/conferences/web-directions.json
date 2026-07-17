@@ -1,0 +1,37 @@
+{
+  "brand": "Web Directions",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "web-directions",
+      "name": "Web Directions",
+      "url": "https://webdirections.org",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript",
+        "css"
+      ]
+    },
+    {
+      "id": "web-directions-code",
+      "name": "Web Directions Code",
+      "url": "https://webdirections.org/code",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "css",
+        "performance"
+      ]
+    },
+    {
+      "id": "web-directions-summit",
+      "name": "Web Directions Summit",
+      "url": "https://webdirections.org/dev-summit",
+      "subjects": [
+        "web"
+      ]
+    }
+  ]
+}

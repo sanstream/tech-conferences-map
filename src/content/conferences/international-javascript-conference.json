@@ -1,0 +1,98 @@
+{
+  "brand": "International JavaScript Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ijs-london",
+      "name": "International JavaScript Conference London",
+      "url": "https://javascript-conference.com/london",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-11",
+          "endDate": "2026-05-15"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      },
+      "isOnline": true
+    },
+    {
+      "id": "ijs-munich",
+      "name": "International JavaScript Conference Munich",
+      "url": "https://javascript-conference.com/munich",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-26",
+          "endDate": "2026-10-30"
+        }
+      ],
+      "location": {
+        "city": "Munich",
+        "country": "Germany"
+      },
+      "isOnline": true
+    },
+    {
+      "id": "ijs-new-york",
+      "name": "International JavaScript Conference New York",
+      "url": "https://javascript-conference.com/new-york",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-28",
+          "endDate": "2026-10-02"
+        }
+      ],
+      "location": {
+        "city": "New York, NY",
+        "country": "U.S.A."
+      },
+      "isOnline": true
+    },
+    {
+      "id": "ijs-san-diego",
+      "name": "International JavaScript Conference San Diego",
+      "url": "https://javascript-conference.com/san-diego",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2026-06-06"
+        },
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2026-06-05"
+        }
+      ],
+      "location": {
+        "city": "San Diego, CA",
+        "country": "U.S.A."
+      },
+      "isOnline": true
+    }
+  ]
+}

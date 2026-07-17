@@ -1,0 +1,20 @@
+{
+  "brand": "MAD Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "mad-summit",
+      "name": "MAD Summit",
+      "url": "https://mad-summit.de",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript",
+        "design-systems",
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

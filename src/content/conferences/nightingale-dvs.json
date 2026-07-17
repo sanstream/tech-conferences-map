@@ -1,0 +1,15 @@
+{
+  "brand": "Nightingale / DVS",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "nightingale-dvs",
+      "name": "Nightingale / DVS",
+      "url": "https://nightingaledvs.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

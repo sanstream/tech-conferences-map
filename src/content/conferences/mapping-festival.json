@@ -1,0 +1,14 @@
+{
+  "brand": "Mapping Festival",
+  "instances": [
+    {
+      "id": "mapping-festival",
+      "name": "Mapping Festival",
+      "url": "https://www.mappingfestival.com",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

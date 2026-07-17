@@ -1,0 +1,15 @@
+{
+  "brand": "Compass Tech Summit",
+  "instances": [
+    {
+      "id": "compass-tech-summit",
+      "name": "Compass Tech Summit",
+      "url": "https://ti.to/crafthub/compass-tech-summit-2024",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

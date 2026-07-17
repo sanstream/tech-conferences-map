@@ -1,0 +1,30 @@
+{
+  "brand": "Pixel Pioneers",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "pixel-pioneers",
+      "name": "Pixel Pioneers",
+      "url": "https://pixelpioneers.co",
+      "subjects": [
+        "frontend",
+        "web",
+        "css",
+        "javascript",
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-19",
+          "endDate": "2026-06-19"
+        }
+      ],
+      "location": {
+        "city": "Bristol",
+        "country": "U.K."
+      }
+    }
+  ]
+}

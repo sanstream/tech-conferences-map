@@ -1,0 +1,15 @@
+{
+  "brand": "Generative Art Conference",
+  "instances": [
+    {
+      "id": "generative-art-conference",
+      "name": "Generative Art Conference",
+      "url": "https://www.generativeart.com",
+      "subjects": [
+        "generative-art",
+        "creative-coding",
+        "research"
+      ]
+    }
+  ]
+}

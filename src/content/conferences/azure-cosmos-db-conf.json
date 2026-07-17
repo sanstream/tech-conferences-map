@@ -1,0 +1,16 @@
+{
+  "brand": "Azure Cosmos DB Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "azure-cosmos-db-conf",
+      "name": "Azure Cosmos DB Conf",
+      "url": "https://developer.microsoft.com/en-us/reactor/events/24779/",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

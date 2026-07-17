@@ -1,0 +1,38 @@
+{
+  "brand": "UXDX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "uxdx",
+      "name": "UXDX",
+      "url": "https://uxdx.com",
+      "subjects": [
+        "ux",
+        "product-design",
+        "design-systems",
+        "ui-design"
+      ]
+    },
+    {
+      "id": "uxdx-emea",
+      "name": "UXDX EMEA",
+      "url": "https://uxdx.com/berlin/2026",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-27",
+          "endDate": "2026-05-29"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "isOnline": true
+    }
+  ]
+}

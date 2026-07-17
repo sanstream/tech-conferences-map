@@ -1,0 +1,17 @@
+{
+  "brand": "SIGGRAPH",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "siggraph",
+      "name": "SIGGRAPH",
+      "url": "https://www.siggraph.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "3d",
+        "research"
+      ]
+    }
+  ]
+}

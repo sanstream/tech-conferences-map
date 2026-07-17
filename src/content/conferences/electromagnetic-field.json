@@ -1,0 +1,15 @@
+{
+  "brand": "Electromagnetic Field",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "electromagnetic-field",
+      "name": "Electromagnetic Field",
+      "url": "https://www.emfcamp.org",
+      "subjects": [
+        "creative-coding",
+        "web"
+      ]
+    }
+  ]
+}

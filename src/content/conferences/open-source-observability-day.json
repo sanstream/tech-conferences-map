@@ -1,0 +1,16 @@
+{
+  "brand": "Open Source Observability Day",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "open-source-observability-day",
+      "name": "Open Source Observability Day",
+      "url": "http://osoday.com",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

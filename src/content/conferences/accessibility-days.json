@@ -1,0 +1,15 @@
+{
+  "brand": "Accessibility Days",
+  "instances": [
+    {
+      "id": "accessibility-days",
+      "name": "Accessibility Days",
+      "url": "https://accessibilitydays.it",
+      "subjects": [
+        "accessibility",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

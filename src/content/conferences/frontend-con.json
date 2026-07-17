@@ -1,0 +1,16 @@
+{
+  "brand": "Frontend Con",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "frontend-con",
+      "name": "Frontend Con",
+      "url": "https://frontend-con.io",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript"
+      ]
+    }
+  ]
+}

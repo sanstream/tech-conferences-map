@@ -1,0 +1,17 @@
+{
+  "brand": "Savvy UX Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "savvy-ux-summit",
+      "name": "Savvy UX Summit",
+      "url": "https://www.savvyuxsummit.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

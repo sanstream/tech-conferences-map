@@ -1,0 +1,16 @@
+{
+  "brand": "Agile Testing Days",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "agile-testing-days",
+      "name": "Agile Testing Days",
+      "url": "https://agiletestingdays.com",
+      "subjects": [
+        "accessibility",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

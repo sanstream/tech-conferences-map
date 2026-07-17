@@ -1,0 +1,17 @@
+{
+  "brand": "UX Cambridge",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ux-cambridge",
+      "name": "UX Cambridge",
+      "url": "https://uxcambridge.net",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

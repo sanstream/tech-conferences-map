@@ -1,0 +1,27 @@
+{
+  "brand": "UX Rotterdam",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ux-rotterdam",
+      "name": "UX Rotterdam",
+      "url": "https://uxrotterdam.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-16",
+          "endDate": "2026-04-17"
+        }
+      ],
+      "location": {
+        "city": "Rotterdam",
+        "country": "Netherlands"
+      }
+    }
+  ]
+}

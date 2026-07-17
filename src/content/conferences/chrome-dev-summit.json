@@ -1,0 +1,17 @@
+{
+  "brand": "Chrome Dev Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "chrome-dev-summit",
+      "name": "Chrome Dev Summit",
+      "url": "https://developer.chrome.com",
+      "subjects": [
+        "web",
+        "frontend",
+        "performance",
+        "javascript"
+      ]
+    }
+  ]
+}

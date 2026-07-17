@@ -1,0 +1,28 @@
+{
+  "brand": "JSHeroes",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "jsheroes",
+      "name": "JSHeroes",
+      "url": "https://jsheroes.io",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript",
+        "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-14",
+          "endDate": "2026-05-15"
+        }
+      ],
+      "location": {
+        "city": "Cluj-Napoca",
+        "country": "Romania"
+      }
+    }
+  ]
+}

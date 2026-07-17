@@ -1,0 +1,17 @@
+{
+  "brand": "DDX Innovation & UX Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ddx-innovation-ux-conference",
+      "name": "DDX Innovation & UX Conference",
+      "url": "https://www.ddxconference.com/ddx-24-dubai",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

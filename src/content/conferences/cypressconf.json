@@ -1,0 +1,16 @@
+{
+  "brand": "CypressConf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "cypressconf",
+      "name": "CypressConf",
+      "url": "https://www.cypress.io/blog/2024/04/02/cypressconf-2024-cfp",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

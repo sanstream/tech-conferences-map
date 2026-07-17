@@ -1,0 +1,15 @@
+{
+  "brand": "#a11yTO Conf",
+  "instances": [
+    {
+      "id": "a11yto-conf",
+      "name": "#a11yTO Conf",
+      "url": "https://conf.a11yto.com",
+      "subjects": [
+        "accessibility",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "TypeScript Congress",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "typescript-congress",
+      "name": "TypeScript Congress",
+      "url": "https://typescriptcongress.com",
+      "subjects": [
+        "typescript",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

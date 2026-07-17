@@ -1,0 +1,16 @@
+{
+  "brand": "TechSummit Amsterdam",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "techsummit-amsterdam",
+      "name": "TechSummit Amsterdam",
+      "url": "https://techsummit.io",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

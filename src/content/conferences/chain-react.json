@@ -1,0 +1,17 @@
+{
+  "brand": "Chain React",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "chain-react",
+      "name": "Chain React",
+      "url": "https://chainreactconf.com",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

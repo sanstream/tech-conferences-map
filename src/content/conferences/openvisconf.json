@@ -1,0 +1,16 @@
+{
+  "brand": "OpenVisConf",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "openvisconf",
+      "name": "OpenVisConf",
+      "url": "https://openvisconf.com",
+      "subjects": [
+        "data-visualization",
+        "javascript",
+        "web"
+      ]
+    }
+  ]
+}

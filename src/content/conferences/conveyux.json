@@ -1,0 +1,26 @@
+{
+  "brand": "ConveyUX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "conveyux",
+      "name": "ConveyUX",
+      "url": "https://conveyux.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-13"
+        }
+      ],
+      "location": {
+        "city": "Seattle, WA",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

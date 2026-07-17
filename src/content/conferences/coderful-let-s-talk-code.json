@@ -1,0 +1,16 @@
+{
+  "brand": "Coderful - let's talk code",
+  "instances": [
+    {
+      "id": "coderful-let-s-talk-code",
+      "name": "Coderful - let's talk code",
+      "url": "https://www.coderful.io",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ]
+    }
+  ]
+}

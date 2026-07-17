@@ -1,0 +1,16 @@
+{
+  "brand": "InfoQ Dev Summit Boston",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "infoq-dev-summit-boston",
+      "name": "InfoQ Dev Summit Boston",
+      "url": "https://devsummit.infoq.com/conference/boston2024",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

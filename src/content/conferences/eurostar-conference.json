@@ -1,0 +1,16 @@
+{
+  "brand": "EuroSTAR Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "eurostar-conference",
+      "name": "EuroSTAR Conference",
+      "url": "https://conference.eurostarsoftwaretesting.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

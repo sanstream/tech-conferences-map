@@ -1,0 +1,66 @@
+{
+  "brand": "Devoxx",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "devoxx-belgium",
+      "name": "Devoxx Belgium",
+      "url": "https://devoxx.be",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-05",
+          "endDate": "2026-10-09"
+        }
+      ],
+      "location": {
+        "city": "Antwerp",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": "devoxx-morocco",
+      "name": "Devoxx Morocco",
+      "url": "https://devoxx.ma",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-04",
+          "endDate": "2026-11-05"
+        }
+      ],
+      "location": {
+        "city": "Casablanca",
+        "country": "Morocco"
+      }
+    },
+    {
+      "id": "devoxx-poland",
+      "name": "Devoxx Poland",
+      "url": "https://devoxx.pl",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-17",
+          "endDate": "2026-06-19"
+        }
+      ],
+      "location": {
+        "city": "Kraków",
+        "country": "Poland"
+      }
+    }
+  ]
+}

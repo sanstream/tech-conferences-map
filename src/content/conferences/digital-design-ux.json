@@ -1,0 +1,17 @@
+{
+  "brand": "Digital Design & UX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "digital-design-ux",
+      "name": "Digital Design & UX",
+      "url": "https://dd-ux.de",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

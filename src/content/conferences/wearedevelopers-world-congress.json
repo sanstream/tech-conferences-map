@@ -1,0 +1,26 @@
+{
+  "brand": "WeAreDevelopers World Congress",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "wearedevelopers-world-congress",
+      "name": "WeAreDevelopers World Congress",
+      "url": "https://www.wearedevelopers.com/world-congress",
+      "subjects": [
+        "javascript",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-07-08",
+          "endDate": "2026-07-10"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    }
+  ]
+}

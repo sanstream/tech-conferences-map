@@ -1,0 +1,15 @@
+{
+  "brand": "UIG-Tagung",
+  "instances": [
+    {
+      "id": "uig-tagung",
+      "name": "UIG-Tagung",
+      "url": "https://www.digitalzentrum-fokus-mensch.de/events/uig-tagung-2024",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

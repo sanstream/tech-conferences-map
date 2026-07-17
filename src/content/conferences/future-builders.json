@@ -1,0 +1,25 @@
+{
+  "brand": "Future Builders",
+  "instances": [
+    {
+      "id": "future-builders",
+      "name": "Future Builders",
+      "url": "https://www.futurebuilders.io",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-18",
+          "endDate": "2026-09-18"
+        }
+      ],
+      "location": {
+        "city": "Vienna",
+        "country": "Austria"
+      }
+    }
+  ]
+}

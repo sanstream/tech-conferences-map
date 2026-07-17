@@ -1,0 +1,15 @@
+{
+  "brand": "VIZBI",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "vizbi",
+      "name": "VIZBI",
+      "url": "https://vizbi.org",
+      "subjects": [
+        "data-visualization",
+        "research"
+      ]
+    }
+  ]
+}

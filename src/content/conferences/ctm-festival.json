@@ -1,0 +1,15 @@
+{
+  "brand": "CTM Festival",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "ctm-festival",
+      "name": "CTM Festival",
+      "url": "https://www.ctm-festival.de",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

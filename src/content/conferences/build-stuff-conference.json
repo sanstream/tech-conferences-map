@@ -1,0 +1,16 @@
+{
+  "brand": "Build Stuff Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "build-stuff-conference",
+      "name": "Build Stuff Conference",
+      "url": "https://www.buildstuff.events",
+      "subjects": [
+        "accessibility",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

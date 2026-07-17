@@ -1,0 +1,48 @@
+{
+  "brand": "FITC",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "fitc-spotlight-ai",
+      "name": "FITC Spotlight AI",
+      "url": "https://fitc.ca/event/slai26",
+      "subjects": [
+        "web",
+        "frontend",
+        "creative-coding",
+        "ux",
+        "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-12-01",
+          "endDate": "2026-12-01"
+        }
+      ],
+      "isOnline": true
+    },
+    {
+      "id": "fitc-web-unleashed-toronto",
+      "name": "FITC Web Unleashed Toronto",
+      "url": "https://fitc.ca/event/webu26",
+      "subjects": [
+        "web",
+        "frontend",
+        "creative-coding",
+        "ux",
+        "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-27",
+          "endDate": "2026-10-28"
+        }
+      ],
+      "location": {
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "isOnline": true
+    }
+  ]
+}

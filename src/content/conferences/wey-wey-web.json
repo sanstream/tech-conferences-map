@@ -1,0 +1,32 @@
+{
+  "brand": "Wey Wey Web",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "wey-wey-web",
+      "name": "Wey Wey Web",
+      "url": "https://www.weyweyweb.com",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript",
+        "ux",
+        "ui-design",
+        "product-design",
+        "accessibility",
+        "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-29",
+          "endDate": "2026-10-30"
+        }
+      ],
+      "location": {
+        "city": "Malaga",
+        "country": "Spain"
+      },
+      "isOnline": true
+    }
+  ]
+}

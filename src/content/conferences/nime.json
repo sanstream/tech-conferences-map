@@ -1,0 +1,15 @@
+{
+  "brand": "NIME",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "nime",
+      "name": "NIME",
+      "url": "https://www.nime.org",
+      "subjects": [
+        "creative-coding",
+        "research"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "brand": "CODAME ART+TECH",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "codame-art-tech",
+      "name": "CODAME ART+TECH",
+      "url": "https://codame.com",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

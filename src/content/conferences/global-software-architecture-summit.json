@@ -1,0 +1,16 @@
+{
+  "brand": "Global Software Architecture Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "global-software-architecture-summit",
+      "name": "Global Software Architecture Summit",
+      "url": "https://gsas.io",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "brand": "SmashingConf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "smashingconf-amsterdam",
+      "name": "SmashingConf Amsterdam",
+      "url": "https://smashingconf.com/amsterdam",
+      "subjects": [
+        "frontend",
+        "css",
+        "ux",
+        "web",
+        "design-systems",
+        "performance",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-16"
+        }
+      ],
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands"
+      },
+      "isOnline": true
+    },
+    {
+      "id": "smashingconf-antwerp",
+      "name": "SmashingConf Antwerp",
+      "url": "https://smashingconf.com/antwerp",
+      "subjects": [
+        "frontend",
+        "css",
+        "ux",
+        "web",
+        "design-systems",
+        "performance",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-15"
+        }
+      ],
+      "location": {
+        "city": "Antwerp",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": "smashingconf-freiburg",
+      "name": "SmashingConf Freiburg",
+      "url": "https://smashingconf.com/freiburg",
+      "subjects": [
+        "frontend",
+        "css",
+        "ux",
+        "web",
+        "design-systems",
+        "performance",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-07",
+          "endDate": "2026-09-10"
+        }
+      ],
+      "location": {
+        "city": "Freiburg",
+        "country": "Germany"
+      }
+    }
+  ]
+}

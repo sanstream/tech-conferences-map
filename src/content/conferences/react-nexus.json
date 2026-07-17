@@ -1,0 +1,27 @@
+{
+  "brand": "React Nexus",
+  "instances": [
+    {
+      "id": "react-nexus",
+      "name": "React Nexus",
+      "url": "https://reactnexus.com",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-07-02",
+          "endDate": "2026-07-03"
+        }
+      ],
+      "location": {
+        "city": "Bengaluru",
+        "country": "India"
+      }
+    }
+  ]
+}

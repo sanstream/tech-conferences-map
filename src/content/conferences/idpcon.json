@@ -1,0 +1,15 @@
+{
+  "brand": "IDPCon",
+  "instances": [
+    {
+      "id": "idpcon",
+      "name": "IDPCon",
+      "url": "https://idpcon.com",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Test Coast",
+  "instances": [
+    {
+      "id": "test-coast",
+      "name": "Test Coast",
+      "url": "https://www.testcoast.se",
+      "subjects": [
+        "accessibility",
+        "frontend",
+        "web",
+        "performance"
+      ]
+    }
+  ]
+}

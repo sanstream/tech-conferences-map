@@ -1,0 +1,15 @@
+{
+  "brand": "OFFSET Dublin",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "offset-dublin",
+      "name": "OFFSET Dublin",
+      "url": "https://www.iloveoffset.com",
+      "subjects": [
+        "ui-design",
+        "creative-coding"
+      ]
+    }
+  ]
+}

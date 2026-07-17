@@ -1,0 +1,14 @@
+{
+  "brand": "Resonate Festival",
+  "instances": [
+    {
+      "id": "resonate-festival",
+      "name": "Resonate Festival",
+      "url": "https://resonate.io",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

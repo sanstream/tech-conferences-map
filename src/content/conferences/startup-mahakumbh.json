@@ -1,0 +1,15 @@
+{
+  "brand": "Startup Mahakumbh",
+  "instances": [
+    {
+      "id": "startup-mahakumbh",
+      "name": "Startup Mahakumbh",
+      "url": "https://startupmahakumbh.co.in",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

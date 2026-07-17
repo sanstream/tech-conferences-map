@@ -1,0 +1,16 @@
+{
+  "brand": "Penpot Fest",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "penpot-fest",
+      "name": "Penpot Fest",
+      "url": "https://penpot.app",
+      "subjects": [
+        "ui-design",
+        "design-systems",
+        "open-source"
+      ]
+    }
+  ]
+}

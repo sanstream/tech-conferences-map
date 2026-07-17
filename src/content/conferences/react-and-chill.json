@@ -1,0 +1,16 @@
+{
+  "brand": "React and Chill",
+  "instances": [
+    {
+      "id": "react-and-chill",
+      "name": "React and Chill",
+      "url": "https://reactandchill.live",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "react"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "UX Australia",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ux-australia",
+      "name": "UX Australia",
+      "url": "https://uxaustralia.com.au",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

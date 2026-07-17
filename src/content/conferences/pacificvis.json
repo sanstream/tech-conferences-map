@@ -1,0 +1,15 @@
+{
+  "brand": "PacificVis",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "pacificvis",
+      "name": "PacificVis",
+      "url": "https://ieee-pacificvis.github.io",
+      "subjects": [
+        "data-visualization",
+        "research"
+      ]
+    }
+  ]
+}

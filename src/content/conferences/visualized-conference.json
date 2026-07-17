@@ -1,0 +1,14 @@
+{
+  "brand": "Visualized Conference",
+  "instances": [
+    {
+      "id": "visualized-conference",
+      "name": "Visualized Conference",
+      "url": "https://visualized.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "PromptUX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "promptux",
+      "name": "PromptUX",
+      "url": "https://www.promptux.ai",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

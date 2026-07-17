@@ -1,0 +1,48 @@
+{
+  "brand": "Mind the Product",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "mtpcon-london",
+      "name": "#mtpcon London",
+      "url": "https://www.mindtheproduct.com/mtpcon/london",
+      "subjects": [
+        "product-design",
+        "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-16"
+        },
+        {
+          "startDate": "2026-06-16",
+          "endDate": "2026-06-16"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      }
+    },
+    {
+      "id": "mind-the-product-chicago",
+      "name": "Mind the Product Chicago",
+      "url": "https://www.mindtheproduct.com/industry",
+      "subjects": [
+        "product-design",
+        "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-06",
+          "endDate": "2026-10-07"
+        }
+      ],
+      "location": {
+        "city": "Chicago, IL",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "dotJS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "dotjs",
+      "name": "dotJS",
+      "url": "https://www.dotjs.io",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-18",
+          "endDate": "2026-09-18"
+        }
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France"
+      }
+    }
+  ]
+}

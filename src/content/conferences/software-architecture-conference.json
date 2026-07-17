@@ -1,0 +1,16 @@
+{
+  "brand": "Software Architecture Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "software-architecture-conference",
+      "name": "Software Architecture Conference",
+      "url": "https://softwarearchitecture.live",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

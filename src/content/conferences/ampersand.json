@@ -1,0 +1,16 @@
+{
+  "brand": "Ampersand",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ampersand",
+      "name": "Ampersand",
+      "url": "https://ampersandconf.com",
+      "subjects": [
+        "ui-design",
+        "web",
+        "css"
+      ]
+    }
+  ]
+}

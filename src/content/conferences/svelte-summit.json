@@ -1,0 +1,15 @@
+{
+  "brand": "Svelte Summit",
+  "instances": [
+    {
+      "id": "svelte-summit",
+      "name": "Svelte Summit",
+      "url": "https://sveltesummit.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

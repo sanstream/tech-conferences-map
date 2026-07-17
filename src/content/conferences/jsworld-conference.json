@@ -1,0 +1,16 @@
+{
+  "brand": "JSworld Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "jsworld-conference",
+      "name": "JSworld Conference",
+      "url": "https://jsworldconference.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

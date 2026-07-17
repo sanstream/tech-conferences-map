@@ -1,0 +1,15 @@
+{
+  "brand": "Gray Area Festival",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "gray-area-festival",
+      "name": "Gray Area Festival",
+      "url": "https://grayarea.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

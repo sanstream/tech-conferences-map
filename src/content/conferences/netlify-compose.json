@@ -1,0 +1,16 @@
+{
+  "brand": "Netlify Compose",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "netlify-compose",
+      "name": "Netlify Compose",
+      "url": "https://www.netlify.com/conference",
+      "subjects": [
+        "web",
+        "frontend",
+        "javascript"
+      ]
+    }
+  ]
+}

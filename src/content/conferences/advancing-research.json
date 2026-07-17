@@ -1,0 +1,16 @@
+{
+  "brand": "Advancing Research",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "advancing-research",
+      "name": "Advancing Research",
+      "url": "https://advancingresearchconference.com",
+      "subjects": [
+        "ux",
+        "product-design",
+        "research"
+      ]
+    }
+  ]
+}

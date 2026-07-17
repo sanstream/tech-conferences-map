@@ -1,11 +1,123 @@
 ---
-import Welcome from "../components/Welcome.astro"
 import Layout from "../layouts/Layout.astro"
+import { getAllConferences, groupByBrand } from "../lib/conferences"
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const conferences = await getAllConferences()
+const byBrand = groupByBrand(conferences)
+const totalInstances = conferences.length
+const withDates = conferences.filter((c) => c.data.editions.length > 0).length
+
+function formatEdition(edition: { startDate: string; endDate: string }) {
+  if (edition.startDate === edition.endDate) return edition.startDate
+  return `${edition.startDate} → ${edition.endDate}`
+}
+
+function formatLocation(entry: {
+  location?: { city?: string; country?: string }
+  isOnline: boolean
+}) {
+  const parts: string[] = []
+  if (entry.location?.city) parts.push(entry.location.city)
+  if (entry.location?.country) parts.push(entry.location.country)
+  const place = parts.join(", ")
+  if (place && entry.isOnline) return `${place} · hybrid`
+  if (place) return place
+  if (entry.isOnline) return "online"
+  return ""
+}
 ---
 
 <Layout>
-  <Welcome />
+  <main>
+    <h1>Tech Conferences</h1>
+    <p>
+      {totalInstances} instances across {byBrand.size} brands · {withDates} with
+      dates
+    </p>
+
+    {
+      [...byBrand.entries()].map(([brand, instances]) => (
+        <section>
+          <h2>{brand}</h2>
+          <ul>
+            {instances.map((entry) => {
+              const where = formatLocation(entry.data)
+              return (
+                <li>
+                  <a href={entry.data.url}>{entry.data.name}</a>
+                  {where && <span class="location"> — {where}</span>}
+                  {entry.data.editions.length > 0 && (
+                    <span class="dates">
+                      {" "}
+                      ({entry.data.editions.map(formatEdition).join("; ")})
+                    </span>
+                  )}
+                  <span class="subjects"> — {entry.data.subjects.join(", ")}</span>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
 </Layout>
+
+<style>
+  main {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+  }
+
+  h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+  }
+
+  p {
+    margin: 0 0 2rem;
+    color: #555;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.25rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+
+  a {
+    color: #0366d6;
+  }
+
+  .location {
+    color: #333;
+    font-size: 0.875rem;
+  }
+
+  .dates {
+    color: #333;
+    font-size: 0.875rem;
+  }
+
+  .subjects {
+    color: #666;
+    font-size: 0.875rem;
+  }
+</style>

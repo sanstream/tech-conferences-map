@@ -1,0 +1,16 @@
+{
+  "brand": "IEEE VIS",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "ieee-vis",
+      "name": "IEEE VIS",
+      "url": "https://ieeevis.org",
+      "subjects": [
+        "data-visualization",
+        "research",
+        "information-design"
+      ]
+    }
+  ]
+}

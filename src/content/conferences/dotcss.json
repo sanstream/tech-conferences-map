@@ -1,0 +1,16 @@
+{
+  "brand": "dotCSS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "dotcss",
+      "name": "dotCSS",
+      "url": "https://www.dotcss.io",
+      "subjects": [
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Fronteers Conference",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "fronteers-conference",
+      "name": "Fronteers Conference",
+      "url": "https://fronteers.nl/congres",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript",
+        "css"
+      ]
+    }
+  ]
+}

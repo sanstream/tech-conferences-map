@@ -1,0 +1,16 @@
+{
+  "brand": "Unleashed Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "unleashed-summit",
+      "name": "Unleashed Summit",
+      "url": "https://summit.productunleashed.co.uk",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "brand": "!!Con",
+  "instances": [
+    {
+      "id": "con",
+      "name": "!!Con",
+      "url": "https://bangbangcon.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "creative-coding"
+      ]
+    }
+  ]
+}

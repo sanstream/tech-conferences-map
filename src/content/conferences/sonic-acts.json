@@ -1,0 +1,15 @@
+{
+  "brand": "Sonic Acts",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "sonic-acts",
+      "name": "Sonic Acts",
+      "url": "https://sonicacts.com",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

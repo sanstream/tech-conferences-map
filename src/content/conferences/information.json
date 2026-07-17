@@ -1,0 +1,15 @@
+{
+  "brand": "Information+",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "information",
+      "name": "Information+",
+      "url": "https://informationplusconference.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

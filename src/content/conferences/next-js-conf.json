@@ -1,0 +1,17 @@
+{
+  "brand": "Next.js Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "next-js-conf",
+      "name": "Next.js Conf",
+      "url": "https://nextjs.org/conf",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

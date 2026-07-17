@@ -1,0 +1,15 @@
+{
+  "brand": "Open Source Day",
+  "instances": [
+    {
+      "id": "open-source-day",
+      "name": "Open Source Day",
+      "url": "https://2025.osday.dev",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

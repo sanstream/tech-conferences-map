@@ -1,0 +1,16 @@
+{
+  "brand": "ng-conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ng-conf",
+      "name": "ng-conf",
+      "url": "https://ng-conf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Awwwards Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "awwwards-conference",
+      "name": "Awwwards Conference",
+      "url": "https://conference.awwwards.com",
+      "subjects": [
+        "web",
+        "ui-design",
+        "frontend",
+        "creative-coding"
+      ]
+    }
+  ]
+}

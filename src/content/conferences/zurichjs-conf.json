@@ -1,0 +1,25 @@
+{
+  "brand": "ZurichJS Conf",
+  "instances": [
+    {
+      "id": "zurichjs-conf",
+      "name": "ZurichJS Conf",
+      "url": "https://conf.zurichjs.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-10",
+          "endDate": "2026-09-11"
+        }
+      ],
+      "location": {
+        "city": "Zurich",
+        "country": "Switzerland"
+      }
+    }
+  ]
+}

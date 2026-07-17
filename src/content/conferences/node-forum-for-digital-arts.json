@@ -1,0 +1,16 @@
+{
+  "brand": "NODE Forum for Digital Arts",
+  "instances": [
+    {
+      "id": "node-forum-for-digital-arts",
+      "name": "NODE Forum for Digital Arts",
+      "url": "https://nodeforum.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "javascript",
+        "web"
+      ]
+    }
+  ]
+}

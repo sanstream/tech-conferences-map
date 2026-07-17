@@ -1,0 +1,25 @@
+{
+  "brand": "Unlocked Seattle",
+  "instances": [
+    {
+      "id": "unlocked-seattle",
+      "name": "Unlocked Seattle",
+      "url": "https://unlockedconf.io",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-07",
+          "endDate": "2026-05-07"
+        }
+      ],
+      "location": {
+        "city": "Seattle, WA",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

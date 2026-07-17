@@ -1,0 +1,16 @@
+{
+  "brand": "Ray Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ray-summit",
+      "name": "Ray Summit",
+      "url": "https://www.anyscale.com/ray-summit/2025",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

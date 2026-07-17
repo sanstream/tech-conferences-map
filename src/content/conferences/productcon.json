@@ -1,0 +1,15 @@
+{
+  "brand": "ProductCon",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "productcon",
+      "name": "ProductCon",
+      "url": "https://www.productschool.com/productcon",
+      "subjects": [
+        "product-design",
+        "ux"
+      ]
+    }
+  ]
+}

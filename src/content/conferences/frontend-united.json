@@ -1,0 +1,15 @@
+{
+  "brand": "Frontend United",
+  "instances": [
+    {
+      "id": "frontend-united",
+      "name": "Frontend United",
+      "url": "https://frontendunited.com",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript"
+      ]
+    }
+  ]
+}

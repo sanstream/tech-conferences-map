@@ -1,0 +1,17 @@
+{
+  "brand": "Leading Design",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "leading-design",
+      "name": "Leading Design",
+      "url": "https://leadingdesign.com",
+      "subjects": [
+        "ux",
+        "product-design",
+        "design-systems",
+        "ui-design"
+      ]
+    }
+  ]
+}

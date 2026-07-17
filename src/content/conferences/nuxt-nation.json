@@ -1,0 +1,16 @@
+{
+  "brand": "Nuxt Nation",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "nuxt-nation",
+      "name": "Nuxt Nation",
+      "url": "https://nuxtnation.com",
+      "subjects": [
+        "vue",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

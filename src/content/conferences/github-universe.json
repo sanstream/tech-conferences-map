@@ -1,0 +1,16 @@
+{
+  "brand": "GitHub Universe",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "github-universe",
+      "name": "GitHub Universe",
+      "url": "https://githubuniverse.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

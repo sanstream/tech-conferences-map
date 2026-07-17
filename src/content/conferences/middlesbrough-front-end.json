@@ -1,0 +1,16 @@
+{
+  "brand": "Middlesbrough Front End",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "middlesbrough-front-end",
+      "name": "Middlesbrough Front End",
+      "url": "https://middlesbroughfe.co.uk",
+      "subjects": [
+        "frontend",
+        "web",
+        "css"
+      ]
+    }
+  ]
+}

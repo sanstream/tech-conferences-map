@@ -1,0 +1,15 @@
+{
+  "brand": "Angular Belgrade",
+  "instances": [
+    {
+      "id": "angular-belgrade",
+      "name": "Angular Belgrade",
+      "url": "https://angularbelgrade.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

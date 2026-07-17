@@ -1,0 +1,27 @@
+{
+  "brand": "FOSDEM",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "fosdem",
+      "name": "FOSDEM",
+      "url": "https://fosdem.org",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend",
+        "open-source"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-01-31",
+          "endDate": "2026-02-02"
+        }
+      ],
+      "location": {
+        "city": "Brussels",
+        "country": "Belgium"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "brand": "MUTEK",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "mutek",
+      "name": "MUTEK",
+      "url": "https://mutek.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

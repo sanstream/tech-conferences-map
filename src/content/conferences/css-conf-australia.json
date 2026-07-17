@@ -1,0 +1,15 @@
+{
+  "brand": "CSS Conf Australia",
+  "instances": [
+    {
+      "id": "css-conf-australia",
+      "name": "CSS Conf Australia",
+      "url": "https://cssconf.com.au",
+      "subjects": [
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

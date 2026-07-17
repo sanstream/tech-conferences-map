@@ -1,0 +1,15 @@
+{
+  "brand": "The Dutch JavaScript Conference",
+  "instances": [
+    {
+      "id": "the-dutch-javascript-conference",
+      "name": "The Dutch JavaScript Conference",
+      "url": "https://www.djsconf.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

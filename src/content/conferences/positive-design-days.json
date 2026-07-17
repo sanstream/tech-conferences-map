@@ -1,0 +1,20 @@
+{
+  "brand": "Positive Design Days",
+  "instances": [
+    {
+      "id": "positive-design-days",
+      "name": "Positive Design Days",
+      "url": "https://positive-design-days.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "design-systems",
+        "css",
+        "frontend",
+        "web",
+        "product-design",
+        "accessibility"
+      ]
+    }
+  ]
+}

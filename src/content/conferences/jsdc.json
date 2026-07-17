@@ -1,0 +1,15 @@
+{
+  "brand": "JSDC",
+  "instances": [
+    {
+      "id": "jsdc",
+      "name": "JSDC",
+      "url": "https://2025.jsdc.tw",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

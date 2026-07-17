@@ -1,0 +1,22 @@
+{
+  "brand": "JSDays",
+  "instances": [
+    {
+      "id": "jsdays",
+      "name": "JSDays",
+      "url": "https://jsdays.cz/cs",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-14",
+          "endDate": "2026-04-14"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

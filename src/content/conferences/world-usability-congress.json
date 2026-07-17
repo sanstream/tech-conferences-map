@@ -1,0 +1,16 @@
+{
+  "brand": "World Usability Congress",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "world-usability-congress",
+      "name": "World Usability Congress",
+      "url": "https://worldusabilitycongress.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

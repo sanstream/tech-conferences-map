@@ -1,0 +1,15 @@
+{
+  "brand": "Processing Community Day",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "processing-community-day",
+      "name": "Processing Community Day",
+      "url": "https://processingfoundation.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

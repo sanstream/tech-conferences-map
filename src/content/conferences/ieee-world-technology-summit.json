@@ -1,0 +1,16 @@
+{
+  "brand": "IEEE World Technology Summit",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "ieee-world-technology-summit",
+      "name": "IEEE World Technology Summit",
+      "url": "https://wts.ieee.org",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

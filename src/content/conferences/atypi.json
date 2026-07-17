@@ -1,0 +1,15 @@
+{
+  "brand": "ATypI",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "atypi",
+      "name": "ATypI",
+      "url": "https://atypi.org",
+      "subjects": [
+        "ui-design",
+        "information-design"
+      ]
+    }
+  ]
+}

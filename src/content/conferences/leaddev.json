@@ -1,0 +1,56 @@
+{
+  "brand": "LeadDev",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "leaddev-ldx3-london",
+      "name": "LDX3 London",
+      "url": "https://leaddev.com/leaddev-london",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-02",
+          "endDate": "2026-06-03"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      }
+    },
+    {
+      "id": "leaddev",
+      "name": "LeadDev",
+      "url": "https://leaddev.com",
+      "subjects": [
+        "web",
+        "frontend",
+        "product-design"
+      ]
+    },
+    {
+      "id": "leaddev-berlin",
+      "name": "LeadDev Berlin",
+      "url": "https://leaddev.com/leaddev-berlin",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-09",
+          "endDate": "2026-11-10"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    }
+  ]
+}

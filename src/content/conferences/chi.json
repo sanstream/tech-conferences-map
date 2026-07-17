@@ -1,0 +1,16 @@
+{
+  "brand": "CHI",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "chi",
+      "name": "CHI",
+      "url": "https://chi.acm.org",
+      "subjects": [
+        "ux",
+        "research",
+        "ui-design"
+      ]
+    }
+  ]
+}

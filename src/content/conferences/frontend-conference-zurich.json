@@ -1,0 +1,16 @@
+{
+  "brand": "Frontend Conference Zurich",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "frontend-conference-zurich",
+      "name": "Frontend Conference Zurich",
+      "url": "https://frontendconf.ch",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript"
+      ]
+    }
+  ]
+}

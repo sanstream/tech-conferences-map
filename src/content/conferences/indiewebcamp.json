@@ -1,0 +1,14 @@
+{
+  "brand": "IndieWebCamp",
+  "instances": [
+    {
+      "id": "indiewebcamp",
+      "name": "IndieWebCamp",
+      "url": "https://indieweb.org",
+      "subjects": [
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

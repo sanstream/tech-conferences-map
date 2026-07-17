@@ -1,0 +1,15 @@
+{
+  "brand": "BORDERLESS JS COMMUNITY DAY",
+  "instances": [
+    {
+      "id": "borderless-js-community-day",
+      "name": "BORDERLESS JS COMMUNITY DAY",
+      "url": "https://wearecommunity.io/events/borderless-js-conference",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

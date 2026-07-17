@@ -1,0 +1,16 @@
+{
+  "brand": "Design Systems London",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "design-systems-london",
+      "name": "Design Systems London",
+      "url": "https://www.designsystemslondon.com",
+      "subjects": [
+        "design-systems",
+        "ux",
+        "ui-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "brand": "Frontrunners",
+  "instances": [
+    {
+      "id": "frontrunners",
+      "name": "Frontrunners",
+      "url": "https://frontrunners.tech",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript",
+        "css",
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "brand": "IIID",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "iiid",
+      "name": "IIID",
+      "url": "https://www.iiid.net",
+      "subjects": [
+        "information-design",
+        "data-visualization"
+      ]
+    }
+  ]
+}

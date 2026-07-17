@@ -1,0 +1,23 @@
+{
+  "brand": "Prompt to Product",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "prompt-to-product",
+      "name": "Prompt to Product",
+      "url": "https://prompttoproduct.ai",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-18",
+          "endDate": "2026-05-22"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

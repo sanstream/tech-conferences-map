@@ -1,0 +1,17 @@
+{
+  "brand": "NNgroup UX Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "nngroup-ux-conference",
+      "name": "NNgroup UX Conference",
+      "url": "https://www.nngroup.com/ux-conference",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

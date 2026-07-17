@@ -1,0 +1,17 @@
+{
+  "brand": "SAP UI5con",
+  "instances": [
+    {
+      "id": "sap-ui5con",
+      "name": "SAP UI5con",
+      "url": "https://openui5.org/ui5con/germany2024",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "css",
+        "performance"
+      ]
+    }
+  ]
+}

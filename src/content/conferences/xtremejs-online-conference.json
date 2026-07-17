@@ -1,0 +1,26 @@
+{
+  "brand": "XtremeJS Online Conference",
+  "instances": [
+    {
+      "id": "xtremejs-online-conference",
+      "name": "XtremeJS Online Conference",
+      "url": "https://xtremejs.dev",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-19",
+          "endDate": "2026-05-19"
+        },
+        {
+          "startDate": "2026-11-10",
+          "endDate": "2026-11-10"
+        }
+      ],
+      "isOnline": true
+    }
+  ]
+}

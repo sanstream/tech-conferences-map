@@ -1,0 +1,16 @@
+{
+  "brand": "Generate CSS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "generate-css",
+      "name": "Generate CSS",
+      "url": "https://www.generateconf.com",
+      "subjects": [
+        "css",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

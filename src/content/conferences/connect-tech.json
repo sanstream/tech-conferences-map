@@ -1,0 +1,16 @@
+{
+  "brand": "Connect.Tech",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "connect-tech",
+      "name": "Connect.Tech",
+      "url": "https://2024.connect.tech",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

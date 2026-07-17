@@ -1,0 +1,17 @@
+{
+  "brand": "UX London",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ux-london",
+      "name": "UX London",
+      "url": "https://uxlondon.com",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

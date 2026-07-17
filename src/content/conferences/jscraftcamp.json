@@ -1,0 +1,25 @@
+{
+  "brand": "JSCraftCamp",
+  "instances": [
+    {
+      "id": "jscraftcamp",
+      "name": "JSCraftCamp",
+      "url": "https://jscraftcamp.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-12",
+          "endDate": "2026-06-13"
+        }
+      ],
+      "location": {
+        "city": "Munich",
+        "country": "Germany"
+      }
+    }
+  ]
+}

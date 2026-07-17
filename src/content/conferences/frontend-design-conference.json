@@ -1,0 +1,20 @@
+{
+  "brand": "Frontend Design Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "frontend-design-conference",
+      "name": "Frontend Design Conference",
+      "url": "https://frontenddesignconference.com",
+      "subjects": [
+        "frontend",
+        "web",
+        "css",
+        "ui-design",
+        "javascript",
+        "ux",
+        "product-design"
+      ]
+    }
+  ]
+}

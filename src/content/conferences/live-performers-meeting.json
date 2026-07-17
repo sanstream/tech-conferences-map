@@ -1,0 +1,16 @@
+{
+  "brand": "Live Performers Meeting",
+  "instances": [
+    {
+      "id": "live-performers-meeting",
+      "name": "Live Performers Meeting",
+      "url": "https://liveperformersmeeting.net",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "performance",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Adobe MAX",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "adobe-max",
+      "name": "Adobe MAX",
+      "url": "https://www.adobe.com/max",
+      "subjects": [
+        "ui-design",
+        "creative-coding",
+        "product-design"
+      ]
+    }
+  ]
+}

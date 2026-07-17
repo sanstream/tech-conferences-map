@@ -1,0 +1,13 @@
+{
+  "brand": "VisFest",
+  "instances": [
+    {
+      "id": "visfest",
+      "name": "VisFest",
+      "url": "https://visfest.com",
+      "subjects": [
+        "data-visualization"
+      ]
+    }
+  ]
+}

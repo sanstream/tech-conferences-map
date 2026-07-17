@@ -1,0 +1,14 @@
+{
+  "brand": "Typographics",
+  "instances": [
+    {
+      "id": "typographics",
+      "name": "Typographics",
+      "url": "https://typographics.com",
+      "subjects": [
+        "ui-design",
+        "information-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "SND",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "snd",
+      "name": "SND",
+      "url": "https://www.snd.org",
+      "subjects": [
+        "information-design",
+        "ui-design",
+        "data-visualization"
+      ]
+    }
+  ]
+}

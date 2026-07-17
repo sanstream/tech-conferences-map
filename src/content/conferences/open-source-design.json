@@ -1,0 +1,15 @@
+{
+  "brand": "Open Source Design",
+  "instances": [
+    {
+      "id": "open-source-design",
+      "name": "Open Source Design",
+      "url": "https://opensourcedesign.net",
+      "subjects": [
+        "ui-design",
+        "ux",
+        "open-source"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "What Design Can Do",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "what-design-can-do",
+      "name": "What Design Can Do",
+      "url": "https://www.whatdesigncando.com",
+      "subjects": [
+        "ui-design",
+        "ux",
+        "product-design"
+      ]
+    }
+  ]
+}

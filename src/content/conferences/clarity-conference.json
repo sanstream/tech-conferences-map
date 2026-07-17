@@ -1,0 +1,16 @@
+{
+  "brand": "Clarity Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "clarity-conference",
+      "name": "Clarity Conference",
+      "url": "https://www.clarityconf.com",
+      "subjects": [
+        "design-systems",
+        "ux",
+        "ui-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "brand": "Ars Electronica Festival",
+  "instances": [
+    {
+      "id": "ars-electronica-festival",
+      "name": "Ars Electronica Festival",
+      "url": "https://ars.electronica.art",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

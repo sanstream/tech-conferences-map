@@ -1,0 +1,27 @@
+{
+  "brand": "CascadiaJS",
+  "instances": [
+    {
+      "id": "cascadiajs",
+      "name": "CascadiaJS",
+      "url": "https://cascadiajs.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "css",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2026-06-02"
+        }
+      ],
+      "location": {
+        "city": "Seattle, WA",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

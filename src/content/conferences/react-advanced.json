@@ -1,0 +1,51 @@
+{
+  "brand": "React Advanced",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "react-advanced",
+      "name": "React Advanced",
+      "url": "https://reactadvanced.com",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web",
+        "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-23",
+          "endDate": "2026-10-26"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      },
+      "isOnline": true
+    },
+    {
+      "id": "react-advanced-canada",
+      "name": "React Advanced Canada",
+      "url": "https://reactadvanced.com/canada",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "react"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-03-24",
+          "endDate": "2026-03-26"
+        }
+      ],
+      "location": {
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "isOnline": true
+    }
+  ]
+}

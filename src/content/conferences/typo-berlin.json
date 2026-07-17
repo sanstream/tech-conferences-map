@@ -1,0 +1,16 @@
+{
+  "brand": "Typo Berlin",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "typo-berlin",
+      "name": "Typo Berlin",
+      "url": "https://typotalks.com/berlin",
+      "subjects": [
+        "ui-design",
+        "information-design",
+        "design-systems"
+      ]
+    }
+  ]
+}

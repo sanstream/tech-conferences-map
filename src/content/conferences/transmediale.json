@@ -1,0 +1,15 @@
+{
+  "brand": "Transmediale",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "transmediale",
+      "name": "Transmediale",
+      "url": "https://transmediale.de",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

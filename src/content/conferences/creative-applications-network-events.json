@@ -1,0 +1,14 @@
+{
+  "brand": "Creative Applications Network Events",
+  "instances": [
+    {
+      "id": "creative-applications-network-events",
+      "name": "Creative Applications Network Events",
+      "url": "https://www.creativeapplications.net",
+      "subjects": [
+        "creative-coding",
+        "generative-art"
+      ]
+    }
+  ]
+}

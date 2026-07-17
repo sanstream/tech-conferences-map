@@ -1,0 +1,15 @@
+{
+  "brand": "Malofiej",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "malofiej",
+      "name": "Malofiej",
+      "url": "https://www.malofiejgraphics.com",
+      "subjects": [
+        "data-visualization",
+        "information-design"
+      ]
+    }
+  ]
+}

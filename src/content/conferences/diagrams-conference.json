@@ -1,0 +1,16 @@
+{
+  "brand": "Diagrams Conference",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "diagrams-conference",
+      "name": "Diagrams Conference",
+      "url": "https://www.diagrams-conference.org",
+      "subjects": [
+        "information-design",
+        "data-visualization",
+        "research"
+      ]
+    }
+  ]
+}

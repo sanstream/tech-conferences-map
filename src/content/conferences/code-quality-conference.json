@@ -1,0 +1,16 @@
+{
+  "brand": "Code Quality Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "code-quality-conference",
+      "name": "Code Quality Conference",
+      "url": "https://codequalityconf.com",
+      "subjects": [
+        "performance",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

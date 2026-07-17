@@ -1,0 +1,16 @@
+{
+  "brand": "Armada JS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "armada-js",
+      "name": "Armada JS",
+      "url": "https://armada-js.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

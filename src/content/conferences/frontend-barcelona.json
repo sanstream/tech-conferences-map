@@ -1,0 +1,15 @@
+{
+  "brand": "Frontend Barcelona",
+  "instances": [
+    {
+      "id": "frontend-barcelona",
+      "name": "Frontend Barcelona",
+      "url": "https://frontend.barcelona",
+      "subjects": [
+        "frontend",
+        "web",
+        "javascript"
+      ]
+    }
+  ]
+}

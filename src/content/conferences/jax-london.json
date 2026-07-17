@@ -1,0 +1,27 @@
+{
+  "brand": "Jax London",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "jax-london",
+      "name": "Jax London",
+      "url": "https://jaxlondon.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-05",
+          "endDate": "2026-10-09"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      },
+      "isOnline": true
+    }
+  ]
+}

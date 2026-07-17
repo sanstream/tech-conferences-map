@@ -1,0 +1,17 @@
+{
+  "brand": "Vue.js Nation",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "vue-js-nation",
+      "name": "Vue.js Nation",
+      "url": "https://vuejsnation.com",
+      "subjects": [
+        "vue",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

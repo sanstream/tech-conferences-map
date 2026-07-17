@@ -1,0 +1,16 @@
+{
+  "brand": "OOP",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "oop",
+      "name": "OOP",
+      "url": "https://www.oop-konferenz.de",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

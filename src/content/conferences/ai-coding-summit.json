@@ -1,0 +1,32 @@
+{
+  "brand": "AI Coding Summit",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "ai-coding-summit-london-edition",
+      "name": "AI Coding Summit, London Edition",
+      "url": "https://aicodingsummit.com",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "performance"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-26",
+          "endDate": "2026-02-27"
+        },
+        {
+          "startDate": "2026-07-06",
+          "endDate": "2026-07-07"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      },
+      "isOnline": true
+    }
+  ]
+}

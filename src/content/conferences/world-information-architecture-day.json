@@ -1,0 +1,16 @@
+{
+  "brand": "World Information Architecture Day",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "world-information-architecture-day",
+      "name": "World Information Architecture Day",
+      "url": "https://www.worldiaday.org",
+      "subjects": [
+        "ux",
+        "information-design",
+        "product-design"
+      ]
+    }
+  ]
+}

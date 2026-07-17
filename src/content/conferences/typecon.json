@@ -1,0 +1,15 @@
+{
+  "brand": "TypeCon",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "typecon",
+      "name": "TypeCon",
+      "url": "https://www.typecon.com",
+      "subjects": [
+        "ui-design",
+        "information-design"
+      ]
+    }
+  ]
+}

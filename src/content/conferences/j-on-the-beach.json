@@ -1,0 +1,18 @@
+{
+  "brand": "J on the Beach",
+  "instances": [
+    {
+      "id": "j-on-the-beach",
+      "name": "J on the Beach",
+      "url": "https://jonthebeach.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "data-visualization",
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

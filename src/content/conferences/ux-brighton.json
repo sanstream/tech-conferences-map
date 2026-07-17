@@ -1,0 +1,26 @@
+{
+  "brand": "UX Brighton",
+  "instances": [
+    {
+      "id": "ux-brighton",
+      "name": "UX Brighton",
+      "url": "https://uxbri.org/2024",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design",
+        "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-06"
+        }
+      ],
+      "location": {
+        "city": "Brighton",
+        "country": "U.K."
+      }
+    }
+  ]
+}

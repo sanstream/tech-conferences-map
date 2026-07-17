@@ -1,0 +1,15 @@
+{
+  "brand": "UXinsight",
+  "instances": [
+    {
+      "id": "uxinsight",
+      "name": "UXinsight",
+      "url": "https://uxinsight.org",
+      "subjects": [
+        "ux",
+        "product-design",
+        "research"
+      ]
+    }
+  ]
+}

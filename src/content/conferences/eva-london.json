@@ -1,0 +1,16 @@
+{
+  "brand": "EVA London",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "eva-london",
+      "name": "EVA London",
+      "url": "https://www.eva-london.org",
+      "subjects": [
+        "creative-coding",
+        "generative-art",
+        "research"
+      ]
+    }
+  ]
+}

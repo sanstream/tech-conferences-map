@@ -1,0 +1,16 @@
+{
+  "brand": "React Brussels",
+  "instances": [
+    {
+      "id": "react-brussels",
+      "name": "React Brussels",
+      "url": "https://www.react.brussels",
+      "subjects": [
+        "react",
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

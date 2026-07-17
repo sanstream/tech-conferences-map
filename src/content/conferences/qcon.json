@@ -1,0 +1,46 @@
+{
+  "brand": "QCon",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "qcon-london",
+      "name": "QCon London",
+      "url": "https://qconlondon.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2027-04-13",
+          "endDate": "2027-04-16"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      }
+    },
+    {
+      "id": "qcon-san-francisco",
+      "name": "QCon San Francisco",
+      "url": "https://qconsf.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-20"
+        }
+      ],
+      "location": {
+        "city": "San Francisco, CA",
+        "country": "U.S.A."
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "React Native London Conference",
+  "instances": [
+    {
+      "id": "react-native-london-conference",
+      "name": "React Native London Conference",
+      "url": "https://www.reactnativelondon.co.uk",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web",
+        "react",
+        "typescript"
+      ]
+    }
+  ]
+}

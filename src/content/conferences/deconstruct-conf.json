@@ -1,0 +1,16 @@
+{
+  "brand": "Deconstruct Conf",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "deconstruct-conf",
+      "name": "Deconstruct Conf",
+      "url": "https://www.deconstructconf.com",
+      "subjects": [
+        "web",
+        "javascript",
+        "frontend"
+      ]
+    }
+  ]
+}

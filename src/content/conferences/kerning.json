@@ -1,0 +1,16 @@
+{
+  "brand": "Kerning",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "kerning",
+      "name": "Kerning",
+      "url": "https://kerning.it",
+      "subjects": [
+        "ui-design",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

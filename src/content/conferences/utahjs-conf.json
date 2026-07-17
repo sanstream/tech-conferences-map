@@ -1,0 +1,16 @@
+{
+  "brand": "UtahJS Conf",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "utahjs-conf",
+      "name": "UtahJS Conf",
+      "url": "https://utahjs.com/conference",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    }
+  ]
+}

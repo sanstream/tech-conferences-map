@@ -1,0 +1,16 @@
+{
+  "brand": "Women in Tech Global Conference",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "women-in-tech-global-conference",
+      "name": "Women in Tech Global Conference",
+      "url": "https://www.womentech.net/women-tech-conference",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

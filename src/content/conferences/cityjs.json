@@ -1,0 +1,96 @@
+{
+  "brand": "CityJS",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "cityjs-athens",
+      "name": "CityJS Athens",
+      "url": "https://athens.cityjsconf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-21",
+          "endDate": "2026-10-23"
+        }
+      ],
+      "location": {
+        "city": "Athens",
+        "country": "Greece"
+      }
+    },
+    {
+      "id": "cityjs-london",
+      "name": "CityJS London",
+      "url": "https://london.cityjsconf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-08",
+          "endDate": "2026-04-10"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "country": "U.K."
+      }
+    },
+    {
+      "id": "cityjs-medellin",
+      "name": "CityJS Medellín",
+      "url": "https://medellin.cityjsconf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ]
+    },
+    {
+      "id": "cityjs-new-delhi",
+      "name": "CityJS New Delhi",
+      "url": "https://india.cityjsconf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-12",
+          "endDate": "2026-02-13"
+        }
+      ],
+      "location": {
+        "city": "Delhi",
+        "country": "India"
+      }
+    },
+    {
+      "id": "cityjs-singapore",
+      "name": "CityJS Singapore",
+      "url": "https://singapore.cityjsconf.org",
+      "subjects": [
+        "javascript",
+        "frontend",
+        "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-04",
+          "endDate": "2026-02-06"
+        }
+      ],
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore"
+      }
+    }
+  ]
+}

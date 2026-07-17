@@ -1,0 +1,14 @@
+{
+  "brand": "Front End North",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "front-end-north",
+      "name": "Front End North",
+      "url": "https://frontendnorth.com",
+      "subjects": [
+        "web"
+      ]
+    }
+  ]
+}

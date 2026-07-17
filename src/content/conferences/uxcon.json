@@ -1,0 +1,15 @@
+{
+  "brand": "UXCON",
+  "instances": [
+    {
+      "id": "uxcon",
+      "name": "UXCON",
+      "url": "https://www.uxconference.org/home",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

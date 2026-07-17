@@ -1,0 +1,15 @@
+{
+  "brand": "EuroVis",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "eurovis",
+      "name": "EuroVis",
+      "url": "https://www.eurovis.org",
+      "subjects": [
+        "data-visualization",
+        "research"
+      ]
+    }
+  ]
+}

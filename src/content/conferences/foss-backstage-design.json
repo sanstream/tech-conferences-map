@@ -1,0 +1,16 @@
+{
+  "brand": "FOSS Backstage Design",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "foss-backstage-design",
+      "name": "FOSS Backstage Design",
+      "url": "https://24.foss-backstage.de/foss-backstage-design",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

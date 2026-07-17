@@ -1,0 +1,15 @@
+{
+  "brand": "Big Sky Dev Con",
+  "instances": [
+    {
+      "id": "big-sky-dev-con",
+      "name": "Big Sky Dev Con",
+      "url": "https://bigskydevcon.com",
+      "subjects": [
+        "javascript",
+        "web",
+        "frontend"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "UXPA International Conference",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "uxpa-international-conference",
+      "name": "UXPA International Conference",
+      "url": "https://uxpa2024.org",
+      "subjects": [
+        "ux",
+        "ui-design",
+        "product-design"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "Service Design Days",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "service-design-days",
+      "name": "Service Design Days",
+      "url": "https://www.servicedesigndays.com",
+      "subjects": [
+        "ux",
+        "product-design",
+        "ui-design"
+      ]
+    }
+  ]
+}

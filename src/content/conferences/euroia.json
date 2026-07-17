@@ -1,0 +1,16 @@
+{
+  "brand": "EuroIA",
+  "orgType": "non-profit",
+  "instances": [
+    {
+      "id": "euroia",
+      "name": "EuroIA",
+      "url": "https://euroia.org",
+      "subjects": [
+        "ux",
+        "information-design",
+        "product-design"
+      ]
+    }
+  ]
+}

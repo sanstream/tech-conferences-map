@@ -1,0 +1,50 @@
+{
+  "brand": "Beyond Tellerrand",
+  "orgType": "for-profit",
+  "instances": [
+    {
+      "id": "beyond-tellerrand-berlin",
+      "name": "beyond tellerrand Berlin",
+      "url": "https://beyondtellerrand.com/events/berlin",
+      "subjects": [
+        "web",
+        "frontend",
+        "ux",
+        "creative-coding",
+        "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-07"
+        }
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "beyond-tellerrand-dusseldorf",
+      "name": "beyond tellerrand Düsseldorf",
+      "url": "https://beyondtellerrand.com/events/dusseldorf",
+      "subjects": [
+        "web",
+        "frontend",
+        "ux",
+        "creative-coding",
+        "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-27",
+          "endDate": "2026-04-28"
+        }
+      ],
+      "location": {
+        "city": "Düsseldorf",
+        "country": "Germany"
+      }
+    }
+  ]
+}
