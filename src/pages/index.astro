@@ -5,7 +5,7 @@ import { getAllConferences, groupByBrand } from "../lib/conferences"
 const conferences = await getAllConferences()
 const byBrand = groupByBrand(conferences)
 const totalInstances = conferences.length
-const withDates = conferences.filter((c) => c.data.editions.length > 0).length
+const withDates = conferences.filter(c => c.data.editions.length > 0).length
 
 type Edition = {
   startDate: string
@@ -16,7 +16,7 @@ type Edition = {
 
 function formatEditionDates(edition: Edition) {
   if (edition.startDate === edition.endDate) return edition.startDate
-  return `${edition.startDate} → ${edition.endDate}`
+  return `${edition.startDate} – ${edition.endDate}`
 }
 
 function formatEditionPlace(edition: Edition) {
@@ -24,16 +24,10 @@ function formatEditionPlace(edition: Edition) {
   if (edition.location?.city) parts.push(edition.location.city)
   if (edition.location?.country) parts.push(edition.location.country)
   const place = parts.join(", ")
-  if (place && edition.isOnline) return `${place} · hybrid`
+  if (place && edition.isOnline) return `${place} / online`
   if (place) return place
   if (edition.isOnline) return "online"
   return ""
-}
-
-function formatEdition(edition: Edition) {
-  const dates = formatEditionDates(edition)
-  const place = formatEditionPlace(edition)
-  return place ? `${dates} · ${place}` : dates
 }
 ---
 
@@ -41,8 +35,7 @@ function formatEdition(edition: Edition) {
   <main>
     <h1>Tech Conferences</h1>
     <p>
-      {totalInstances} instances across {byBrand.size} brands · {withDates} with
-      dates
+      {totalInstances} instances across {byBrand.size} brands · {withDates} with dates
     </p>
 
     {
@@ -50,16 +43,25 @@ function formatEdition(edition: Edition) {
         <section>
           <h2>{brand}</h2>
           <ul>
-            {instances.map((entry) => (
+            {instances.map(entry => (
               <li>
                 <a href={entry.data.url}>{entry.data.name}</a>
+                &nbsp;
                 {entry.data.editions.length > 0 && (
-                  <span class="dates">
-                    {" "}
-                    ({entry.data.editions.map(formatEdition).join("; ")})
-                  </span>
+                  <ul>
+                    {entry.data.editions.map((edition: Edition) => (
+                      <li class="dates">
+                        <time datetime={edition.startDate}>
+                          {formatEditionDates(edition)}
+                        </time>
+                        &nbsp;
+                        <span class="location">
+                          ({formatEditionPlace(edition)})
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 )}
-                <span class="subjects"> — {entry.data.subjects.join(", ")}</span>
               </li>
             ))}
           </ul>
@@ -78,25 +80,8 @@ function formatEdition(edition: Edition) {
     line-height: 1.5;
   }
 
-  h1 {
-    margin: 0 0 0.25rem;
-    font-size: 1.75rem;
-  }
-
-  p {
-    margin: 0 0 2rem;
-    color: #555;
-  }
-
   section {
     margin-bottom: 2rem;
-  }
-
-  h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.125rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.25rem;
   }
 
   ul {
@@ -108,17 +93,8 @@ function formatEdition(edition: Edition) {
     margin-bottom: 0.35rem;
   }
 
-  a {
-    color: #0366d6;
-  }
-
   .dates {
     color: #333;
-    font-size: 0.875rem;
-  }
-
-  .subjects {
-    color: #666;
     font-size: 0.875rem;
   }
 </style>

@@ -1,0 +1,45 @@
+@layer utils {
+  .body-text {
+    background-color: var(--colour-main-bg);
+    color: var(--colour-body-text);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--colour-heading-text);
+    margin-bottom: 1em;
+    font-family: "Armata", "Helvetica", sans-serif;
+    font-weight: 500;
+  }
+
+  h1,
+  .h1-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+
+  h2,
+  .h2-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: var(--colour-link-text);
+    transition: color 0.05s ease-out;
+  }
+
+  a:hover {
+    color: var(--colour-link-text-hover);
+  }
+}

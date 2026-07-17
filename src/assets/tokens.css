@@ -1,0 +1,90 @@
+/* css layers for tokens, consuming components and utilities */
+@layer tokens {
+  :root {
+    /**
+  All colour tokens are defined as OKLCH colour values. this provides a wider colour 
+  space and the option for more vibrant colours than RGB.
+  */
+
+    /* Mustard serves as an accent colour */
+    --colour-mustard-100: oklch(0.96 0.02 90);
+    --colour-mustard-200: oklch(0.92 0.05 90);
+    --colour-mustard-300: oklch(0.85 0.09 90);
+    --colour-mustard-400: oklch(0.79 0.12 90);
+    --colour-mustard-500: oklch(0.71 0.14 90);
+    --colour-mustard-600: oklch(0.61 0.14 90);
+    --colour-mustard-700: oklch(0.52 0.12 90);
+    --colour-mustard-800: oklch(0.41 0.1 90);
+    --colour-mustard-900: oklch(0.25 0.06 90);
+
+    /* Blue serves as a neutral on dark mode, and as an accent on light mode */
+    --colour-blue-100: oklch(0.96 0.02 243);
+    --colour-blue-200: oklch(0.92 0.05 243);
+    --colour-blue-300: oklch(0.85 0.09 243);
+    --colour-blue-400: oklch(0.78 0.12 243);
+    --colour-blue-500: oklch(0.7 0.14 243);
+    --colour-blue-600: oklch(0.61 0.14 243);
+    --colour-blue-700: oklch(0.52 0.12 243);
+    --colour-blue-800: oklch(0.41 0.1 243);
+    --colour-blue-900: oklch(0.24 0.06 243);
+    --colour-blue-1000: oklch(0.18 0.04 243);
+
+    /* Flamingo serves as an neutral colour on light mode and as an accent on dark mode */
+    --colour-flamingo-100: oklch(0.97 0.02 1.8);
+    --colour-flamingo-200: oklch(0.92 0.05 1.8);
+    --colour-flamingo-300: oklch(0.86 0.09 1.8);
+    --colour-flamingo-400: oklch(0.8 0.12 1.8);
+    --colour-flamingo-500: oklch(0.72 0.14 1.8);
+    --colour-flamingo-600: oklch(0.63 0.14 1.8);
+    --colour-flamingo-700: oklch(0.54 0.12 1.8);
+    --colour-flamingo-800: oklch(0.42 0.1 1.8);
+    --colour-flamingo-900: oklch(0.25 0.06 1.8);
+    --colour-flamingo-1000: oklch(0.18 0.04 1.8);
+
+    /* Green serves as an accent colour */
+    --colour-green-100: oklch(0.96 0.02 142.9);
+    --colour-green-200: oklch(0.91 0.05 142.9);
+    --colour-green-300: oklch(0.84 0.09 142.9);
+    --colour-green-400: oklch(0.78 0.12 142.9);
+    --colour-green-500: oklch(0.69 0.14 142.9);
+    --colour-green-600: oklch(0.6 0.14 142.9);
+    --colour-green-700: oklch(0.51 0.12 142.9);
+    --colour-green-800: oklch(0.4 0.1 142.9);
+    --colour-green-900: oklch(0.24 0.06 142.9);
+
+    --white: oklch(1 0 0);
+    --black: oklch(0 0 0);
+
+    /* semantic token mapping */
+    --colour-main-bg: light-dark(
+      var(--colour-flamingo-100),
+      var(--colour-blue-1000)
+    );
+    --colour-section-bg: light-dark(
+      var(--colour-flamingo-200),
+      var(--colour-blue-900)
+    );
+
+    --colour-body-text: light-dark(
+      var(--colour-flamingo-1000),
+      var(--colour-blue-100)
+    );
+    --colour-heading-text: light-dark(
+      var(--colour-flamingo-600),
+      var(--colour-blue-200)
+    );
+    --colour-link-text: light-dark(
+      var(--colour-flamingo-800),
+      var(--colour-blue-300)
+    );
+    --colour-link-text-hover: light-dark(
+      var(--colour-flamingo-700),
+      var(--colour-blue-200)
+    );
+
+    --colour-shadow: var(--black);
+
+    --shadow-sm: 0 1px 2px 0 var(--colour-shadow);
+    --shadow-md: 0 4px 6px -1px var(--colour-shadow);
+  }
+}
