@@ -78,18 +78,9 @@ The Astro loader ([`src/loaders/conferences.ts`](../loaders/conferences.ts)) fla
 | Add one conference | Add an instance to the brand file, or create a new `{brand-slug}.json` |
 | Fix name, url, or subjects | Edit the instance inside the brand file |
 | Add/update dates or location | Edit `editions` on that instance |
-| Bulk import from confs.tech | Run `node scripts/build-conferences.mjs` (maintainer-only) |
 
 Validation: `pnpm conferences:validate` and `pnpm build`.
 
-## Maintenance
-
-1. **Seed rebuild** — `node scripts/build-conferences.mjs` merges confs.tech seed data and supplements, then writes brand-grouped files.
-2. **Instance expansion** — `pnpm conferences:apply` re-processes the collection (idempotent).
-3. **Date/location enrichment** — `pnpm conferences:enrich-dates` merges start/end dates, `location`, and `isOnline` onto editions from confs.tech seed (2026/2027).
-4. **Legacy flat files** — `pnpm conferences:migrate-brands` converts one-file-per-instance → one-file-per-brand.
-
 ## Notes
 
-- Subject tags are derived from confs.tech topic files and enriched for well-known brands; coverage is uneven by design for this first broad pass.
-- Alias duplicates (same URL, alternate name) are dropped during instance processing; umbrella-only rows (e.g. `jsconf.com` when regional JSConfs exist) are removed.
+- Subject tags were derived from confs.tech topic files and enriched for well-known brands; coverage is uneven by design.

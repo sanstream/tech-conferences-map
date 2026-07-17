@@ -7,9 +7,6 @@ dist/
 # dependencies
 node_modules/
 
-# one-off conference seed cache
-scripts/.conf-seed/
-
 # logs
 npm-debug.log*
 yarn-debug.log*

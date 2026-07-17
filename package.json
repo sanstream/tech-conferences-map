@@ -12,10 +12,6 @@
     "astro": "astro",
     "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,mjs,cjs,md,mdx,json}\" \"scripts/**/*.{mjs,js}\" astro.config.mjs tsconfig.json .prettierrc package.json",
     "lint": "astro check",
-    "conferences:split": "node scripts/split-conferences.mjs",
-    "conferences:migrate-brands": "node scripts/migrate-to-brand-files.mjs",
-    "conferences:apply": "node scripts/apply-brand-instances.mjs",
-    "conferences:enrich-dates": "node scripts/enrich-dates.mjs",
     "conferences:validate": "node scripts/validate-conferences.mjs"
   },
   "dependencies": {
