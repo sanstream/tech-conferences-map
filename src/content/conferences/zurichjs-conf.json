@@ -13,13 +13,13 @@
       "editions": [
         {
           "startDate": "2026-09-10",
-          "endDate": "2026-09-11"
+          "endDate": "2026-09-11",
+          "location": {
+            "city": "Zurich",
+            "country": "Switzerland"
+          }
         }
-      ],
-      "location": {
-        "city": "Zurich",
-        "country": "Switzerland"
-      }
+      ]
     }
   ]
 }

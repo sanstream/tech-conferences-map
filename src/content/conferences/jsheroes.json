@@ -16,13 +16,13 @@
       "editions": [
         {
           "startDate": "2026-05-14",
-          "endDate": "2026-05-15"
+          "endDate": "2026-05-15",
+          "location": {
+            "city": "Cluj-Napoca",
+            "country": "Romania"
+          }
         }
-      ],
-      "location": {
-        "city": "Cluj-Napoca",
-        "country": "Romania"
-      }
+      ]
     }
   ]
 }

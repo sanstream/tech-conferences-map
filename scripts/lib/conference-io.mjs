@@ -1,7 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import { formatConference, slugify, validateInstances } from "./brand-instances.mjs"
+import { formatConference, hoistLocationOntoEditions, slugify, validateInstances } from "./brand-instances.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export const conferencesDir = path.join(__dirname, "../../src/content/conferences")
@@ -39,6 +39,7 @@ export function readBrandDir(dir = conferencesDir) {
           subjects: inst.subjects ?? [],
           editions: inst.editions ?? [],
         }
+        // Legacy instance-level fields (migrated onto editions on write)
         if (inst.location) row.location = inst.location
         if (inst.isOnline === true) row.isOnline = true
         if (orgType) row.orgType = orgType
@@ -87,9 +88,13 @@ function brandFileSlug(brand) {
 
 /**
  * Write instances as one JSON file per brand. Removes stale brand files.
+ * Hoists legacy instance-level location/isOnline onto editions.
  */
 export function writeBrandDir(instances, dir = conferencesDir) {
-  const formatted = instances.map(formatConference)
+  const formatted = instances.map((inst) => {
+    const editions = hoistLocationOntoEditions(inst)
+    return formatConference({ ...inst, editions, location: undefined, isOnline: undefined })
+  })
   const errors = validateInstances(formatted)
   if (errors.length) {
     throw new Error(`Validation failed:\n${errors.map((e) => `  - ${e}`).join("\n")}`)
@@ -123,15 +128,11 @@ export function writeBrandDir(instances, dir = conferencesDir) {
     const payload = {
       brand,
       ...(orgType ? { orgType } : {}),
-      instances: brandInstances.map(
-        ({ id, name, url, subjects, editions, location, isOnline }) => {
-          const row = { id, name, url, subjects }
-          if (editions?.length) row.editions = editions
-          if (location) row.location = location
-          if (isOnline === true) row.isOnline = true
-          return row
-        },
-      ),
+      instances: brandInstances.map(({ id, name, url, subjects, editions }) => {
+        const row = { id, name, url, subjects }
+        if (editions?.length) row.editions = editions
+        return row
+      }),
     }
     fs.writeFileSync(path.join(dir, `${slug}.json`), JSON.stringify(payload, null, 2) + "\n")
   }

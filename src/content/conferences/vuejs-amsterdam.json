@@ -15,13 +15,13 @@
       "editions": [
         {
           "startDate": "2026-03-12",
-          "endDate": "2026-03-13"
+          "endDate": "2026-03-13",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
         }
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      }
+      ]
     }
   ]
 }

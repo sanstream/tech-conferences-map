@@ -14,14 +14,14 @@
       "editions": [
         {
           "startDate": "2026-10-05",
-          "endDate": "2026-10-09"
+          "endDate": "2026-10-09",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

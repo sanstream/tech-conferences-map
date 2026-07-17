@@ -16,10 +16,10 @@
       "editions": [
         {
           "startDate": "2026-12-01",
-          "endDate": "2026-12-01"
+          "endDate": "2026-12-01",
+          "isOnline": true
         }
-      ],
-      "isOnline": true
+      ]
     },
     {
       "id": "fitc-web-unleashed-toronto",
@@ -35,14 +35,14 @@
       "editions": [
         {
           "startDate": "2026-10-27",
-          "endDate": "2026-10-28"
+          "endDate": "2026-10-28",
+          "location": {
+            "city": "Toronto",
+            "country": "Canada"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Toronto",
-        "country": "Canada"
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

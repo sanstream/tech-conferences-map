@@ -18,13 +18,13 @@
       "editions": [
         {
           "startDate": "2026-07-02",
-          "endDate": "2026-07-04"
+          "endDate": "2026-07-04",
+          "location": {
+            "city": "Opatija",
+            "country": "Croatia"
+          }
         }
-      ],
-      "location": {
-        "city": "Opatija",
-        "country": "Croatia"
-      }
+      ]
     }
   ]
 }

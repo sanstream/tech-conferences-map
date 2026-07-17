@@ -10,11 +10,7 @@
         "web",
         "api",
         "ux"
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      }
+      ]
     },
     {
       "id": "apidays-australia",
@@ -28,13 +24,13 @@
       "editions": [
         {
           "startDate": "2026-10-28",
-          "endDate": "2026-10-29"
+          "endDate": "2026-10-29",
+          "location": {
+            "city": "Melbourne",
+            "country": "Australia"
+          }
         }
-      ],
-      "location": {
-        "city": "Melbourne",
-        "country": "Australia"
-      }
+      ]
     },
     {
       "id": "apidays-india",
@@ -48,13 +44,13 @@
       "editions": [
         {
           "startDate": "2026-08-19",
-          "endDate": "2026-08-20"
+          "endDate": "2026-08-20",
+          "location": {
+            "city": "Bangalore",
+            "country": "India"
+          }
         }
-      ],
-      "location": {
-        "city": "Bangalore",
-        "country": "India"
-      }
+      ]
     },
     {
       "id": "apidays-london",
@@ -68,13 +64,13 @@
       "editions": [
         {
           "startDate": "2026-09-30",
-          "endDate": "2026-10-01"
+          "endDate": "2026-10-01",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "apidays-munich",
@@ -84,11 +80,7 @@
         "web",
         "api",
         "ux"
-      ],
-      "location": {
-        "city": "Munich",
-        "country": "Germany"
-      }
+      ]
     },
     {
       "id": "apidays-new-york",
@@ -98,11 +90,7 @@
         "web",
         "api",
         "ux"
-      ],
-      "location": {
-        "city": "New York, NY",
-        "country": "U.S.A."
-      }
+      ]
     },
     {
       "id": "apidays-paris",
@@ -116,13 +104,13 @@
       "editions": [
         {
           "startDate": "2026-12-01",
-          "endDate": "2026-12-03"
+          "endDate": "2026-12-03",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          }
         }
-      ],
-      "location": {
-        "city": "Paris",
-        "country": "France"
-      }
+      ]
     },
     {
       "id": "apidays-singapore",
@@ -136,13 +124,13 @@
       "editions": [
         {
           "startDate": "2027-04-13",
-          "endDate": "2027-04-14"
+          "endDate": "2027-04-14",
+          "location": {
+            "city": "Singapore",
+            "country": "Singapore"
+          }
         }
-      ],
-      "location": {
-        "city": "Singapore",
-        "country": "Singapore"
-      }
+      ]
     },
     {
       "id": "apidays-toronto",
@@ -156,13 +144,13 @@
       "editions": [
         {
           "startDate": "2026-09-09",
-          "endDate": "2026-09-10"
+          "endDate": "2026-09-10",
+          "location": {
+            "city": "Toronto",
+            "country": "Canada"
+          }
         }
-      ],
-      "location": {
-        "city": "Toronto",
-        "country": "Canada"
-      }
+      ]
     }
   ]
 }

@@ -7,14 +7,16 @@ const conferencesDir = fileURLToPath(
   new URL("../content/conferences", import.meta.url),
 )
 
-type Edition = {
-  startDate: string
-  endDate: string
-}
-
 type Location = {
   city?: string
   country?: string
+}
+
+type Edition = {
+  startDate: string
+  endDate: string
+  location?: Location
+  isOnline?: boolean
 }
 
 type OrgType = "for-profit" | "non-profit"
@@ -28,8 +30,6 @@ type BrandFile = {
     url: string
     subjects: string[]
     editions?: Edition[]
-    location?: Location
-    isOnline?: boolean
   }>
 }
 
@@ -65,9 +65,12 @@ export function conferencesLoader(): Loader {
               name: instance.name,
               url: instance.url,
               subjects: instance.subjects,
-              editions: instance.editions ?? [],
-              ...(instance.location ? { location: instance.location } : {}),
-              isOnline: instance.isOnline === true,
+              editions: (instance.editions ?? []).map((ed) => ({
+                startDate: ed.startDate,
+                endDate: ed.endDate,
+                ...(ed.location ? { location: ed.location } : {}),
+                isOnline: ed.isOnline === true,
+              })),
               ...(raw.orgType ? { orgType: raw.orgType } : {}),
             },
           })

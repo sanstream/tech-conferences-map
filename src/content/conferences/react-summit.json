@@ -15,14 +15,14 @@
       "editions": [
         {
           "startDate": "2026-06-12",
-          "endDate": "2026-06-16"
+          "endDate": "2026-06-16",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      },
-      "isOnline": true
+      ]
     },
     {
       "id": "react-summit-us",
@@ -38,14 +38,14 @@
       "editions": [
         {
           "startDate": "2026-11-17",
-          "endDate": "2026-11-20"
+          "endDate": "2026-11-20",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "New York, NY",
-        "country": "U.S.A."
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

@@ -17,13 +17,13 @@
       "editions": [
         {
           "startDate": "2026-06-08",
-          "endDate": "2026-06-09"
+          "endDate": "2026-06-09",
+          "location": {
+            "city": "Espoo",
+            "country": "Finland"
+          }
         }
-      ],
-      "location": {
-        "city": "Espoo",
-        "country": "Finland"
-      }
+      ]
     }
   ]
 }

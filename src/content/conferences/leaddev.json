@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-06-02",
-          "endDate": "2026-06-03"
+          "endDate": "2026-06-03",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "leaddev",
@@ -44,13 +44,13 @@
       "editions": [
         {
           "startDate": "2026-11-09",
-          "endDate": "2026-11-10"
+          "endDate": "2026-11-10",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Berlin",
-        "country": "Germany"
-      }
+      ]
     }
   ]
 }

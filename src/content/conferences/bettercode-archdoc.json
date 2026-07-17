@@ -14,10 +14,10 @@
       "editions": [
         {
           "startDate": "2026-05-20",
-          "endDate": "2026-05-20"
+          "endDate": "2026-05-20",
+          "isOnline": true
         }
-      ],
-      "isOnline": true
+      ]
     }
   ]
 }

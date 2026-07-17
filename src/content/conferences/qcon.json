@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2027-04-13",
-          "endDate": "2027-04-16"
+          "endDate": "2027-04-16",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "qcon-san-francisco",
@@ -34,13 +34,13 @@
       "editions": [
         {
           "startDate": "2026-11-16",
-          "endDate": "2026-11-20"
+          "endDate": "2026-11-20",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
         }
-      ],
-      "location": {
-        "city": "San Francisco, CA",
-        "country": "U.S.A."
-      }
+      ]
     }
   ]
 }

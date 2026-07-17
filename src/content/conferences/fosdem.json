@@ -15,13 +15,13 @@
       "editions": [
         {
           "startDate": "2026-01-31",
-          "endDate": "2026-02-02"
+          "endDate": "2026-02-02",
+          "location": {
+            "city": "Brussels",
+            "country": "Belgium"
+          }
         }
-      ],
-      "location": {
-        "city": "Brussels",
-        "country": "Belgium"
-      }
+      ]
     }
   ]
 }

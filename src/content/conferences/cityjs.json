@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-10-21",
-          "endDate": "2026-10-23"
+          "endDate": "2026-10-23",
+          "location": {
+            "city": "Athens",
+            "country": "Greece"
+          }
         }
-      ],
-      "location": {
-        "city": "Athens",
-        "country": "Greece"
-      }
+      ]
     },
     {
       "id": "cityjs-london",
@@ -34,13 +34,13 @@
       "editions": [
         {
           "startDate": "2026-04-08",
-          "endDate": "2026-04-10"
+          "endDate": "2026-04-10",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "cityjs-medellin",
@@ -64,13 +64,13 @@
       "editions": [
         {
           "startDate": "2026-02-12",
-          "endDate": "2026-02-13"
+          "endDate": "2026-02-13",
+          "location": {
+            "city": "Delhi",
+            "country": "India"
+          }
         }
-      ],
-      "location": {
-        "city": "Delhi",
-        "country": "India"
-      }
+      ]
     },
     {
       "id": "cityjs-singapore",
@@ -84,13 +84,13 @@
       "editions": [
         {
           "startDate": "2026-02-04",
-          "endDate": "2026-02-06"
+          "endDate": "2026-02-06",
+          "location": {
+            "city": "Singapore",
+            "country": "Singapore"
+          }
         }
-      ],
-      "location": {
-        "city": "Singapore",
-        "country": "Singapore"
-      }
+      ]
     }
   ]
 }

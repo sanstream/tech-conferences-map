@@ -18,13 +18,13 @@
       "editions": [
         {
           "startDate": "2026-06-19",
-          "endDate": "2026-06-19"
+          "endDate": "2026-06-19",
+          "location": {
+            "city": "Bristol",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "Bristol",
-        "country": "U.K."
-      }
+      ]
     }
   ]
 }

@@ -18,14 +18,14 @@
       "editions": [
         {
           "startDate": "2026-06-08",
-          "endDate": "2026-06-12"
+          "endDate": "2026-06-12",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Berlin",
-        "country": "Germany"
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

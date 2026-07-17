@@ -19,14 +19,14 @@
       "editions": [
         {
           "startDate": "2026-04-13",
-          "endDate": "2026-04-16"
+          "endDate": "2026-04-16",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      },
-      "isOnline": true
+      ]
     },
     {
       "id": "smashingconf-antwerp",
@@ -45,13 +45,13 @@
       "editions": [
         {
           "startDate": "2026-10-12",
-          "endDate": "2026-10-15"
+          "endDate": "2026-10-15",
+          "location": {
+            "city": "Antwerp",
+            "country": "Belgium"
+          }
         }
-      ],
-      "location": {
-        "city": "Antwerp",
-        "country": "Belgium"
-      }
+      ]
     },
     {
       "id": "smashingconf-freiburg",
@@ -70,13 +70,13 @@
       "editions": [
         {
           "startDate": "2026-09-07",
-          "endDate": "2026-09-10"
+          "endDate": "2026-09-10",
+          "location": {
+            "city": "Freiburg",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Freiburg",
-        "country": "Germany"
-      }
+      ]
     }
   ]
 }

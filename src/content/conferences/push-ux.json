@@ -15,13 +15,13 @@
       "editions": [
         {
           "startDate": "2026-10-22",
-          "endDate": "2026-10-23"
+          "endDate": "2026-10-23",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Munich",
-        "country": "Germany"
-      }
+      ]
     }
   ]
 }

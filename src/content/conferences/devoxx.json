@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-10-05",
-          "endDate": "2026-10-09"
+          "endDate": "2026-10-09",
+          "location": {
+            "city": "Antwerp",
+            "country": "Belgium"
+          }
         }
-      ],
-      "location": {
-        "city": "Antwerp",
-        "country": "Belgium"
-      }
+      ]
     },
     {
       "id": "devoxx-morocco",
@@ -34,13 +34,13 @@
       "editions": [
         {
           "startDate": "2026-11-04",
-          "endDate": "2026-11-05"
+          "endDate": "2026-11-05",
+          "location": {
+            "city": "Casablanca",
+            "country": "Morocco"
+          }
         }
-      ],
-      "location": {
-        "city": "Casablanca",
-        "country": "Morocco"
-      }
+      ]
     },
     {
       "id": "devoxx-poland",
@@ -54,13 +54,13 @@
       "editions": [
         {
           "startDate": "2026-06-17",
-          "endDate": "2026-06-19"
+          "endDate": "2026-06-19",
+          "location": {
+            "city": "Kraków",
+            "country": "Poland"
+          }
         }
-      ],
-      "location": {
-        "city": "Kraków",
-        "country": "Poland"
-      }
+      ]
     }
   ]
 }

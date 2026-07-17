@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-02-25",
-          "endDate": "2026-02-27"
+          "endDate": "2026-02-27",
+          "location": {
+            "city": "Montreal",
+            "country": "Canada"
+          }
         }
-      ],
-      "location": {
-        "city": "Montreal",
-        "country": "Canada"
-      }
+      ]
     }
   ]
 }

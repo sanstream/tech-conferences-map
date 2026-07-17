@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-05-12",
-          "endDate": "2026-05-15"
+          "endDate": "2026-05-15",
+          "location": {
+            "city": "Lisbon",
+            "country": "Portugal"
+          }
         }
-      ],
-      "location": {
-        "city": "Lisbon",
-        "country": "Portugal"
-      }
+      ]
     }
   ]
 }

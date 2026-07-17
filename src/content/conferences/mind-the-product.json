@@ -13,17 +13,21 @@
       "editions": [
         {
           "startDate": "2026-06-15",
-          "endDate": "2026-06-16"
+          "endDate": "2026-06-16",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         },
         {
           "startDate": "2026-06-16",
-          "endDate": "2026-06-16"
+          "endDate": "2026-06-16",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "mind-the-product-chicago",
@@ -36,13 +40,13 @@
       "editions": [
         {
           "startDate": "2026-10-06",
-          "endDate": "2026-10-07"
+          "endDate": "2026-10-07",
+          "location": {
+            "city": "Chicago, IL",
+            "country": "U.S.A."
+          }
         }
-      ],
-      "location": {
-        "city": "Chicago, IL",
-        "country": "U.S.A."
-      }
+      ]
     }
   ]
 }

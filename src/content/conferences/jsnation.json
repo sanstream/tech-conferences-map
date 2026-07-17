@@ -15,14 +15,14 @@
       "editions": [
         {
           "startDate": "2026-06-11",
-          "endDate": "2026-06-15"
+          "endDate": "2026-06-15",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      },
-      "isOnline": true
+      ]
     },
     {
       "id": "jsnation-us",
@@ -36,13 +36,13 @@
       "editions": [
         {
           "startDate": "2026-11-16",
-          "endDate": "2026-11-19"
+          "endDate": "2026-11-19",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          }
         }
-      ],
-      "location": {
-        "city": "New York, NY",
-        "country": "U.S.A."
-      }
+      ]
     }
   ]
 }

@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-04-20",
-          "endDate": "2026-04-21"
+          "endDate": "2026-04-21",
+          "location": {
+            "city": "Madrid",
+            "country": "Spain"
+          }
         }
-      ],
-      "location": {
-        "city": "Madrid",
-        "country": "Spain"
-      }
+      ]
     },
     {
       "id": "codemotion-milan",
@@ -34,13 +34,13 @@
       "editions": [
         {
           "startDate": "2026-10-28",
-          "endDate": "2026-10-29"
+          "endDate": "2026-10-29",
+          "location": {
+            "city": "Milan",
+            "country": "Italy"
+          }
         }
-      ],
-      "location": {
-        "city": "Milan",
-        "country": "Italy"
-      }
+      ]
     },
     {
       "id": "codemotion-rome",
@@ -54,13 +54,13 @@
       "editions": [
         {
           "startDate": "2026-03-31",
-          "endDate": "2026-03-31"
+          "endDate": "2026-03-31",
+          "location": {
+            "city": "Rome",
+            "country": "Italy"
+          }
         }
-      ],
-      "location": {
-        "city": "Rome",
-        "country": "Italy"
-      }
+      ]
     }
   ]
 }

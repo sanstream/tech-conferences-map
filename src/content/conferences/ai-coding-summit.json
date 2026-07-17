@@ -15,18 +15,23 @@
       "editions": [
         {
           "startDate": "2026-02-26",
-          "endDate": "2026-02-27"
+          "endDate": "2026-02-27",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
         },
         {
           "startDate": "2026-07-06",
-          "endDate": "2026-07-07"
+          "endDate": "2026-07-07",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

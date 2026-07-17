@@ -35,14 +35,22 @@ Each file in `conferences/{brand-slug}.json` groups all instances of one brand:
 
 ```json
 {
-  "brand": "Data Visualization Society",
-  "orgType": "non-profit",
+  "brand": "React Summit",
+  "orgType": "for-profit",
   "instances": [
     {
-      "id": "data-visualization-society",
-      "name": "Data Visualization Society",
-      "url": "https://www.datavisualizationsociety.org",
-      "subjects": ["data-visualization", "information-design"]
+      "id": "react-summit",
+      "name": "React Summit",
+      "url": "https://reactsummit.com",
+      "subjects": ["react", "javascript", "frontend"],
+      "editions": [
+        {
+          "startDate": "2026-06-12",
+          "endDate": "2026-06-16",
+          "location": { "city": "Amsterdam", "country": "Netherlands" },
+          "isOnline": true
+        }
+      ]
     }
   ]
 }
@@ -51,26 +59,25 @@ Each file in `conferences/{brand-slug}.json` groups all instances of one brand:
 | Field | Description |
 | ----- | ----------- |
 | `brand` | Shared label for all instances in the file (filename is a slug of this) |
-| `orgType` | Optional brand-level organizer type: `"for-profit"` or `"non-profit"` (omit when unknown) |
-| `instances[].id` | Stable kebab-case slug, unique across the whole collection |
-| `instances[].name` | Display name for this edition |
+| `orgType` | Optional brand-level organizer type: `"for-profit"` or `"non-profit"` |
+| `instances[].id` | Stable kebab-case slug, unique across the collection |
+| `instances[].name` | Display name for this instance |
 | `instances[].url` | Instance-specific homepage |
 | `instances[].subjects` | Topic tags (1–10) |
-| `instances[].editions` | Optional dated editions: `{ startDate, endDate }` as `YYYY-MM-DD` (2026 and 2027 when known) |
-| `instances[].location` | Optional `{ city, country }` — omit for online-only events |
-| `instances[].isOnline` | `true` for online or hybrid events (hybrid also has `location`) |
+| `instances[].editions[]` | Dated editions for this instance |
+| `editions[].startDate` / `endDate` | ISO dates (`YYYY-MM-DD`) |
+| `editions[].location` | Optional `{ city, country }` — omit for online-only |
+| `editions[].isOnline` | `true` for online or hybrid (hybrid also has `location`) |
 
-The Astro loader ([`src/loaders/conferences.ts`](../loaders/conferences.ts)) flattens each brand file into one collection entry per instance. Singleton brands (e.g. CSS Day) still use one file with a single instance.
-
-[`brand-instances.json`](./brand-instances.json) is used by build scripts to expand collapsed seed rows into multiple instances when importing from confs.tech, and can carry curated `editions` for those franchises.
+The Astro loader ([`src/loaders/conferences.ts`](../loaders/conferences.ts)) flattens each brand file into one collection entry per instance.
 
 ## Contributing via pull request
 
 | Change type | What to edit |
 | ----------- | ------------ |
-| Add one conference | Add an instance to the brand file, or create a new `{brand-slug}.json` with one instance |
+| Add one conference | Add an instance to the brand file, or create a new `{brand-slug}.json` |
 | Fix name, url, or subjects | Edit the instance inside the brand file |
-| Add city editions for a franchise | Edit [`brand-instances.json`](./brand-instances.json), then run `pnpm conferences:apply` |
+| Add/update dates or location | Edit `editions` on that instance |
 | Bulk import from confs.tech | Run `node scripts/build-conferences.mjs` (maintainer-only) |
 
 Validation: `pnpm conferences:validate` and `pnpm build`.
@@ -79,7 +86,7 @@ Validation: `pnpm conferences:validate` and `pnpm build`.
 
 1. **Seed rebuild** — `node scripts/build-conferences.mjs` merges confs.tech seed data and supplements, then writes brand-grouped files.
 2. **Instance expansion** — `pnpm conferences:apply` re-processes the collection (idempotent).
-3. **Date/location enrichment** — `pnpm conferences:enrich-dates` merges start/end dates, `location`, and `isOnline` from confs.tech seed (2026/2027) and curated fields in `brand-instances.json`.
+3. **Date/location enrichment** — `pnpm conferences:enrich-dates` merges start/end dates, `location`, and `isOnline` onto editions from confs.tech seed (2026/2027).
 4. **Legacy flat files** — `pnpm conferences:migrate-brands` converts one-file-per-instance → one-file-per-brand.
 
 ## Notes

@@ -25,14 +25,14 @@
       "editions": [
         {
           "startDate": "2026-05-27",
-          "endDate": "2026-05-29"
+          "endDate": "2026-05-29",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Berlin",
-        "country": "Germany"
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

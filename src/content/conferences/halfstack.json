@@ -11,11 +11,7 @@
         "frontend",
         "web",
         "typescript"
-      ],
-      "location": {
-        "city": "Phoenix",
-        "country": "U.S.A."
-      }
+      ]
     },
     {
       "id": "halfstack-vienna",
@@ -30,13 +26,13 @@
       "editions": [
         {
           "startDate": "2026-11-16",
-          "endDate": "2026-11-16"
+          "endDate": "2026-11-16",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          }
         }
-      ],
-      "location": {
-        "city": "Vienna",
-        "country": "Austria"
-      }
+      ]
     }
   ]
 }

@@ -16,13 +16,13 @@
       "editions": [
         {
           "startDate": "2026-11-06",
-          "endDate": "2026-11-07"
+          "endDate": "2026-11-07",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Berlin",
-        "country": "Germany"
-      }
+      ]
     },
     {
       "id": "beyond-tellerrand-dusseldorf",
@@ -38,13 +38,13 @@
       "editions": [
         {
           "startDate": "2026-04-27",
-          "endDate": "2026-04-28"
+          "endDate": "2026-04-28",
+          "location": {
+            "city": "Düsseldorf",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Düsseldorf",
-        "country": "Germany"
-      }
+      ]
     }
   ]
 }

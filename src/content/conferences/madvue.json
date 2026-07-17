@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-05-22",
-          "endDate": "2026-05-22"
+          "endDate": "2026-05-22",
+          "location": {
+            "city": "Madrid",
+            "country": "Spain"
+          }
         }
-      ],
-      "location": {
-        "city": "Madrid",
-        "country": "Spain"
-      }
+      ]
     }
   ]
 }

@@ -18,14 +18,14 @@
       "editions": [
         {
           "startDate": "2026-03-26",
-          "endDate": "2026-03-27"
+          "endDate": "2026-03-27",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Paris",
-        "country": "France"
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

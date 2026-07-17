@@ -148,6 +148,11 @@ export function applyBrandInstances(entries, manifest = loadBrandManifest()) {
       url: e.url,
       subjects: e.subjects || [],
       id: e.id,
+      brand: e.brand,
+      editions: e.editions || [],
+      location: e.location,
+      isOnline: e.isOnline,
+      orgType: e.orgType,
     }))
 
   const expandedBrands = new Set()
@@ -175,9 +180,7 @@ export function applyBrandInstances(entries, manifest = loadBrandManifest()) {
           name: inst.name,
           url: inst.url,
           subjects: [...(entry.subjects || [])],
-          editions: normalizeEditions(inst.editions),
-          ...(formatLocation(inst.location) ? { location: formatLocation(inst.location) } : {}),
-          ...(inst.isOnline === true ? { isOnline: true } : {}),
+          editions: hoistLocationOntoEditions(inst),
         })
       }
       continue
@@ -187,7 +190,7 @@ export function applyBrandInstances(entries, manifest = loadBrandManifest()) {
       continue
     }
 
-    const brand = inferBrand(entry, manifest)
+    const brand = entry.brand || inferBrand(entry, manifest)
     const id = entry.id && !manifestEntry ? entry.id : inferId(entry, brand)
     out.push({
       id,
@@ -195,9 +198,8 @@ export function applyBrandInstances(entries, manifest = loadBrandManifest()) {
       name: entry.name,
       url: entry.url,
       subjects: [...(entry.subjects || [])],
-      editions: normalizeEditions(entry.editions),
-      ...(formatLocation(entry.location) ? { location: formatLocation(entry.location) } : {}),
-      ...(entry.isOnline === true ? { isOnline: true } : {}),
+      editions: hoistLocationOntoEditions(entry),
+      ...(entry.orgType ? { orgType: entry.orgType } : {}),
     })
   }
 
@@ -214,8 +216,6 @@ function dedupeInstances(list) {
     }
     existing.subjects = mergeSubjects(existing.subjects, entry.subjects)
     existing.editions = mergeEditions(existing.editions, entry.editions)
-    if (!existing.location && entry.location) existing.location = formatLocation(entry.location)
-    if (entry.isOnline === true) existing.isOnline = true
   }
   return [...byId.values()]
 }
@@ -235,26 +235,6 @@ function mergeSubjects(a, b) {
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 
-export function normalizeEditions(editions) {
-  if (!Array.isArray(editions)) return []
-  const out = []
-  const seen = new Set()
-  for (const ed of editions) {
-    if (!ed?.startDate || !ISO_DATE.test(ed.startDate)) continue
-    const endDate = ed.endDate && ISO_DATE.test(ed.endDate) ? ed.endDate : ed.startDate
-    if (endDate < ed.startDate) continue
-    const key = `${ed.startDate}::${endDate}`
-    if (seen.has(key)) continue
-    seen.add(key)
-    out.push({ startDate: ed.startDate, endDate })
-  }
-  return out.sort((a, b) => a.startDate.localeCompare(b.startDate))
-}
-
-export function mergeEditions(...lists) {
-  return normalizeEditions(lists.flat())
-}
-
 export function formatLocation(location) {
   if (!location || typeof location !== "object") return undefined
   const city = typeof location.city === "string" ? location.city.trim() : ""
@@ -264,6 +244,62 @@ export function formatLocation(location) {
   if (city) out.city = city
   if (country) out.country = country
   return out
+}
+
+export function formatEdition(edition) {
+  if (!edition?.startDate || !ISO_DATE.test(edition.startDate)) return null
+  const endDate =
+    edition.endDate && ISO_DATE.test(edition.endDate) ? edition.endDate : edition.startDate
+  if (endDate < edition.startDate) return null
+  const out = { startDate: edition.startDate, endDate }
+  const location = formatLocation(edition.location)
+  if (location) out.location = location
+  if (edition.isOnline === true) out.isOnline = true
+  return out
+}
+
+export function normalizeEditions(editions) {
+  if (!Array.isArray(editions)) return []
+  const byKey = new Map()
+  for (const ed of editions) {
+    const formatted = formatEdition(ed)
+    if (!formatted) continue
+    const key = `${formatted.startDate}::${formatted.endDate}`
+    const existing = byKey.get(key)
+    if (!existing) {
+      byKey.set(key, formatted)
+      continue
+    }
+    if (!existing.location && formatted.location) existing.location = formatted.location
+    if (formatted.isOnline) existing.isOnline = true
+  }
+  return [...byKey.values()].sort((a, b) => a.startDate.localeCompare(b.startDate))
+}
+
+export function mergeEditions(...lists) {
+  return normalizeEditions(lists.flat())
+}
+
+/**
+ * Move instance-level location/isOnline onto editions (new schema).
+ * Seed/meta location applies to all editions that lack one.
+ */
+export function hoistLocationOntoEditions(instance, fallback = {}) {
+  const inheritedLocation =
+    formatLocation(instance.location) || formatLocation(fallback.location)
+  const inheritedOnline =
+    instance.isOnline === true || fallback.isOnline === true
+
+  const editions = normalizeEditions(instance.editions).map((ed) => {
+    const out = { ...ed }
+    if (!out.location && inheritedLocation) out.location = inheritedLocation
+    if (inheritedOnline) out.isOnline = true
+    return out
+  })
+
+  // If we have location/online but no editions, leave editions empty
+  // (dates are required for an edition under the new schema).
+  return normalizeEditions(editions)
 }
 
 export function validateInstances(list) {
@@ -292,24 +328,28 @@ export function validateInstances(list) {
           if (ed?.startDate && ed?.endDate && ed.endDate < ed.startDate) {
             errors.push(`edition end before start: ${c.name}`)
           }
-        }
-      }
-    }
-    if (c.location !== undefined && c.location !== null) {
-      if (typeof c.location !== "object" || Array.isArray(c.location)) {
-        errors.push(`bad location: ${c.name}`)
-      } else {
-        const loc = formatLocation(c.location)
-        if (!loc) errors.push(`empty location object: ${c.name}`)
-        for (const key of Object.keys(c.location)) {
-          if (key !== "city" && key !== "country") {
-            errors.push(`unknown location field ${key}: ${c.name}`)
+          if (ed?.location !== undefined && ed?.location !== null) {
+            const loc = formatLocation(ed.location)
+            if (!loc) errors.push(`empty edition location: ${c.name}`)
+            if (ed.location && typeof ed.location === "object") {
+              for (const key of Object.keys(ed.location)) {
+                if (key !== "city" && key !== "country") {
+                  errors.push(`unknown edition location field ${key}: ${c.name}`)
+                }
+              }
+            }
+          }
+          if (ed?.isOnline !== undefined && typeof ed.isOnline !== "boolean") {
+            errors.push(`bad edition isOnline: ${c.name}`)
           }
         }
       }
     }
-    if (c.isOnline !== undefined && typeof c.isOnline !== "boolean") {
-      errors.push(`bad isOnline: ${c.name}`)
+    if (c.location !== undefined) {
+      errors.push(`instance-level location is deprecated (use editions): ${c.name}`)
+    }
+    if (c.isOnline !== undefined) {
+      errors.push(`instance-level isOnline is deprecated (use editions): ${c.name}`)
     }
     if (
       c.orgType !== undefined &&
@@ -331,7 +371,6 @@ export function sortInstances(list) {
 
 export function formatConference(entry) {
   const editions = normalizeEditions(entry.editions)
-  const location = formatLocation(entry.location)
   const out = {
     id: entry.id,
     brand: entry.brand,
@@ -340,8 +379,6 @@ export function formatConference(entry) {
     subjects: entry.subjects.slice(0, 10),
   }
   if (editions.length) out.editions = editions
-  if (location) out.location = location
-  if (entry.isOnline === true) out.isOnline = true
   if (entry.orgType === "for-profit" || entry.orgType === "non-profit") {
     out.orgType = entry.orgType
   }

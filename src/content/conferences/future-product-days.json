@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-09-22",
-          "endDate": "2026-09-24"
+          "endDate": "2026-09-24",
+          "location": {
+            "city": "Copenhagen",
+            "country": "Denmark"
+          }
         }
-      ],
-      "location": {
-        "city": "Copenhagen",
-        "country": "Denmark"
-      }
+      ]
     }
   ]
 }

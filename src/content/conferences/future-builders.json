@@ -13,13 +13,13 @@
       "editions": [
         {
           "startDate": "2026-09-18",
-          "endDate": "2026-09-18"
+          "endDate": "2026-09-18",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          }
         }
-      ],
-      "location": {
-        "city": "Vienna",
-        "country": "Austria"
-      }
+      ]
     }
   ]
 }

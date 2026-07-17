@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 /**
- * Enrich conference instances with editions + location/isOnline from:
- * 1) confs.tech seed (2026 / 2027 when available)
- * 2) curated fields in brand-instances.json
+ * Enrich conference instances with editions (dates, location, isOnline)
+ * from confs.tech seed (2026 / 2027 when available).
  */
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import {
   formatLocation,
-  loadBrandManifest,
+  hoistLocationOntoEditions,
   mergeEditions,
   sortInstances,
 } from "./lib/brand-instances.mjs"
@@ -51,21 +50,14 @@ function normalizeName(name) {
     .replace(/[^a-z0-9]+/g, "")
 }
 
-function locationFromSeed(row) {
-  return formatLocation({
-    city: row.city || "",
-    country: row.country || "",
-  })
-}
-
-function loadSeedMeta() {
+function loadSeedEditions() {
   const byUrl = new Map()
   const byName = new Map()
 
-  const add = (map, key, meta) => {
+  const add = (map, key, edition) => {
     if (!key) return
     const list = map.get(key) ?? []
-    list.push(meta)
+    list.push(edition)
     map.set(key, list)
   }
 
@@ -75,20 +67,22 @@ function loadSeedMeta() {
       if (!fs.existsSync(file)) continue
       const rows = JSON.parse(fs.readFileSync(file, "utf8"))
       for (const row of rows) {
-        if (!row?.url) continue
-        const meta = {
-          edition:
-            row.startDate
-              ? {
-                  startDate: row.startDate,
-                  endDate: row.endDate || row.startDate,
-                }
-              : null,
-          location: locationFromSeed(row),
-          isOnline: row.online === true,
+        if (!row?.url || !row?.startDate) continue
+        const edition = {
+          startDate: row.startDate,
+          endDate: row.endDate || row.startDate,
+          ...(formatLocation({ city: row.city || "", country: row.country || "" })
+            ? {
+                location: formatLocation({
+                  city: row.city || "",
+                  country: row.country || "",
+                }),
+              }
+            : {}),
+          ...(row.online === true ? { isOnline: true } : {}),
         }
-        add(byUrl, normalizeUrl(row.url), meta)
-        if (row.name) add(byName, normalizeName(row.name), meta)
+        add(byUrl, normalizeUrl(row.url), edition)
+        if (row.name) add(byName, normalizeName(row.name), edition)
       }
     }
   }
@@ -96,43 +90,8 @@ function loadSeedMeta() {
   return { byUrl, byName }
 }
 
-function mergeSeedMeta(lists) {
-  const editions = []
-  let location
-  let isOnline = false
-
-  for (const meta of lists.flat()) {
-    if (!meta) continue
-    if (meta.edition) editions.push(meta.edition)
-    if (meta.location && !location) location = meta.location
-    if (meta.isOnline) isOnline = true
-  }
-
-  return {
-    editions: mergeEditions(editions),
-    location: formatLocation(location),
-    isOnline,
-  }
-}
-
-function loadManifestMeta() {
-  const byId = new Map()
-  for (const brand of loadBrandManifest()) {
-    for (const inst of brand.instances || []) {
-      if (!inst.id) continue
-      byId.set(inst.id, {
-        editions: inst.editions ?? [],
-        location: formatLocation(inst.location),
-        isOnline: inst.isOnline === true,
-      })
-    }
-  }
-  return byId
-}
-
 function main() {
-  const { byUrl, byName } = loadSeedMeta()
-  const byManifestId = loadManifestMeta()
+  const { byUrl, byName } = loadSeedEditions()
   const instances = readBrandDir(conferencesDir)
 
   let matched = 0
@@ -143,35 +102,31 @@ function main() {
   const enriched = instances.map((inst) => {
     const fromUrl = byUrl.get(normalizeUrl(inst.url)) ?? []
     const fromName = byName.get(normalizeName(inst.name)) ?? []
-    const fromManifest = byManifestId.get(inst.id)
-    const seed = mergeSeedMeta([fromUrl, fromName])
-
     const editions = mergeEditions(
-      inst.editions,
-      seed.editions,
-      fromManifest?.editions,
+      hoistLocationOntoEditions(inst),
+      fromUrl,
+      fromName,
     )
-    const location =
-      formatLocation(inst.location) || seed.location || fromManifest?.location
-    const isOnline =
-      inst.isOnline === true || seed.isOnline || fromManifest?.isOnline === true
 
-    if (fromUrl.length || fromName.length || fromManifest) matched++
+    if (fromUrl.length || fromName.length) matched++
     if (editions.length) withEditions++
-    if (location) withLocation++
-    if (isOnline) onlineCount++
+    if (editions.some((ed) => ed.location)) withLocation++
+    if (editions.some((ed) => ed.isOnline)) onlineCount++
 
     return {
-      ...inst,
+      id: inst.id,
+      brand: inst.brand,
+      name: inst.name,
+      url: inst.url,
+      subjects: inst.subjects,
+      orgType: inst.orgType,
       editions,
-      ...(location ? { location } : { location: undefined }),
-      isOnline,
     }
   })
 
   writeBrandDir(sortInstances(enriched), conferencesDir)
   console.log(
-    `Enriched ${instances.length} instances: ${matched} matched sources, ${withEditions} with editions, ${withLocation} with location, ${onlineCount} online/hybrid`,
+    `Enriched ${instances.length} instances: ${matched} matched seed, ${withEditions} with editions, ${withLocation} with location, ${onlineCount} online/hybrid`,
   )
 }
 

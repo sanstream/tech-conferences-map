@@ -7,23 +7,33 @@ const byBrand = groupByBrand(conferences)
 const totalInstances = conferences.length
 const withDates = conferences.filter((c) => c.data.editions.length > 0).length
 
-function formatEdition(edition: { startDate: string; endDate: string }) {
+type Edition = {
+  startDate: string
+  endDate: string
+  location?: { city?: string; country?: string }
+  isOnline: boolean
+}
+
+function formatEditionDates(edition: Edition) {
   if (edition.startDate === edition.endDate) return edition.startDate
   return `${edition.startDate} → ${edition.endDate}`
 }
 
-function formatLocation(entry: {
-  location?: { city?: string; country?: string }
-  isOnline: boolean
-}) {
+function formatEditionPlace(edition: Edition) {
   const parts: string[] = []
-  if (entry.location?.city) parts.push(entry.location.city)
-  if (entry.location?.country) parts.push(entry.location.country)
+  if (edition.location?.city) parts.push(edition.location.city)
+  if (edition.location?.country) parts.push(edition.location.country)
   const place = parts.join(", ")
-  if (place && entry.isOnline) return `${place} · hybrid`
+  if (place && edition.isOnline) return `${place} · hybrid`
   if (place) return place
-  if (entry.isOnline) return "online"
+  if (edition.isOnline) return "online"
   return ""
+}
+
+function formatEdition(edition: Edition) {
+  const dates = formatEditionDates(edition)
+  const place = formatEditionPlace(edition)
+  return place ? `${dates} · ${place}` : dates
 }
 ---
 
@@ -40,22 +50,18 @@ function formatLocation(entry: {
         <section>
           <h2>{brand}</h2>
           <ul>
-            {instances.map((entry) => {
-              const where = formatLocation(entry.data)
-              return (
-                <li>
-                  <a href={entry.data.url}>{entry.data.name}</a>
-                  {where && <span class="location"> — {where}</span>}
-                  {entry.data.editions.length > 0 && (
-                    <span class="dates">
-                      {" "}
-                      ({entry.data.editions.map(formatEdition).join("; ")})
-                    </span>
-                  )}
-                  <span class="subjects"> — {entry.data.subjects.join(", ")}</span>
-                </li>
-              )
-            })}
+            {instances.map((entry) => (
+              <li>
+                <a href={entry.data.url}>{entry.data.name}</a>
+                {entry.data.editions.length > 0 && (
+                  <span class="dates">
+                    {" "}
+                    ({entry.data.editions.map(formatEdition).join("; ")})
+                  </span>
+                )}
+                <span class="subjects"> — {entry.data.subjects.join(", ")}</span>
+              </li>
+            ))}
           </ul>
         </section>
       ))
@@ -104,11 +110,6 @@ function formatLocation(entry: {
 
   a {
     color: #0366d6;
-  }
-
-  .location {
-    color: #333;
-    font-size: 0.875rem;
   }
 
   .dates {

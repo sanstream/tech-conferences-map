@@ -14,14 +14,14 @@
       "editions": [
         {
           "startDate": "2026-05-07",
-          "endDate": "2026-05-08"
+          "endDate": "2026-05-08",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
         }
-      ],
-      "location": {
-        "city": "Amsterdam",
-        "country": "Netherlands"
-      },
-      "isOnline": true
+      ]
     }
   ]
 }

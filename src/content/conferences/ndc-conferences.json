@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-06-01",
-          "endDate": "2026-06-04"
+          "endDate": "2026-06-04",
+          "location": {
+            "city": "Copenhagen",
+            "country": "Denmark"
+          }
         }
-      ],
-      "location": {
-        "city": "Copenhagen",
-        "country": "Denmark"
-      }
+      ]
     },
     {
       "id": "ndc-london",
@@ -34,17 +34,21 @@
       "editions": [
         {
           "startDate": "2026-01-26",
-          "endDate": "2026-01-30"
+          "endDate": "2026-01-30",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         },
         {
           "startDate": "2027-01-25",
-          "endDate": "2027-01-29"
+          "endDate": "2027-01-29",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
         }
-      ],
-      "location": {
-        "city": "London",
-        "country": "U.K."
-      }
+      ]
     },
     {
       "id": "ndc-oslo",
@@ -58,13 +62,13 @@
       "editions": [
         {
           "startDate": "2026-09-14",
-          "endDate": "2026-09-18"
+          "endDate": "2026-09-18",
+          "location": {
+            "city": "Oslo",
+            "country": "Norway"
+          }
         }
-      ],
-      "location": {
-        "city": "Oslo",
-        "country": "Norway"
-      }
+      ]
     },
     {
       "id": "ndc-porto",
@@ -78,13 +82,13 @@
       "editions": [
         {
           "startDate": "2026-11-17",
-          "endDate": "2026-11-20"
+          "endDate": "2026-11-20",
+          "location": {
+            "city": "Porto",
+            "country": "Portugal"
+          }
         }
-      ],
-      "location": {
-        "city": "Porto",
-        "country": "Portugal"
-      }
+      ]
     },
     {
       "id": "ndc-sydney",
@@ -98,13 +102,13 @@
       "editions": [
         {
           "startDate": "2026-04-22",
-          "endDate": "2026-04-24"
+          "endDate": "2026-04-24",
+          "location": {
+            "city": "Sydney",
+            "country": "Australia"
+          }
         }
-      ],
-      "location": {
-        "city": "Sydney",
-        "country": "Australia"
-      }
+      ]
     }
   ]
 }

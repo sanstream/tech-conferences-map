@@ -14,13 +14,13 @@
       "editions": [
         {
           "startDate": "2026-07-08",
-          "endDate": "2026-07-10"
+          "endDate": "2026-07-10",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
         }
-      ],
-      "location": {
-        "city": "Berlin",
-        "country": "Germany"
-      }
+      ]
     }
   ]
 }
