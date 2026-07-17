@@ -1,0 +1,30 @@
+{
+  "name": "tech-conferences-map",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,mjs,cjs}\" \"content/**/*.{md,mdx,json}\" astro.config.mjs tsconfig.json .prettierrc package.json",
+    "lint": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^7.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "^5.9.3"
+  }
+}
