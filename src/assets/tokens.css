@@ -31,6 +31,7 @@
 
     /* Flamingo serves as an neutral colour on light mode and as an accent on dark mode */
     --colour-flamingo-100: oklch(0.97 0.02 1.8);
+    --colour-flamingo-150: oklch(0.94 0.03 1.8);
     --colour-flamingo-200: oklch(0.92 0.05 1.8);
     --colour-flamingo-300: oklch(0.86 0.09 1.8);
     --colour-flamingo-400: oklch(0.8 0.12 1.8);
@@ -70,8 +71,8 @@
       var(--colour-blue-100)
     );
     --colour-heading-text: light-dark(
-      var(--colour-flamingo-700),
-      var(--colour-blue-200)
+      var(--colour-blue-800),
+      var(--colour-flamingo-300)
     );
     --colour-link-text: light-dark(
       var(--colour-flamingo-800),
