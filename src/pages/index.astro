@@ -1,8 +1,62 @@
 ---
-import ConferenceList from "../components/conference-list.astro"
+import Placeholder from "../components/placeholder.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-  <ConferenceList />
+  <main class="main-content">
+    <header class="main-content-filters">
+      <h2 class="h3-heading filters-heading">
+        Filter the map using these option:
+      </h2>
+      <Placeholder class="filters-field1">Placeholder field</Placeholder>
+      <Placeholder class="filters-field2">Placeholder field</Placeholder>
+      <Placeholder class="filters-field3">Placeholder field</Placeholder>
+    </header>
+    <Placeholder class="main-content-results placeholder--center"
+      >Placeholder results</Placeholder
+    >
+  </main>
 </Layout>
+
+<style>
+  .main-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    grid-template-areas:
+      "filters"
+      "results";
+  }
+
+  .main-content-filters {
+    grid-area: filters;
+    display: grid;
+    grid-template-areas:
+      "heading heading heading"
+      "field1 field2 field3";
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 1rem;
+
+    & .filters-heading {
+      grid-area: heading;
+      margin: 0;
+    }
+
+    & .filters-field1 {
+      grid-area: field1;
+    }
+    & .filters-field2 {
+      grid-area: field2;
+    }
+    & .filters-field3 {
+      grid-area: field3;
+    }
+  }
+
+  .main-content-results {
+    grid-area: results;
+  }
+</style>

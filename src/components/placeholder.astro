@@ -1,0 +1,33 @@
+---
+interface Props {
+  /** Content alignment. Defaults to left. */
+  class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<div class:list={["placeholder", className]}>
+  <slot />
+</div>
+
+<style>
+  .placeholder {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 1px dashed
+      light-dark(var(--colour-flamingo-500), var(--colour-blue-500));
+
+    &.placeholder--center {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &.placeholder--left {
+      text-align: left;
+      justify-content: left;
+    }
+  }
+</style>
