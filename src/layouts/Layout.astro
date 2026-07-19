@@ -3,6 +3,7 @@ import "@fontsource/armata/400.css"
 import "@fontsource/fira-code/400.css"
 import "@fontsource/montserrat/500.css"
 import "../assets/index.css"
+import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
 ---
 
 <!doctype html>
@@ -16,7 +17,26 @@ import "../assets/index.css"
     <title>Tech Conferences Map</title>
   </head>
   <body class="body-text">
-    <slot />
+    <header class="page-header page-level-container">
+      <h1 class="h2-heading">
+        Tech Conferences Map
+
+        <span class="subheading"
+          >all of the worlds tech conferences on one map</span
+        >
+      </h1>
+      <ColorSchemeSwitch client:only="react" />
+    </header>
+    <div class="page-content page-level-container">
+      <slot />
+    </div>
+    <footer class="page-footer page-level-container">
+      <p>
+        Concept and design by <a href="https://sanstream.nl" target="_blank">
+          Studio Sanstream
+        </a> &copy; {new Date().getFullYear()}
+      </p>
+    </footer>
   </body>
 </html>
 
@@ -26,5 +46,54 @@ import "../assets/index.css"
     margin: 0;
     width: 100%;
     height: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+  }
+
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    background-color: light-dark(
+      var(--colour-flamingo-200),
+      var(--colour-blue-900)
+    );
+
+    & h1 {
+      margin: 0;
+      color: light-dark(var(--colour-flamingo-900), var(--colour-blue-200));
+    }
+
+    & .subheading {
+      font-size: 0.875rem;
+      display: block;
+    }
+
+    & .color-scheme-switch {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+  .page-content {
+    overflow-y: auto;
+  }
+
+  .page-footer {
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    background-color: light-dark(
+      var(--colour-flamingo-200),
+      var(--colour-blue-900)
+    );
+    color: light-dark(var(--colour-flamingo-900), var(--colour-blue-200));
+
+    & p {
+      margin: 0;
+    }
   }
 </style>

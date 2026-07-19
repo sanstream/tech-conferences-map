@@ -16,22 +16,23 @@
     margin-bottom: 1em;
     font-family: "Armata", "Helvetica", sans-serif;
     font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1em;
   }
 
   h1,
   .h1-heading {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1em;
+    font-size: 2rem;
   }
 
   h2,
   .h2-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1em;
+    font-size: 1.7rem;
+  }
+
+  h3,
+  .h3-heading {
+    font-size: 1.25rem;
   }
 
   a {
@@ -41,5 +42,24 @@
 
   a:hover {
     color: var(--colour-link-text-hover);
+  }
+
+  .page-level-container {
+    --page-min-x-padding: 1.5rem;
+    --page-max-content-width: 75rem;
+    /*
+      Calculate the x/inline padding based on the viewport width and the max content width
+      giving the effect of a responsive padding that ensures the content is always centered
+      at a maximum width.
+    */
+    --page-x-padding: clamp(
+      var(--page-min-x-padding),
+      calc(
+        var(--page-min-x-padding) + (100vw - var(--page-max-content-width)) / 2
+      ),
+      var(--page-max-content-width)
+    );
+    --page-y-padding: 1rem;
+    padding: var(--page-y-padding) var(--page-x-padding);
   }
 }

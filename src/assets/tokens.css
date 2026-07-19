@@ -70,7 +70,7 @@
       var(--colour-blue-100)
     );
     --colour-heading-text: light-dark(
-      var(--colour-flamingo-600),
+      var(--colour-flamingo-700),
       var(--colour-blue-200)
     );
     --colour-link-text: light-dark(
@@ -82,9 +82,24 @@
       var(--colour-blue-200)
     );
 
-    --colour-shadow: var(--black);
+    --colour-shadow: oklch(from var(--black) l c h / 0.3);
 
     --shadow-sm: 0 1px 2px 0 var(--colour-shadow);
     --shadow-md: 0 4px 6px -1px var(--colour-shadow);
+  }
+
+  /* color-scheme logic */
+  :root {
+    color-scheme: light dark;
+  }
+
+  /* Enable light from an element and downwards to its children: */
+  [data-color-scheme="light"] {
+    color-scheme: light;
+  }
+
+  /* Enable dark from an element and downwards to its children: */
+  [data-color-scheme="dark"] {
+    color-scheme: dark;
   }
 }
