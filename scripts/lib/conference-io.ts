@@ -1,26 +1,32 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import { formatConference, hoistLocationOntoEditions, slugify, validateInstances } from "./brand-instances.mjs"
+import {
+  formatConference,
+  hoistLocationOntoEditions,
+  slugify,
+  validateInstances,
+  type ConferenceInstance,
+} from "./brand-instances.ts"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export const conferencesDir = path.join(__dirname, "../../src/content/conferences")
 
-function isBrandFile(data) {
+function isBrandFile(data: any): boolean {
   return Array.isArray(data?.instances)
 }
 
-function isFlatInstanceFile(data) {
-  return data?.id && data?.name && data?.url && !data.instances
+function isFlatInstanceFile(data: any): boolean {
+  return Boolean(data?.id && data?.name && data?.url && !data.instances)
 }
 
 /**
  * Flatten brand-grouped files into instance rows (with brand on each).
  */
-export function readBrandDir(dir = conferencesDir) {
+export function readBrandDir(dir: string = conferencesDir): ConferenceInstance[] {
   if (!fs.existsSync(dir)) return []
 
-  const instances = []
+  const instances: ConferenceInstance[] = []
   for (const file of fs.readdirSync(dir).sort()) {
     if (!file.endsWith(".json")) continue
     const filePath = path.join(dir, file)
@@ -31,7 +37,7 @@ export function readBrandDir(dir = conferencesDir) {
       if (!brand) throw new Error(`missing brand in ${file}`)
       const orgType = data.orgType
       for (const inst of data.instances) {
-        const row = {
+        const row: ConferenceInstance = {
           id: inst.id,
           brand,
           name: inst.name,
@@ -64,12 +70,14 @@ export function readBrandDir(dir = conferencesDir) {
 }
 
 /** @deprecated use readBrandDir */
-export function readConferenceDir(dir = conferencesDir) {
+export function readConferenceDir(dir: string = conferencesDir): ConferenceInstance[] {
   return readBrandDir(dir)
 }
 
-export function groupInstancesByBrand(instances) {
-  const groups = new Map()
+export function groupInstancesByBrand(
+  instances: ConferenceInstance[],
+): Map<string, ConferenceInstance[]> {
+  const groups = new Map<string, ConferenceInstance[]>()
   for (const inst of instances) {
     const list = groups.get(inst.brand) ?? []
     list.push(formatConference(inst))
@@ -80,7 +88,7 @@ export function groupInstancesByBrand(instances) {
   )
 }
 
-function brandFileSlug(brand) {
+function brandFileSlug(brand: string): string {
   const slug = slugify(brand)
   if (!slug) throw new Error(`cannot slugify brand: ${brand}`)
   return slug
@@ -90,7 +98,10 @@ function brandFileSlug(brand) {
  * Write instances as one JSON file per brand. Removes stale brand files.
  * Hoists legacy instance-level location/isOnline onto editions.
  */
-export function writeBrandDir(instances, dir = conferencesDir) {
+export function writeBrandDir(
+  instances: ConferenceInstance[],
+  dir: string = conferencesDir,
+): ConferenceInstance[] {
   const formatted = instances.map((inst) => {
     const editions = hoistLocationOntoEditions(inst)
     return formatConference({ ...inst, editions, location: undefined, isOnline: undefined })
@@ -101,7 +112,7 @@ export function writeBrandDir(instances, dir = conferencesDir) {
   }
 
   const grouped = groupInstancesByBrand(formatted)
-  const slugToBrand = new Map()
+  const slugToBrand = new Map<string, string>()
 
   for (const [brand] of grouped) {
     const slug = brandFileSlug(brand)
@@ -129,7 +140,7 @@ export function writeBrandDir(instances, dir = conferencesDir) {
       brand,
       ...(orgType ? { orgType } : {}),
       instances: brandInstances.map(({ id, name, url, subjects, editions }) => {
-        const row = { id, name, url, subjects }
+        const row: Record<string, unknown> = { id, name, url, subjects }
         if (editions?.length) row.editions = editions
         return row
       }),
@@ -141,11 +152,14 @@ export function writeBrandDir(instances, dir = conferencesDir) {
 }
 
 /** @deprecated use writeBrandDir */
-export function writeConferenceDir(instances, dir = conferencesDir) {
+export function writeConferenceDir(
+  instances: ConferenceInstance[],
+  dir: string = conferencesDir,
+): ConferenceInstance[] {
   return writeBrandDir(instances, dir)
 }
 
-export function validateBrandDir(dir = conferencesDir) {
+export function validateBrandDir(dir: string = conferencesDir): string[] {
   const instances = readBrandDir(dir)
   const errors = validateInstances(instances)
 

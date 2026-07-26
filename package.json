@@ -3,16 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=22.18.0"
   },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,mjs,cjs,md,mdx,json}\" \"scripts/**/*.{mjs,js}\" astro.config.mjs tsconfig.json .prettierrc package.json",
+    "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,mjs,cjs,md,mdx,json}\" \"scripts/**/*.{ts,mjs,js}\" astro.config.ts tsconfig.json .prettierrc package.json",
     "lint": "astro check",
-    "conferences:validate": "node scripts/validate-conferences.mjs"
+    "conferences:validate": "node scripts/validate-conferences.ts"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.1",

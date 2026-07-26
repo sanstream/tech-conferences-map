@@ -41,6 +41,10 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
+## 🌍 Data sources
+
+City coordinates are derived from the [SimpleMaps World Cities Database (Basic)](https://simplemaps.com/data/world-cities), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). A copy is vendored in [`src/data/world-cities/`](src/data/world-cities/README.md) so conference locations can be geocoded at build time without network access. Timezones are derived from those coordinates with [`@photostructure/tz-lookup`](https://github.com/photostructure/tz-lookup).
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

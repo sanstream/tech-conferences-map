@@ -1,6 +1,37 @@
+import type { ConferenceLocation } from "../../src/lib/world-cities.ts"
+
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 
-export function slugify(text) {
+export type OrgType = "for-profit" | "non-profit"
+
+export type Edition = {
+  startDate: string
+  endDate: string
+  location?: ConferenceLocation
+  isOnline?: boolean
+}
+
+export type ConferenceInstance = {
+  id: string
+  brand: string
+  name: string
+  url: string
+  subjects: string[]
+  editions?: Edition[]
+  orgType?: OrgType
+  /** Legacy instance-level field, migrated onto editions on write. */
+  location?: ConferenceLocation
+  /** Legacy instance-level field, migrated onto editions on write. */
+  isOnline?: boolean
+}
+
+/**
+ * Raw, not-yet-validated data as read from the JSON source files.
+ * The functions in this module normalize and validate it at runtime.
+ */
+type Raw = any
+
+export function slugify(text: unknown): string {
   return String(text)
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -10,32 +41,32 @@ export function slugify(text) {
     .slice(0, 80)
 }
 
-export function formatLocation(location) {
+export function formatLocation(location: Raw): ConferenceLocation | undefined {
   if (!location || typeof location !== "object") return undefined
   const city = typeof location.city === "string" ? location.city.trim() : ""
   const country = typeof location.country === "string" ? location.country.trim() : ""
   if (!city && !country) return undefined
-  const out = {}
+  const out: ConferenceLocation = {}
   if (city) out.city = city
   if (country) out.country = country
   return out
 }
 
-export function formatEdition(edition) {
+export function formatEdition(edition: Raw): Edition | null {
   if (!edition?.startDate || !ISO_DATE.test(edition.startDate)) return null
   const endDate =
     edition.endDate && ISO_DATE.test(edition.endDate) ? edition.endDate : edition.startDate
   if (endDate < edition.startDate) return null
-  const out = { startDate: edition.startDate, endDate }
+  const out: Edition = { startDate: edition.startDate, endDate }
   const location = formatLocation(edition.location)
   if (location) out.location = location
   if (edition.isOnline === true) out.isOnline = true
   return out
 }
 
-export function normalizeEditions(editions) {
+export function normalizeEditions(editions: Raw): Edition[] {
   if (!Array.isArray(editions)) return []
-  const byKey = new Map()
+  const byKey = new Map<string, Edition>()
   for (const ed of editions) {
     const formatted = formatEdition(ed)
     if (!formatted) continue
@@ -54,13 +85,16 @@ export function normalizeEditions(editions) {
 /**
  * Move instance-level location/isOnline onto editions (legacy migration on write).
  */
-export function hoistLocationOntoEditions(instance, fallback = {}) {
+export function hoistLocationOntoEditions(
+  instance: Raw,
+  fallback: Raw = {},
+): Edition[] {
   const inheritedLocation =
     formatLocation(instance.location) || formatLocation(fallback.location)
   const inheritedOnline = instance.isOnline === true || fallback.isOnline === true
 
   const editions = normalizeEditions(instance.editions).map((ed) => {
-    const out = { ...ed }
+    const out: Edition = { ...ed }
     if (!out.location && inheritedLocation) out.location = inheritedLocation
     if (inheritedOnline) out.isOnline = true
     return out
@@ -69,9 +103,9 @@ export function hoistLocationOntoEditions(instance, fallback = {}) {
   return normalizeEditions(editions)
 }
 
-export function validateInstances(list) {
-  const errors = []
-  const ids = new Set()
+export function validateInstances(list: Raw[]): string[] {
+  const errors: string[] = []
+  const ids = new Set<string>()
 
   for (const c of list) {
     if (!c.id) errors.push(`missing id: ${c.name}`)
@@ -132,9 +166,9 @@ export function validateInstances(list) {
   return errors
 }
 
-export function formatConference(entry) {
+export function formatConference(entry: Raw): ConferenceInstance {
   const editions = normalizeEditions(entry.editions)
-  const out = {
+  const out: ConferenceInstance = {
     id: entry.id,
     brand: entry.brand,
     name: entry.name,
