@@ -1,0 +1,21 @@
+@layer components {
+  .conference-map {
+    display: block;
+    width: calc(var(--page-max-content-width) - 2 * var(--page-min-x-padding));
+    height: auto;
+    background-color: var(--colour-section-bg);
+  }
+
+  .conference-map-parallels {
+    fill: none;
+    stroke: light-dark(var(--colour-flamingo-300), var(--colour-blue-800));
+    stroke-width: 1px;
+    opacity: 0.5;
+  }
+
+  .conference-map-land {
+    fill: var(--colour-land-bg);
+    stroke: var(--colour-land-contour);
+    stroke-width: 1px;
+  }
+}

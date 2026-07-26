@@ -1,0 +1,16 @@
+@layer components {
+  .conference-map-marker {
+    fill: var(--colour-mustard-500);
+    stroke: var(--white);
+    stroke-width: 1px;
+    filter: drop-shadow(1px 1px 1px var(--colour-shadow));
+  }
+
+  .conference-map-marker-count {
+    fill: var(--white);
+    font-size: 0.75rem;
+    stroke-width: 0px;
+    pointer-events: none;
+    user-select: none;
+  }
+}

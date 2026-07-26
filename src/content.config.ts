@@ -30,6 +30,13 @@ const conferences = defineCollection({
             })
             .optional(),
           isOnline: z.boolean().default(false),
+          // For online editions without a physical location: the IANA
+          // timezone whose local midday best matches the midpoint of the
+          // conference's daily schedule (i.e. the audience it targets).
+          timezone: z.string().min(1).optional(),
+          // How an online edition's timezone was derived (schedule window
+          // + midday matching). Optional; mainly for online editions.
+          notes: z.string().min(1).optional(),
         }),
       )
       .default([]),
