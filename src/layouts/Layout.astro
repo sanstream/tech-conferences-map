@@ -36,6 +36,15 @@ import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
           Studio Sanstream
         </a> &copy; {new Date().getFullYear()}
       </p>
+      <p>
+        City data by <a
+          href="https://simplemaps.com/data/world-cities"
+          target="_blank">SimpleMaps.com</a
+        >, licensed under <a
+          href="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank">CC BY 4.0</a
+        >
+      </p>
     </footer>
   </body>
 </html>
@@ -88,6 +97,9 @@ import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
   .page-footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
     box-shadow: var(--shadow-sm);
     background-color: light-dark(
       var(--colour-flamingo-150),

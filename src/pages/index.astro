@@ -1,4 +1,5 @@
 ---
+import ConferenceList from "../components/conference-list.astro"
 import Placeholder from "../components/placeholder.astro"
 import Layout from "../layouts/Layout.astro"
 ---
@@ -13,9 +14,7 @@ import Layout from "../layouts/Layout.astro"
       <Placeholder class="filters-field2">Placeholder field</Placeholder>
       <Placeholder class="filters-field3">Placeholder field</Placeholder>
     </header>
-    <Placeholder class="main-content-results placeholder--center"
-      >Placeholder results</Placeholder
-    >
+    <ConferenceList />
   </main>
 </Layout>
 

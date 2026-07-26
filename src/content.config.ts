@@ -19,6 +19,11 @@ const conferences = defineCollection({
             .object({
               city: z.string().min(1).optional(),
               country: z.string().min(1).optional(),
+              // Derived at load time from city/country via the vendored
+              // world-cities dataset; not present in the JSON source files.
+              latitude: z.number().min(-90).max(90).optional(),
+              longitude: z.number().min(-180).max(180).optional(),
+              timezone: z.string().min(1).optional(),
             })
             .refine((loc) => Boolean(loc.city || loc.country), {
               message: "location requires city and/or country",

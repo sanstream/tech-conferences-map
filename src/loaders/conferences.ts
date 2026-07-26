@@ -2,15 +2,17 @@ import type { Loader } from "astro/loaders"
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import {
+  lookupLocation,
+  type ConferenceLocation,
+  type GeoInfo,
+} from "../lib/world-cities.ts"
 
 const conferencesDir = fileURLToPath(
   new URL("../content/conferences", import.meta.url),
 )
 
-type Location = {
-  city?: string
-  country?: string
-}
+type Location = ConferenceLocation & Partial<GeoInfo>
 
 type Edition = {
   startDate: string
@@ -33,6 +35,28 @@ type BrandFile = {
   }>
 }
 
+/**
+ * Adds latitude/longitude/timezone (derived from the location's
+ * city/country, see src/lib/world-cities.ts) to the generated
+ * edition objects. The JSON source files stay geo-free on purpose:
+ * contributors only provide city and country.
+ */
+function enrichLocation(
+  location: Location,
+  warn: (message: string) => void,
+): Location {
+  const geo = lookupLocation(location)
+  if (!geo) {
+    if (location.city) {
+      warn(
+        `Could not resolve coordinates for "${location.city}, ${location.country ?? "?"}"`,
+      )
+    }
+    return location
+  }
+  return { ...location, ...geo }
+}
+
 export function conferencesLoader(): Loader {
   return {
     name: "conferences-loader",
@@ -45,6 +69,13 @@ export function conferencesLoader(): Loader {
       const files = fs
         .readdirSync(conferencesDir)
         .filter((f: string) => f.endsWith(".json"))
+
+      const warned = new Set<string>()
+      const warnOnce = (message: string) => {
+        if (warned.has(message)) return
+        warned.add(message)
+        logger.warn(message)
+      }
 
       for (const file of files) {
         const raw = JSON.parse(
@@ -68,7 +99,9 @@ export function conferencesLoader(): Loader {
               editions: (instance.editions ?? []).map((ed) => ({
                 startDate: ed.startDate,
                 endDate: ed.endDate,
-                ...(ed.location ? { location: ed.location } : {}),
+                ...(ed.location
+                  ? { location: enrichLocation(ed.location, warnOnce) }
+                  : {}),
                 isOnline: ed.isOnline === true,
               })),
               ...(raw.orgType ? { orgType: raw.orgType } : {}),
