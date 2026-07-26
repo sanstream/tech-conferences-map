@@ -10,6 +10,16 @@
         "ux",
         "research",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-05-04",
+          "endDate": "2019-05-09",
+          "location": {
+            "city": "Glasgow",
+            "country": "Scotland"
+          }
+        }
       ]
     }
   ]

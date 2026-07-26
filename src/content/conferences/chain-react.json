@@ -11,6 +11,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-07-17",
+          "endDate": "2024-07-19",
+          "location": {
+            "city": "Portland, OR",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

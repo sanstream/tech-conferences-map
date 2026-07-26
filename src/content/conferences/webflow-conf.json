@@ -10,6 +10,17 @@
         "web",
         "ui-design",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-01",
+          "endDate": "2026-09-03",
+          "location": {
+            "city": "Boston",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

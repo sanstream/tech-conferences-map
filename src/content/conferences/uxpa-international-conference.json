@@ -10,6 +10,17 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-24",
+          "endDate": "2024-06-27",
+          "location": {
+            "city": "Fort Lauderdale, FL",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

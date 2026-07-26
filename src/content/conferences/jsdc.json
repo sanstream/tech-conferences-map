@@ -9,6 +9,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-11-29",
+          "endDate": "2025-11-29",
+          "location": {
+            "city": "Taipei",
+            "country": "Taiwan"
+          }
+        }
       ]
     }
   ]

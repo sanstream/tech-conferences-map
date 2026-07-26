@@ -10,6 +10,16 @@
         "web",
         "accessibility",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-28",
+          "endDate": "2026-10-30",
+          "location": {
+            "city": "Barcelona",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

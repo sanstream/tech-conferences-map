@@ -10,6 +10,29 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-16",
+          "endDate": "2024-04-16",
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 09:00–12:00 America/Los_Angeles; midday matches America/Chicago (UTC-5 on this date). Same 3-hour PT live-show format as 2025. Confidence: medium."
+        },
+        {
+          "startDate": "2025-04-15",
+          "endDate": "2025-04-15",
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 09:00–12:00 America/Los_Angeles; midday matches America/Chicago (UTC-5 on this date). devblogs.microsoft.com: 9 AM – 12 PM PT livestream."
+        },
+        {
+          "startDate": "2026-04-28",
+          "endDate": "2026-04-28",
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 09:00–12:00 America/Los_Angeles; midday matches America/Chicago (UTC-5 on this date). Same PT morning live-show pattern as prior years. Confidence: medium."
+        }
       ]
     }
   ]

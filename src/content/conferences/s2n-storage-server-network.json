@@ -12,6 +12,14 @@
       ],
       "editions": [
         {
+          "startDate": "2025-10-22",
+          "endDate": "2025-10-23",
+          "location": {
+            "city": "Regensburg",
+            "country": "Germany"
+          }
+        },
+        {
           "startDate": "2026-11-03",
           "endDate": "2026-11-04",
           "location": {

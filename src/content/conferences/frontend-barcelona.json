@@ -9,6 +9,16 @@
         "frontend",
         "web",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-12-03",
+          "endDate": "2024-12-04",
+          "location": {
+            "city": "Barcelona",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

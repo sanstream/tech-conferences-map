@@ -8,6 +8,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-07",
+          "endDate": "2026-05-17",
+          "location": {
+            "city": "Geneva",
+            "country": "Switzerland"
+          }
+        }
       ]
     }
   ]

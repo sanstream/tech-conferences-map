@@ -10,6 +10,25 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-30",
+          "endDate": "2024-10-02",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-11-03",
+          "endDate": "2025-11-05",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

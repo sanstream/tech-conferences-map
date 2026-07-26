@@ -10,6 +10,16 @@
         "ui-design",
         "ux",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2020-02-26",
+          "endDate": "2020-02-28",
+          "location": {
+            "city": "Cape Town",
+            "country": "South Africa"
+          }
+        }
       ]
     }
   ]

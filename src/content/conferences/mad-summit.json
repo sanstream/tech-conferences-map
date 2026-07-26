@@ -14,6 +14,40 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-10",
+          "endDate": "2024-06-12",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
+        },
+        {
+          "startDate": "2024-11-25",
+          "endDate": "2024-11-27",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        {
+          "startDate": "2025-06-30",
+          "endDate": "2025-07-02",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
+        },
+        {
+          "startDate": "2026-06-22",
+          "endDate": "2026-06-26",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

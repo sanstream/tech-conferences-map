@@ -10,6 +10,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-11-08",
+          "endDate": "2019-11-09",
+          "location": {
+            "city": "Moscow",
+            "country": "Russia"
+          }
+        }
       ]
     }
   ]

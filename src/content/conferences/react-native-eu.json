@@ -11,6 +11,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-05",
+          "endDate": "2024-09-06",
+          "location": {
+            "city": "Wrocław",
+            "country": "Poland"
+          }
+        }
       ]
     }
   ]

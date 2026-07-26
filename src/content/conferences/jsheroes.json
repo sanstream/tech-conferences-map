@@ -15,6 +15,22 @@
       ],
       "editions": [
         {
+          "startDate": "2024-05-23",
+          "endDate": "2024-05-24",
+          "location": {
+            "city": "Cluj-Napoca",
+            "country": "Romania"
+          }
+        },
+        {
+          "startDate": "2025-05-29",
+          "endDate": "2025-05-30",
+          "location": {
+            "city": "Cluj-Napoca",
+            "country": "Romania"
+          }
+        },
+        {
           "startDate": "2026-05-14",
           "endDate": "2026-05-15",
           "location": {

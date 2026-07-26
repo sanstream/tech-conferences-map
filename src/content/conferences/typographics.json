@@ -8,6 +8,17 @@
       "subjects": [
         "ui-design",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-27",
+          "location": {
+            "city": "New York",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

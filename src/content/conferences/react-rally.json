@@ -11,6 +11,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-08-12",
+          "endDate": "2024-08-14",
+          "location": {
+            "city": "Park City, UT",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

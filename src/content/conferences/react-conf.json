@@ -11,6 +11,26 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-05-15",
+          "endDate": "2024-05-16",
+          "location": {
+            "city": "Henderson, NV",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-10-07",
+          "endDate": "2025-10-08",
+          "location": {
+            "city": "Henderson, NV",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

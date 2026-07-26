@@ -16,6 +16,32 @@
       ],
       "editions": [
         {
+          "startDate": "2024-04-19",
+          "endDate": "2024-04-20",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          }
+        },
+        {
+          "startDate": "2024-09-19",
+          "endDate": "2024-09-20",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-10-06",
+          "endDate": "2025-10-08",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-09-16",
           "endDate": "2026-09-17",
           "location": {

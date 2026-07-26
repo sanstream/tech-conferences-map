@@ -10,6 +10,17 @@
         "information-design",
         "ui-design",
         "data-visualization"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-20",
+          "endDate": "2026-04-24",
+          "location": {
+            "city": "Berkeley",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

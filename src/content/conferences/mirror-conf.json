@@ -11,6 +11,16 @@
         "frontend",
         "web",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-10-18",
+          "endDate": "2018-10-19",
+          "location": {
+            "city": "Braga",
+            "country": "Portugal"
+          }
+        }
       ]
     }
   ]

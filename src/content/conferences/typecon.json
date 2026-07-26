@@ -9,6 +9,16 @@
       "subjects": [
         "ui-design",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-08-05",
+          "endDate": "2026-08-08",
+          "location": {
+            "city": "Portland",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

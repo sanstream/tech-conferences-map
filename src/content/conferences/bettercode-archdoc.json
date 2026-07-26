@@ -13,9 +13,25 @@
       ],
       "editions": [
         {
+          "startDate": "2024-09-30",
+          "endDate": "2024-09-30",
+          "isOnline": true,
+          "timezone": "Europe/Berlin",
+          "notes": "Online schedule 09:00–16:30 Europe/Berlin; midday matches Europe/Berlin (UTC+2 on this date). Same German daytime programme shape as 2026 edition. Confidence: medium."
+        },
+        {
+          "startDate": "2025-05-12",
+          "endDate": "2025-05-12",
+          "isOnline": true,
+          "timezone": "Europe/Berlin",
+          "notes": "Online schedule 09:00–16:30 Europe/Berlin; midday matches Europe/Berlin (UTC+2 on this date). Same German daytime programme shape as 2026 edition. Confidence: medium."
+        },
+        {
           "startDate": "2026-05-20",
           "endDate": "2026-05-20",
-          "isOnline": true
+          "isOnline": true,
+          "timezone": "Europe/Berlin",
+          "notes": "Online schedule 09:00–16:30 Europe/Berlin; midday matches Europe/Berlin (UTC+2 on this date). archdoc.bettercode.eu: 09:00 Begrüßung – 16:30 Verabschiedung."
         }
       ]
     }

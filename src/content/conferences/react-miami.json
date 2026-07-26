@@ -11,6 +11,24 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-19",
+          "endDate": "2024-04-20",
+          "location": {
+            "city": "Miami, FL",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-04-17",
+          "endDate": "2025-04-18",
+          "location": {
+            "city": "Miami, FL",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

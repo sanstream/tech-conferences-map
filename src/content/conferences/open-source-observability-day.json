@@ -10,6 +10,22 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-10-23",
+          "endDate": "2025-10-24",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–16:10 America/New_York; midday matches America/New_York (UTC-4 on this date). osoday.com/schedule: 9:00am–4:10pm; timezone inferred ET from speaker base. Confidence: medium."
+        },
+        {
+          "startDate": "2026-10-23",
+          "endDate": "2026-10-23",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–16:10 America/New_York; midday matches America/New_York (UTC-4 on this date). Same daytime pattern as 2025 OSOD schedule. Confidence: low."
+        }
       ]
     }
   ]

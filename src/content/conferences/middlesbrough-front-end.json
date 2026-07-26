@@ -10,6 +10,16 @@
         "frontend",
         "web",
         "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-07-17",
+          "endDate": "2024-07-17",
+          "location": {
+            "city": "Middlesbrough",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

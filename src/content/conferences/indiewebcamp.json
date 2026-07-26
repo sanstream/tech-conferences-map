@@ -8,6 +8,16 @@
       "subjects": [
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-13",
+          "location": {
+            "city": "San Diego",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -5,10 +5,17 @@
     {
       "id": "schema",
       "name": "Schema",
-      "url": "https://www.schema.conf",
+      "url": "https://schema.figma.com",
       "subjects": [
         "design-systems",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-10-28",
+          "endDate": "2025-10-28",
+          "isOnline": true
+        }
       ]
     }
   ]

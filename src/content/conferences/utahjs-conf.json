@@ -10,6 +10,24 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-13",
+          "endDate": "2024-09-13",
+          "location": {
+            "city": "Salt Lake City, UT",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-09-12",
+          "endDate": "2025-09-12",
+          "location": {
+            "city": "Salt Lake City, UT",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

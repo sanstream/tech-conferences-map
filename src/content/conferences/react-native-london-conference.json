@@ -11,6 +11,16 @@
         "web",
         "react",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-15",
+          "endDate": "2024-11-15",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

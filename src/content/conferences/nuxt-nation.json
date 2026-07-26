@@ -10,6 +10,15 @@
         "vue",
         "javascript",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-12",
+          "endDate": "2024-11-13",
+          "isOnline": true,
+          "timezone": "America/Halifax",
+          "notes": "Online schedule 14:00–18:00 UTC; midday matches America/Halifax (UTC-4 on this date). Same UTC afternoon window as Vue.js Nation 2025. Confidence: medium."
+        }
       ]
     }
   ]

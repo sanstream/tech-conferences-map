@@ -23,6 +23,17 @@
         "web",
         "css",
         "performance"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-20",
+          "endDate": "2024-06-21",
+          "location": {
+            "city": "Melbourne",
+            "country": "Australia"
+          },
+          "isOnline": true
+        }
       ]
     },
     {
@@ -31,6 +42,17 @@
       "url": "https://webdirections.org/dev-summit",
       "subjects": [
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-27",
+          "endDate": "2024-11-28",
+          "location": {
+            "city": "Sydney",
+            "country": "Australia"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

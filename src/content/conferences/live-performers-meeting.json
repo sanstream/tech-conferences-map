@@ -10,6 +10,16 @@
         "generative-art",
         "performance",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-22",
+          "endDate": "2026-10-25",
+          "location": {
+            "city": "Rome",
+            "country": "Italy"
+          }
+        }
       ]
     }
   ]

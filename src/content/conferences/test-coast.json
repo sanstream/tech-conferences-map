@@ -10,6 +10,32 @@
         "frontend",
         "web",
         "performance"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-25",
+          "endDate": "2024-04-25",
+          "location": {
+            "city": "Gothenburg",
+            "country": "Sweden"
+          }
+        },
+        {
+          "startDate": "2025-05-15",
+          "endDate": "2025-05-15",
+          "location": {
+            "city": "Gothenburg",
+            "country": "Sweden"
+          }
+        },
+        {
+          "startDate": "2026-05-21",
+          "endDate": "2026-05-21",
+          "location": {
+            "city": "Gothenburg",
+            "country": "Sweden"
+          }
+        }
       ]
     }
   ]

@@ -8,6 +8,16 @@
       "subjects": [
         "data-visualization",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-03-11",
+          "endDate": "2017-03-11",
+          "location": {
+            "city": "Milan",
+            "country": "Italy"
+          }
+        }
       ]
     }
   ]

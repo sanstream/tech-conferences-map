@@ -13,6 +13,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-03-22",
+          "endDate": "2024-03-22",
+          "location": {
+            "city": "Kraków",
+            "country": "Poland"
+          }
+        }
       ]
     }
   ]

@@ -13,6 +13,22 @@
       ],
       "editions": [
         {
+          "startDate": "2024-04-08",
+          "endDate": "2024-04-10",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        },
+        {
+          "startDate": "2025-04-07",
+          "endDate": "2025-04-09",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        },
+        {
           "startDate": "2027-04-13",
           "endDate": "2027-04-16",
           "location": {
@@ -32,6 +48,14 @@
         "frontend"
       ],
       "editions": [
+        {
+          "startDate": "2024-11-18",
+          "endDate": "2024-11-22",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
+        },
         {
           "startDate": "2026-11-16",
           "endDate": "2026-11-20",

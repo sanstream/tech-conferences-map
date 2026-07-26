@@ -10,6 +10,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-03",
+          "endDate": "2026-10-03",
+          "location": {
+            "city": "Kyiv",
+            "country": "Ukraine"
+          },
+          "isOnline": true
+        }
       ]
     },
     {
@@ -20,6 +31,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-15",
+          "endDate": "2024-06-15",
+          "location": {
+            "city": "Kyiv",
+            "country": "Ukraine"
+          },
+          "isOnline": true
+        }
       ]
     },
     {
@@ -31,6 +53,17 @@
         "frontend",
         "web",
         "react"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-19",
+          "endDate": "2024-10-19",
+          "location": {
+            "city": "Kyiv",
+            "country": "Ukraine"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

@@ -12,14 +12,32 @@
       ],
       "editions": [
         {
+          "startDate": "2024-11-12",
+          "endDate": "2024-11-12",
+          "isOnline": true,
+          "timezone": "Europe/London",
+          "notes": "Online schedule 07:00–16:35 UTC; midday matches Europe/London (UTC+0 on this date). xtremejs.dev/2024/schedule: 07:00 GMT welcome – 16:25/16:35 closure."
+        },
+        {
+          "startDate": "2025-11-11",
+          "endDate": "2025-11-11",
+          "isOnline": true,
+          "timezone": "Europe/London",
+          "notes": "Online schedule 07:00–16:35 UTC; midday matches Europe/London (UTC+0 on this date). xtremejs.dev/2025/schedule: same GMT timetable as 2024."
+        },
+        {
           "startDate": "2026-05-19",
           "endDate": "2026-05-19",
-          "isOnline": true
+          "isOnline": true,
+          "timezone": "UTC",
+          "notes": "Online schedule 07:00–16:35 UTC; midday matches UTC (UTC+0 on this date). XtremeJS GMT day pattern carried forward. Confidence: medium."
         },
         {
           "startDate": "2026-11-10",
           "endDate": "2026-11-10",
-          "isOnline": true
+          "isOnline": true,
+          "timezone": "Europe/London",
+          "notes": "Online schedule 07:00–16:35 UTC; midday matches Europe/London (UTC+0 on this date). XtremeJS GMT day pattern carried forward. Confidence: medium."
         }
       ]
     }

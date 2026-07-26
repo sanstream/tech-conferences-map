@@ -10,6 +10,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-18",
+          "endDate": "2024-11-20",
+          "location": {
+            "city": "Atlanta, GA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

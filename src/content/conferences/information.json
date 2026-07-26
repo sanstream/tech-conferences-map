@@ -9,6 +9,16 @@
       "subjects": [
         "data-visualization",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-11-14",
+          "endDate": "2025-11-16",
+          "location": {
+            "city": "Boston",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

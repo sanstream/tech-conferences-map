@@ -10,6 +10,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2021-04-22",
+          "endDate": "2021-04-23",
+          "isOnline": true,
+          "timezone": "America/Los_Angeles",
+          "notes": "Online schedule 09:00–17:00 America/Denver; midday matches America/Los_Angeles (UTC-7 on this date). 2021.ng-conf.org sessions: 9am–5pm MST."
+        }
       ]
     }
   ]

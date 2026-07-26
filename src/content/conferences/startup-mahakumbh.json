@@ -9,6 +9,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-03-27",
+          "endDate": "2025-03-28",
+          "location": {
+            "city": "Delhi",
+            "country": "India"
+          }
+        }
       ]
     }
   ]

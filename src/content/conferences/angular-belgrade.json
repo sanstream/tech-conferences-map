@@ -9,6 +9,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-05-23",
+          "endDate": "2024-05-24",
+          "location": {
+            "city": "Belgrade",
+            "country": "Serbia"
+          }
+        }
       ]
     }
   ]

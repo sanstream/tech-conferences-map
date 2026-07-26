@@ -10,6 +10,29 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-07-16",
+          "endDate": "2024-07-16",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–15:00 America/New_York; midday matches America/New_York (UTC-4 on this date). softwarearchitecture.live uses Eastern Time; ~09:00–15:00 day pattern. Confidence: medium."
+        },
+        {
+          "startDate": "2024-08-18",
+          "endDate": "2024-08-18",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–15:00 America/New_York; midday matches America/New_York (UTC-4 on this date). softwarearchitecture.live Eastern Time day pattern. Confidence: medium."
+        },
+        {
+          "startDate": "2025-08-05",
+          "endDate": "2025-08-06",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 08:50–15:35 America/New_York; midday matches America/New_York (UTC-4 on this date). softwarearchitecture.live 2025 schedule in Eastern Time, ~08:50–15:35."
+        }
       ]
     }
   ]

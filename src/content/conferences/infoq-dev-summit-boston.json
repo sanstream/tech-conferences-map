@@ -10,6 +10,24 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-24",
+          "endDate": "2024-06-25",
+          "location": {
+            "city": "Boston, MA",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-06-09",
+          "endDate": "2025-06-10",
+          "location": {
+            "city": "Boston, MA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "ui-design",
         "ux",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-30",
+          "endDate": "2026-10-02",
+          "location": {
+            "city": "Mexico City",
+            "country": "Mexico"
+          }
+        }
       ]
     }
   ]

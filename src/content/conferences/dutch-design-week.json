@@ -10,6 +10,16 @@
         "ui-design",
         "product-design",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-17",
+          "endDate": "2026-10-25",
+          "location": {
+            "city": "Eindhoven",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

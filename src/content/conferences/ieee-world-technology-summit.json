@@ -10,6 +10,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-12",
+          "endDate": "2024-11-14",
+          "location": {
+            "city": "San Jose, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

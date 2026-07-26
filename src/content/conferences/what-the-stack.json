@@ -10,6 +10,16 @@
         "javascript",
         "frontend",
         "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-14",
+          "endDate": "2024-09-14",
+          "location": {
+            "city": "Skopje",
+            "country": "North Macedonia"
+          }
+        }
       ]
     }
   ]

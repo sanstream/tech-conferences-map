@@ -16,6 +16,23 @@
       ],
       "editions": [
         {
+          "startDate": "2024-06-13",
+          "endDate": "2024-06-14",
+          "location": {
+            "city": "Helsinki",
+            "country": "Finland"
+          }
+        },
+        {
+          "startDate": "2025-05-27",
+          "endDate": "2025-05-28",
+          "location": {
+            "city": "Espoo",
+            "country": "Finland"
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-06-08",
           "endDate": "2026-06-09",
           "location": {

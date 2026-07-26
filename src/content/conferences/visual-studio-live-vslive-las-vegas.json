@@ -10,6 +10,16 @@
         "typescript",
         "javascript",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-03-03",
+          "endDate": "2024-03-08",
+          "location": {
+            "city": "Las Vegas, NV",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

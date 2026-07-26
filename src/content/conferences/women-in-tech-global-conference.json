@@ -10,6 +10,13 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-23",
+          "endDate": "2024-04-25",
+          "isOnline": true
+        }
       ]
     }
   ]

@@ -9,6 +9,17 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-10-09",
+          "endDate": "2025-10-09",
+          "location": {
+            "city": "Washington, DC",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

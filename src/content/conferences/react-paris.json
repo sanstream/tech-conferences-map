@@ -17,6 +17,24 @@
       ],
       "editions": [
         {
+          "startDate": "2024-03-22",
+          "endDate": "2024-03-22",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-03-20",
+          "endDate": "2025-03-21",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-03-26",
           "endDate": "2026-03-27",
           "location": {

@@ -10,6 +10,16 @@
         "css",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-12-04",
+          "endDate": "2019-12-04",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          }
+        }
       ]
     }
   ]

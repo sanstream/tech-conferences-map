@@ -14,6 +14,16 @@
         "web",
         "product-design",
         "accessibility"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-06-12",
+          "endDate": "2025-06-12",
+          "location": {
+            "city": "Strasbourg",
+            "country": "France"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,17 @@
         "generative-art",
         "javascript",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2020-10-02",
+          "endDate": "2020-10-08",
+          "location": {
+            "city": "Frankfurt",
+            "country": "Germany"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

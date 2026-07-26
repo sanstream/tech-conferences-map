@@ -9,6 +9,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-08-25",
+          "endDate": "2026-08-30",
+          "location": {
+            "city": "Montreal",
+            "country": "Canada"
+          }
+        }
       ]
     }
   ]

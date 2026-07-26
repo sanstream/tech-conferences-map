@@ -10,6 +10,32 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-11",
+          "endDate": "2024-06-14",
+          "location": {
+            "city": "Stockholm",
+            "country": "Sweden"
+          }
+        },
+        {
+          "startDate": "2025-06-03",
+          "endDate": "2025-06-06",
+          "location": {
+            "city": "Edinburgh",
+            "country": "U.K."
+          }
+        },
+        {
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-18",
+          "location": {
+            "city": "Oslo",
+            "country": "Norway"
+          }
+        }
       ]
     }
   ]

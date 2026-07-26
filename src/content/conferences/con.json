@@ -9,6 +9,15 @@
         "web",
         "javascript",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2021-05-15",
+          "endDate": "2021-05-22",
+          "isOnline": true,
+          "timezone": "America/Adak",
+          "notes": "Online schedule 12:00–15:45 America/Los_Angeles; midday matches America/Adak (UTC-9 on this date). bangbangcon.com/2021/program.html opening day: 12:00–15:00 sessions PDT."
+        }
       ]
     }
   ]

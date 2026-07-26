@@ -9,6 +9,16 @@
         "ui-design",
         "product-design",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-12",
+          "endDate": "2026-09-20",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

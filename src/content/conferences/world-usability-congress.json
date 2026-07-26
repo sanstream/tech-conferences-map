@@ -10,6 +10,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2021-10-13",
+          "endDate": "2021-10-14",
+          "location": {
+            "city": "Graz",
+            "country": "Austria"
+          }
+        }
       ]
     }
   ]

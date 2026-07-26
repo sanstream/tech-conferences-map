@@ -10,6 +10,16 @@
         "ui-design",
         "information-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-05-25",
+          "endDate": "2017-05-27",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

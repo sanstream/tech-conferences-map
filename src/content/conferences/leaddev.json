@@ -13,6 +13,15 @@
       ],
       "editions": [
         {
+          "startDate": "2025-06-16",
+          "endDate": "2025-06-17",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-06-02",
           "endDate": "2026-06-03",
           "location": {
@@ -30,6 +39,16 @@
         "web",
         "frontend",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2023-06-27",
+          "endDate": "2023-06-28",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     },
     {
@@ -42,6 +61,24 @@
         "frontend"
       ],
       "editions": [
+        {
+          "startDate": "2024-11-04",
+          "endDate": "2024-11-05",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-11-03",
+          "endDate": "2025-11-04",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "isOnline": true
+        },
         {
           "startDate": "2026-11-09",
           "endDate": "2026-11-10",

@@ -13,9 +13,25 @@
       ],
       "editions": [
         {
+          "startDate": "2024-02-20",
+          "endDate": "2024-02-22",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–16:00 America/New_York; midday matches America/New_York (UTC-5 on this date). Same ET daytime pattern as 2026 agenda (9am–3pm talks, social ~4pm). Confidence: medium."
+        },
+        {
+          "startDate": "2025-02-25",
+          "endDate": "2025-02-27",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–16:00 America/New_York; midday matches America/New_York (UTC-5 on this date). Same ET daytime pattern as 2026 agenda. Confidence: medium."
+        },
+        {
           "startDate": "2026-02-24",
           "endDate": "2026-02-25",
-          "isOnline": true
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 09:00–16:00 America/New_York; midday matches America/New_York (UTC-5 on this date). deque.com/axe-con/schedule: keynotes 9am ET, last talks 3pm, social 4pm."
         }
       ]
     }

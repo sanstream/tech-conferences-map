@@ -10,6 +10,13 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-27",
+          "endDate": "2024-06-27",
+          "isOnline": true
+        }
       ]
     }
   ]

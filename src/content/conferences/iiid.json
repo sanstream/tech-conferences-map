@@ -9,6 +9,16 @@
       "subjects": [
         "information-design",
         "data-visualization"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-05-27",
+          "endDate": "2026-05-29",
+          "location": {
+            "city": "Vienna",
+            "country": "Austria"
+          }
+        }
       ]
     }
   ]

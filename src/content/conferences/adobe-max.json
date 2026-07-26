@@ -10,6 +10,16 @@
         "ui-design",
         "creative-coding",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-11-02",
+          "endDate": "2019-11-06",
+          "location": {
+            "city": "Los Angeles, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

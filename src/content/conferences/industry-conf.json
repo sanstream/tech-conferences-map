@@ -9,6 +9,16 @@
       "subjects": [
         "product-design",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-09-08",
+          "endDate": "2025-09-10",
+          "location": {
+            "city": "Cleveland, OH",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

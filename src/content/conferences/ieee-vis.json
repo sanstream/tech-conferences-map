@@ -10,6 +10,17 @@
         "data-visualization",
         "research",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-09",
+          "endDate": "2026-11-13",
+          "location": {
+            "city": "Boston",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

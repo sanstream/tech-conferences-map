@@ -13,6 +13,14 @@
       ],
       "editions": [
         {
+          "startDate": "2024-11-01",
+          "endDate": "2024-11-01",
+          "location": {
+            "city": "Brighton",
+            "country": "U.K."
+          }
+        },
+        {
           "startDate": "2026-11-06",
           "endDate": "2026-11-06",
           "location": {

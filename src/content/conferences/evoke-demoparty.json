@@ -8,6 +8,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-08-21",
+          "endDate": "2026-08-23",
+          "location": {
+            "city": "Cologne",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "data-visualization",
         "javascript",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-04-24",
+          "endDate": "2017-04-24",
+          "location": {
+            "city": "Boston, MA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

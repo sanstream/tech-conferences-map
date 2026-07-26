@@ -10,6 +10,25 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-02-28",
+          "endDate": "2024-03-01",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-03-12",
+          "endDate": "2025-03-14",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

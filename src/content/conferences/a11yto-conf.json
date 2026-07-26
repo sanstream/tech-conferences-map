@@ -9,6 +9,17 @@
         "accessibility",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-03",
+          "endDate": "2024-10-04",
+          "location": {
+            "city": "Toronto",
+            "country": "Canada"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

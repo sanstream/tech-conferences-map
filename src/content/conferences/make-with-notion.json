@@ -10,6 +10,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-09-18",
+          "endDate": "2025-09-18",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

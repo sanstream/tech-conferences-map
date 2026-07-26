@@ -14,6 +14,23 @@
       ],
       "editions": [
         {
+          "startDate": "2024-06-19",
+          "endDate": "2024-06-22",
+          "location": {
+            "city": "Seattle, WA",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-09-18",
+          "endDate": "2025-09-19",
+          "location": {
+            "city": "Seattle, WA",
+            "country": "U.S.A."
+          }
+        },
+        {
           "startDate": "2026-06-01",
           "endDate": "2026-06-02",
           "location": {

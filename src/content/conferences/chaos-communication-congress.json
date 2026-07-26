@@ -9,6 +9,16 @@
       "subjects": [
         "web",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-12-27",
+          "endDate": "2026-12-30",
+          "location": {
+            "city": "Hamburg",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

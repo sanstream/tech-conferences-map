@@ -10,6 +10,16 @@
         "css",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2022-06-09",
+          "endDate": "2022-06-10",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

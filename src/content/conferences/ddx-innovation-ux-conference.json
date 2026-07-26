@@ -11,6 +11,16 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-03-02",
+          "endDate": "2024-03-02",
+          "location": {
+            "city": "Dubai",
+            "country": "United Arab Emirates"
+          }
+        }
       ]
     }
   ]

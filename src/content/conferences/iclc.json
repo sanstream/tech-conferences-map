@@ -9,6 +9,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2027-03-09",
+          "endDate": "2027-03-13",
+          "location": {
+            "city": "Antwerp",
+            "country": "Belgium"
+          }
+        }
       ]
     }
   ]

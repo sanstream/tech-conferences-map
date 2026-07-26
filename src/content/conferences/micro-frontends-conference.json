@@ -11,6 +11,15 @@
         "javascript",
         "web",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-17",
+          "endDate": "2024-06-17",
+          "isOnline": true,
+          "timezone": "Europe/Moscow",
+          "notes": "Online schedule 07:00–16:20 Europe/Berlin; midday matches Europe/Moscow (UTC+3 on this date). conference.microfrontends.cloud/2024/schedule: 07:00–16:20 CEST."
+        }
       ]
     }
   ]

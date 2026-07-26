@@ -9,6 +9,24 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-09",
+          "endDate": "2024-06-09",
+          "location": {
+            "city": "Yerevan",
+            "country": "Armenia"
+          }
+        },
+        {
+          "startDate": "2025-10-25",
+          "endDate": "2025-10-25",
+          "location": {
+            "city": "Yerevan",
+            "country": "Armenia"
+          }
+        }
       ]
     },
     {
@@ -19,6 +37,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-06-14",
+          "endDate": "2019-06-16",
+          "location": {
+            "city": "Singapore",
+            "country": "Singapore"
+          }
+        }
       ]
     },
     {
@@ -29,6 +57,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2016-12-01",
+          "endDate": "2016-12-01",
+          "location": {
+            "city": "Melbourne",
+            "country": "Australia"
+          }
+        }
       ]
     },
     {
@@ -41,6 +79,16 @@
         "web",
         "css",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-26",
+          "endDate": "2024-06-28",
+          "location": {
+            "city": "Budapest",
+            "country": "Hungary"
+          }
+        }
       ]
     },
     {
@@ -51,6 +99,32 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-05",
+          "endDate": "2024-09-07",
+          "location": {
+            "city": "Santiago",
+            "country": "Chile"
+          }
+        },
+        {
+          "startDate": "2024-12-05",
+          "endDate": "2024-12-07",
+          "location": {
+            "city": "Santiago",
+            "country": "Chile"
+          }
+        },
+        {
+          "startDate": "2025-10-24",
+          "endDate": "2025-10-25",
+          "location": {
+            "city": "Santiago",
+            "country": "Chile"
+          }
+        }
       ]
     },
     {
@@ -61,6 +135,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-03-01",
+          "endDate": "2025-03-01",
+          "location": {
+            "city": "Madrid",
+            "country": "Spain"
+          },
+          "isOnline": true
+        }
       ]
     },
     {
@@ -71,6 +156,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-06-01",
+          "endDate": "2019-06-02",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        }
       ]
     },
     {
@@ -81,6 +176,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2020-02-05",
+          "endDate": "2020-02-07",
+          "location": {
+            "city": "Honolulu, HI",
+            "country": "U.S.A."
+          }
+        }
       ]
     },
     {
@@ -92,6 +197,17 @@
         "frontend",
         "web",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-25",
+          "endDate": "2024-09-26",
+          "location": {
+            "city": "Dublin",
+            "country": "Ireland"
+          },
+          "isOnline": true
+        }
       ]
     },
     {
@@ -102,6 +218,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-11-30",
+          "endDate": "2019-12-01",
+          "location": {
+            "city": "Tokyo",
+            "country": "Japan"
+          }
+        }
       ]
     },
     {
@@ -112,6 +238,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2022-09-16",
+          "endDate": "2022-09-17",
+          "location": {
+            "city": "Seoul",
+            "country": "Korea"
+          }
+        }
       ]
     },
     {
@@ -122,6 +258,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-31",
+          "endDate": "2024-11-01",
+          "location": {
+            "city": "Guadalajara",
+            "country": "Mexico"
+          }
+        }
       ]
     }
   ]

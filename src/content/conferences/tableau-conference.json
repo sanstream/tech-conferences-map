@@ -8,6 +8,15 @@
       "url": "https://www.tableau.com/events/conference",
       "subjects": [
         "data-visualization"
+      ],
+      "editions": [
+        {
+          "startDate": "2020-10-06",
+          "endDate": "2020-10-09",
+          "isOnline": true,
+          "timezone": "America/Los_Angeles",
+          "notes": "Online schedule 09:00–15:00 America/Los_Angeles; midday matches America/Los_Angeles (UTC-7 on this date). Tableau: Americas 9am–3pm PDT (Europe/APAC had separate regional windows)."
+        }
       ]
     }
   ]

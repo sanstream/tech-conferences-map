@@ -19,6 +19,8 @@ type Edition = {
   endDate: string
   location?: Location
   isOnline?: boolean
+  timezone?: string
+  notes?: string
 }
 
 type OrgType = "for-profit" | "non-profit"
@@ -103,6 +105,8 @@ export function conferencesLoader(): Loader {
                   ? { location: enrichLocation(ed.location, warnOnce) }
                   : {}),
                 isOnline: ed.isOnline === true,
+                ...(ed.timezone ? { timezone: ed.timezone } : {}),
+                ...(ed.notes ? { notes: ed.notes } : {}),
               })),
               ...(raw.orgType ? { orgType: raw.orgType } : {}),
             },

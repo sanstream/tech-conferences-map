@@ -9,6 +9,17 @@
         "ux",
         "product-design",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-20",
+          "endDate": "2026-04-22",
+          "location": {
+            "city": "Leiden",
+            "country": "Netherlands"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

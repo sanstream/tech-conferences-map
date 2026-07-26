@@ -9,6 +9,16 @@
         "frontend",
         "web",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-05-17",
+          "endDate": "2019-05-18",
+          "location": {
+            "city": "Utrecht",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

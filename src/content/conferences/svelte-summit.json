@@ -9,6 +9,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-19",
+          "endDate": "2024-10-19",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 15:00–21:00 Europe/Berlin; midday matches America/New_York (UTC-4 on this date). sveltesummit.com: starts 3PM CET, lasts about 5–6 hours. Confidence: medium."
+        }
       ]
     }
   ]

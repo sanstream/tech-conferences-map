@@ -11,6 +11,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-01-29",
+          "endDate": "2025-01-30",
+          "isOnline": true,
+          "timezone": "America/Halifax",
+          "notes": "Online schedule 14:00–18:00 UTC; midday matches America/Halifax (UTC-4 on this date). vuejsnation.com/2025 schedule: 14:00–18:00 UTC."
+        }
       ]
     }
   ]

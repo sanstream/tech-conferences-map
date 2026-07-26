@@ -10,6 +10,13 @@
         "ux",
         "product-design",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-03-10",
+          "endDate": "2026-03-12",
+          "isOnline": true
+        }
       ]
     }
   ]

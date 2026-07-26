@@ -11,6 +11,16 @@
         "frontend",
         "javascript",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-09-21",
+          "endDate": "2018-09-22",
+          "location": {
+            "city": "Prague",
+            "country": "Czech Republic"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "frontend",
         "web",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-08-29",
+          "endDate": "2019-08-30",
+          "location": {
+            "city": "Zurich",
+            "country": "Switzerland"
+          }
+        }
       ]
     }
   ]

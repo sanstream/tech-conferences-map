@@ -17,6 +17,22 @@
       ],
       "editions": [
         {
+          "startDate": "2024-06-14",
+          "endDate": "2024-06-14",
+          "location": {
+            "city": "Bristol",
+            "country": "U.K."
+          }
+        },
+        {
+          "startDate": "2025-06-20",
+          "endDate": "2025-06-20",
+          "location": {
+            "city": "Bristol",
+            "country": "U.K."
+          }
+        },
+        {
           "startDate": "2026-06-19",
           "endDate": "2026-06-19",
           "location": {

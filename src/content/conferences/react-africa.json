@@ -10,6 +10,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-29",
+          "endDate": "2024-11-29",
+          "location": {
+            "city": "Casablanca",
+            "country": "Morocco"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

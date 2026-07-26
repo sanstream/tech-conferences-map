@@ -9,6 +9,13 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-10",
+          "endDate": "2024-10-11",
+          "isOnline": true
+        }
       ]
     }
   ]

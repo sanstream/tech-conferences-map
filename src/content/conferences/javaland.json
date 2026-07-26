@@ -10,6 +10,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-04-01",
+          "endDate": "2025-04-03",
+          "location": {
+            "city": "Nürburgring",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

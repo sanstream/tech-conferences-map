@@ -9,6 +9,16 @@
       "subjects": [
         "data-visualization",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-08",
+          "endDate": "2026-06-12",
+          "location": {
+            "city": "Nottingham",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

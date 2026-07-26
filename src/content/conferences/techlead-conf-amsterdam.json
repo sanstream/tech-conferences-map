@@ -13,6 +13,20 @@
       ],
       "editions": [
         {
+          "startDate": "2024-06-15",
+          "endDate": "2024-06-19",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 16:00–21:00 Europe/Berlin; midday matches America/New_York (UTC-4 on this date). GitNation remote track default afternoon CEST ( Tito lists multi-day 10am–9pm window). Confidence: low."
+        },
+        {
+          "startDate": "2025-09-18",
+          "endDate": "2025-09-19",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 16:00–21:00 Europe/Berlin; midday matches America/New_York (UTC-4 on this date). GitNation remote track default afternoon CEST. Confidence: low."
+        },
+        {
           "startDate": "2026-06-11",
           "endDate": "2026-06-12",
           "location": {

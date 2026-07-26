@@ -12,6 +12,17 @@
         "web",
         "typescript",
         "react"
+      ],
+      "editions": [
+        {
+          "startDate": "2023-03-20",
+          "endDate": "2023-03-23",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

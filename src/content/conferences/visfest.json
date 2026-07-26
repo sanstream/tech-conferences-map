@@ -7,6 +7,16 @@
       "url": "https://visfest.com",
       "subjects": [
         "data-visualization"
+      ],
+      "editions": [
+        {
+          "startDate": "2016-10-16",
+          "endDate": "2016-10-17",
+          "location": {
+            "city": "San Francisco",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

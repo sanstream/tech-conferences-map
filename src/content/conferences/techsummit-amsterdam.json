@@ -10,6 +10,24 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-09-16",
+          "endDate": "2025-09-16",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        },
+        {
+          "startDate": "2026-09-30",
+          "endDate": "2026-09-30",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

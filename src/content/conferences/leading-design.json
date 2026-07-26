@@ -11,6 +11,16 @@
         "product-design",
         "design-systems",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2020-03-04",
+          "endDate": "2020-03-06",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-02-15",
+          "endDate": "2024-02-16",
+          "isOnline": true,
+          "timezone": "America/New_York",
+          "notes": "Online schedule 16:00–21:00 Europe/Berlin; midday matches America/New_York (UTC-5 on this date). GitNation remote default afternoon CET window (as Node Congress). Confidence: low."
+        }
       ]
     }
   ]

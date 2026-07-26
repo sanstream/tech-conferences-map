@@ -9,6 +9,16 @@
       "subjects": [
         "ui-design",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-04-03",
+          "endDate": "2019-04-05",
+          "location": {
+            "city": "Dublin",
+            "country": "Ireland"
+          }
+        }
       ]
     }
   ]

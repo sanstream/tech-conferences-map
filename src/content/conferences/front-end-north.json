@@ -8,6 +8,16 @@
       "url": "https://frontendnorth.com",
       "subjects": [
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-07-10",
+          "endDate": "2025-07-10",
+          "location": {
+            "city": "Sheffield",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

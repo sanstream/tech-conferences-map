@@ -11,6 +11,17 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-23",
+          "endDate": "2024-10-25",
+          "location": {
+            "city": "Copenhagen",
+            "country": "Denmark"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

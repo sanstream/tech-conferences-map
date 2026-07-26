@@ -12,6 +12,15 @@
         "web",
         "css",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-24",
+          "endDate": "2024-10-24",
+          "isOnline": true,
+          "timezone": "America/Sao_Paulo",
+          "notes": "Online schedule 09:00–13:00 America/New_York; midday matches America/Sao_Paulo (UTC-3 on this date). JetBrains blog: 9:00 am EDT; greymatter lists 14:00–18:00 GMT (= 09:00–13:00 EDT)."
+        }
       ]
     }
   ]

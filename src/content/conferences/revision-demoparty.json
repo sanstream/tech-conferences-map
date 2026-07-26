@@ -8,6 +8,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-03",
+          "endDate": "2026-04-06",
+          "location": {
+            "city": "Saarbrücken",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

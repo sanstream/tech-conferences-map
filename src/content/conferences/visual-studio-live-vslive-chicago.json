@@ -10,6 +10,16 @@
         "typescript",
         "javascript",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-29",
+          "endDate": "2024-05-03",
+          "location": {
+            "city": "Chicago, IL",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

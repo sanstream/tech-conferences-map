@@ -53,6 +53,14 @@
       ],
       "editions": [
         {
+          "startDate": "2025-04-14",
+          "endDate": "2025-04-14",
+          "location": {
+            "city": "Rome",
+            "country": "Italy"
+          }
+        },
+        {
           "startDate": "2026-03-31",
           "endDate": "2026-03-31",
           "location": {

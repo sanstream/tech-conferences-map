@@ -14,6 +14,14 @@
       ],
       "editions": [
         {
+          "startDate": "2025-07-03",
+          "endDate": "2025-07-05",
+          "location": {
+            "city": "Bangalore",
+            "country": "India"
+          }
+        },
+        {
           "startDate": "2026-07-02",
           "endDate": "2026-07-03",
           "location": {

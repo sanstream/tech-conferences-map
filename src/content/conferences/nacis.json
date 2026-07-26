@@ -9,6 +9,16 @@
       "subjects": [
         "data-visualization",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-21",
+          "endDate": "2026-10-24",
+          "location": {
+            "city": "Milwaukee",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "ui-design",
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-04-25",
+          "endDate": "2019-04-27",
+          "location": {
+            "city": "Barcelona",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

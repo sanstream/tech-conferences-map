@@ -11,6 +11,13 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-08-17",
+          "endDate": "2026-08-28",
+          "isOnline": true
+        }
       ]
     }
   ]

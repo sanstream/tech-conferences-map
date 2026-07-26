@@ -10,6 +10,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-04-17",
+          "endDate": "2024-04-18",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,17 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-14",
+          "endDate": "2024-11-15",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

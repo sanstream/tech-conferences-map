@@ -11,6 +11,16 @@
         "web",
         "javascript",
         "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2023-09-21",
+          "endDate": "2023-09-22",
+          "location": {
+            "city": "Utrecht",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

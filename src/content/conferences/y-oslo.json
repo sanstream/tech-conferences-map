@@ -10,6 +10,17 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-10-27",
+          "endDate": "2025-10-28",
+          "location": {
+            "city": "Oslo",
+            "country": "Norway"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

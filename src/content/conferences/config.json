@@ -11,6 +11,26 @@
         "ux",
         "design-systems",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-05-06",
+          "endDate": "2025-05-08",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-05-14",
+          "endDate": "2025-05-14",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

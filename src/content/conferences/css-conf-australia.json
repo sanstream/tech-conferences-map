@@ -9,6 +9,16 @@
         "css",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-03-20",
+          "endDate": "2018-03-20",
+          "location": {
+            "city": "Melbourne",
+            "country": "Australia"
+          }
+        }
       ]
     }
   ]

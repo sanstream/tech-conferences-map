@@ -9,6 +9,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-26",
+          "endDate": "2026-03-01",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

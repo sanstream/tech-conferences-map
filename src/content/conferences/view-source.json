@@ -10,6 +10,16 @@
         "web",
         "frontend",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-10-27",
+          "endDate": "2017-10-27",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

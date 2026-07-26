@@ -11,6 +11,16 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-06-25",
+          "endDate": "2025-06-26",
+          "location": {
+            "city": "Dortmund",
+            "country": "Germany"
+          }
+        }
       ]
     }
   ]

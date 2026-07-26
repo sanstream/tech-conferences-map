@@ -11,6 +11,16 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-09-12",
+          "endDate": "2018-09-14",
+          "location": {
+            "city": "Cambridge",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

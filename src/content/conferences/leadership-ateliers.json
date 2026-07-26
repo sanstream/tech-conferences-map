@@ -9,6 +9,16 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-04-23",
+          "endDate": "2025-04-24",
+          "location": {
+            "city": "Lisbon",
+            "country": "Portugal"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "ux",
         "research",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2022-09-08",
+          "endDate": "2022-09-09",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

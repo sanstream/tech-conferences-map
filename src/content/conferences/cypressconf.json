@@ -10,6 +10,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-22",
+          "endDate": "2024-10-23",
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 14:00–22:15 Europe/London; midday matches America/Chicago (UTC-5 on this date). Ministry of Testing listing: 14:00–22:15 BST."
+        }
       ]
     }
   ]

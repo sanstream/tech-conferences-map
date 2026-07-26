@@ -9,6 +9,17 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-05",
+          "endDate": "2024-09-05",
+          "location": {
+            "city": "Karlsruhe",
+            "country": "Germany"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

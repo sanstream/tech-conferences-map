@@ -11,6 +11,16 @@
         "frontend",
         "web",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-01-31",
+          "endDate": "2025-01-31",
+          "location": {
+            "city": "Phoenix, AZ",
+            "country": "U.S.A."
+          }
+        }
       ]
     },
     {

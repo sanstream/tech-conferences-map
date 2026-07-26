@@ -10,6 +10,17 @@
         "web",
         "javascript",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2022-11-09",
+          "endDate": "2022-11-10",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

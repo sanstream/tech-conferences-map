@@ -8,6 +8,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-04-18",
+          "endDate": "2018-04-21",
+          "location": {
+            "city": "Belgrade",
+            "country": "Serbia"
+          }
+        }
       ]
     }
   ]

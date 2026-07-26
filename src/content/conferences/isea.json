@@ -10,6 +10,16 @@
         "creative-coding",
         "generative-art",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-15",
+          "location": {
+            "city": "Dubai",
+            "country": "United Arab Emirates"
+          }
+        }
       ]
     }
   ]

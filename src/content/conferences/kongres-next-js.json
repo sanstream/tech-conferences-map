@@ -9,6 +9,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-02-02",
+          "endDate": "2024-02-02",
+          "location": {
+            "city": "Warsaw",
+            "country": "Poland"
+          }
+        }
       ]
     }
   ]

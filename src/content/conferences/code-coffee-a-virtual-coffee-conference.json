@@ -13,6 +13,15 @@
         "ui-design",
         "product-design",
         "accessibility"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-04-25",
+          "endDate": "2025-04-25",
+          "isOnline": true,
+          "timezone": "America/Denver",
+          "notes": "Online schedule 11:00–16:45 America/New_York; midday matches America/Denver (UTC-6 on this date). cfe.dev: starts 11am ET; closing Frontend Friday Feud ~4:45pm ET."
+        }
       ]
     }
   ]

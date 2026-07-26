@@ -14,6 +14,16 @@
         "javascript",
         "ux",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-01-25",
+          "endDate": "2024-01-26",
+          "location": {
+            "city": "St. Petersburg, FL",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

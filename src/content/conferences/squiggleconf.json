@@ -11,6 +11,24 @@
         "tooling",
         "frontend",
         "typescript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-03",
+          "endDate": "2024-10-04",
+          "location": {
+            "city": "Boston, MA",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-09-18",
+          "endDate": "2025-09-19",
+          "location": {
+            "city": "Boston, MA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

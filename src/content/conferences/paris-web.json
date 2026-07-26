@@ -8,6 +8,16 @@
       "url": "https://www.paris-web.fr",
       "subjects": [
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-09-26",
+          "endDate": "2024-09-28",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          }
+        }
       ]
     }
   ]

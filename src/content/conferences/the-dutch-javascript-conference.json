@@ -9,6 +9,16 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-09-26",
+          "endDate": "2025-09-28",
+          "location": {
+            "city": "Amsterdam",
+            "country": "Netherlands"
+          }
+        }
       ]
     }
   ]

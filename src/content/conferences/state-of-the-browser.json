@@ -9,6 +9,17 @@
         "web",
         "frontend",
         "browsers"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-02-28",
+          "endDate": "2026-02-28",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

@@ -9,6 +9,16 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-05-20",
+          "endDate": "2025-05-20",
+          "location": {
+            "city": "Tel Aviv",
+            "country": "Israel"
+          }
+        }
       ]
     }
   ]

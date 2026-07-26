@@ -10,6 +10,15 @@
         "web",
         "frontend",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-10",
+          "endDate": "2024-06-14",
+          "isOnline": true,
+          "timezone": "UTC",
+          "notes": "Online schedule 10:00–19:00 Europe/Berlin; midday matches UTC (UTC+0 on this date). 2024.platformcon.com: talk days 10:00 AM–07:00 PM CEST (EMEA + Americas kickoffs)."
+        }
       ]
     }
   ]

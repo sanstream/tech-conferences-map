@@ -9,6 +9,16 @@
       "subjects": [
         "data-visualization",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-04-14",
+          "endDate": "2026-04-17",
+          "location": {
+            "city": "Cambridge",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

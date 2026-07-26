@@ -11,6 +11,13 @@
         "ux",
         "web",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-09-24",
+          "endDate": "2026-09-24",
+          "isOnline": true
+        }
       ]
     }
   ]

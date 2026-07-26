@@ -10,6 +10,16 @@
         "ui-design",
         "design-systems",
         "open-source"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-10-08",
+          "endDate": "2025-10-10",
+          "location": {
+            "city": "Madrid",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

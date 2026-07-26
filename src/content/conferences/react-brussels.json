@@ -10,6 +10,17 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-18",
+          "endDate": "2024-10-18",
+          "location": {
+            "city": "Brussels",
+            "country": "Belgium"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

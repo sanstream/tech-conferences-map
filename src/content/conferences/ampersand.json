@@ -10,6 +10,16 @@
         "ui-design",
         "web",
         "css"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-06-29",
+          "endDate": "2018-06-29",
+          "location": {
+            "city": "Brighton",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,16 @@
         "web",
         "frontend",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-02",
+          "endDate": "2024-10-03",
+          "location": {
+            "city": "San Francisco",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

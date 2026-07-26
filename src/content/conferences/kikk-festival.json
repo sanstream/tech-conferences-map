@@ -9,6 +9,16 @@
         "creative-coding",
         "generative-art",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-10-22",
+          "endDate": "2026-10-25",
+          "location": {
+            "city": "Namur",
+            "country": "Belgium"
+          }
+        }
       ]
     }
   ]

@@ -10,6 +10,17 @@
         "accessibility",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-13",
+          "endDate": "2024-11-15",
+          "location": {
+            "city": "Vilnius",
+            "country": "Lithuania"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

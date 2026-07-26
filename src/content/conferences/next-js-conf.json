@@ -11,6 +11,15 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2023-10-26",
+          "endDate": "2023-10-26",
+          "isOnline": true,
+          "timezone": "America/Los_Angeles",
+          "notes": "Online schedule 09:00–16:30 America/Los_Angeles; midday matches America/Los_Angeles (UTC-7 on this date). Vercel Next.js Conf main-stage pattern ~9:00–16:30 PT (excl. happy hour). Confidence: medium."
+        }
       ]
     }
   ]

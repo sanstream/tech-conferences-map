@@ -8,6 +8,16 @@
       "subjects": [
         "data-visualization",
         "information-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-11-29",
+          "endDate": "2018-11-30",
+          "location": {
+            "city": "Miami",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

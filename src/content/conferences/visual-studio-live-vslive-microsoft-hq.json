@@ -10,6 +10,16 @@
         "typescript",
         "javascript",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-08-05",
+          "endDate": "2024-08-09",
+          "location": {
+            "city": "Redmond, WA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

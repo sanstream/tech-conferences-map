@@ -9,6 +9,16 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-24",
+          "endDate": "2024-10-24",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

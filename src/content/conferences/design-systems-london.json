@@ -10,6 +10,16 @@
         "design-systems",
         "ux",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-11-15",
+          "endDate": "2018-11-16",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        }
       ]
     }
   ]

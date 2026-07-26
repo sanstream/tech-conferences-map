@@ -44,6 +44,15 @@
       ],
       "editions": [
         {
+          "startDate": "2024-10-28",
+          "endDate": "2024-10-31",
+          "location": {
+            "city": "Antwerp",
+            "country": "Belgium"
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-10-12",
           "endDate": "2026-10-15",
           "location": {
@@ -68,6 +77,24 @@
         "product-design"
       ],
       "editions": [
+        {
+          "startDate": "2024-09-09",
+          "endDate": "2024-09-11",
+          "location": {
+            "city": "Freiburg",
+            "country": "Germany"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-09-08",
+          "endDate": "2025-09-11",
+          "location": {
+            "city": "Freiburg",
+            "country": "Germany"
+          },
+          "isOnline": true
+        },
         {
           "startDate": "2026-09-07",
           "endDate": "2026-09-10",

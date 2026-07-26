@@ -10,6 +10,16 @@
         "ui-design",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-06-03",
+          "endDate": "2017-06-03",
+          "location": {
+            "city": "Faenza",
+            "country": "Italy"
+          }
+        }
       ]
     }
   ]

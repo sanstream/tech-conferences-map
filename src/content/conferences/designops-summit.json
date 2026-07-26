@@ -11,6 +11,16 @@
         "ux",
         "product-design",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-11-06",
+          "endDate": "2017-11-08",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

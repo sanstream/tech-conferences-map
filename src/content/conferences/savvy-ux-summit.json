@@ -11,6 +11,15 @@
         "ui-design",
         "product-design",
         "design-systems"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-11-07",
+          "endDate": "2024-11-08",
+          "isOnline": true,
+          "timezone": "Asia/Kolkata",
+          "notes": "Online schedule 13:00–18:00 Asia/Tokyo; midday matches Asia/Kolkata (UTC+5:30 on this date). savvyuxsummit.com: starts 1 PM JST; end estimated ~18:00 for keynote day. Confidence: medium."
+        }
       ]
     }
   ]

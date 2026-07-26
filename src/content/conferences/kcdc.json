@@ -9,6 +9,24 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-26",
+          "endDate": "2024-06-28",
+          "location": {
+            "city": "Kansas City, MO",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-08-13",
+          "endDate": "2025-08-16",
+          "location": {
+            "city": "Kansas City, KS",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

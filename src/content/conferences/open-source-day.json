@@ -9,6 +9,26 @@
         "javascript",
         "frontend",
         "web"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-03-07",
+          "endDate": "2024-03-08",
+          "location": {
+            "city": "Florence",
+            "country": "Italy"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-03-21",
+          "endDate": "2025-03-21",
+          "location": {
+            "city": "Florence",
+            "country": "Italy"
+          },
+          "isOnline": true
+        }
       ]
     }
   ]

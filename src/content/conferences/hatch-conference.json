@@ -13,6 +13,15 @@
       ],
       "editions": [
         {
+          "startDate": "2024-09-04",
+          "endDate": "2024-09-06",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "isOnline": true
+        },
+        {
           "startDate": "2026-09-16",
           "endDate": "2026-09-18",
           "location": {

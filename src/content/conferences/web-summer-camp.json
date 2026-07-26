@@ -17,6 +17,22 @@
       ],
       "editions": [
         {
+          "startDate": "2024-07-04",
+          "endDate": "2024-07-06",
+          "location": {
+            "city": "Opatija",
+            "country": "Croatia"
+          }
+        },
+        {
+          "startDate": "2025-07-03",
+          "endDate": "2025-07-05",
+          "location": {
+            "city": "Opatija",
+            "country": "Croatia"
+          }
+        },
+        {
           "startDate": "2026-07-02",
           "endDate": "2026-07-04",
           "location": {

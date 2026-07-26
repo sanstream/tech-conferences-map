@@ -12,6 +12,22 @@
       ],
       "editions": [
         {
+          "startDate": "2024-06-07",
+          "endDate": "2024-06-08",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
+        },
+        {
+          "startDate": "2025-06-27",
+          "endDate": "2025-06-28",
+          "location": {
+            "city": "Munich",
+            "country": "Germany"
+          }
+        },
+        {
           "startDate": "2026-06-12",
           "endDate": "2026-06-13",
           "location": {

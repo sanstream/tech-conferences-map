@@ -9,6 +9,24 @@
         "javascript",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-06-08",
+          "endDate": "2024-06-08",
+          "location": {
+            "city": "Bozeman, MT",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2025-08-02",
+          "endDate": "2025-08-02",
+          "location": {
+            "city": "Bozeman, MT",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -9,6 +9,15 @@
         "web",
         "frontend",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-05-09",
+          "endDate": "2024-05-09",
+          "isOnline": true,
+          "timezone": "America/Denver",
+          "notes": "Online schedule 15:00–20:35 UTC; midday matches America/Denver (UTC-6 on this date). conf.11ty.dev schedule: Kickoff 15:00 UTC, wrap-up 20:35 UTC."
+        }
       ]
     }
   ]

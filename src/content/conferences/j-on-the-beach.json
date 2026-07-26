@@ -12,6 +12,32 @@
         "ux",
         "ui-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-05-08",
+          "endDate": "2024-05-10",
+          "location": {
+            "city": "Malaga",
+            "country": "Spain"
+          }
+        },
+        {
+          "startDate": "2025-05-21",
+          "endDate": "2025-05-23",
+          "location": {
+            "city": "Malaga",
+            "country": "Spain"
+          }
+        },
+        {
+          "startDate": "2026-10-29",
+          "endDate": "2026-10-30",
+          "location": {
+            "city": "Malaga",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

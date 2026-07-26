@@ -17,7 +17,9 @@
         {
           "startDate": "2026-12-01",
           "endDate": "2026-12-01",
-          "isOnline": true
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 10:30–16:00 America/New_York; midday matches America/Chicago (UTC-6 on this date). fitc.ca/event/slai26: 10:30 A.M. to 4:00 P.M. Eastern."
         }
       ]
     },

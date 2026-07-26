@@ -9,6 +9,16 @@
       "subjects": [
         "creative-coding",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2027-06-22",
+          "endDate": "2027-06-25",
+          "location": {
+            "city": "Paris",
+            "country": "France"
+          }
+        }
       ]
     }
   ]

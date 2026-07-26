@@ -11,6 +11,16 @@
         "ui-design",
         "frontend",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-12-05",
+          "endDate": "2024-12-06",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

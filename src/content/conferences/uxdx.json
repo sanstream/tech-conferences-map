@@ -11,6 +11,26 @@
         "product-design",
         "design-systems",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-09",
+          "endDate": "2024-10-11",
+          "location": {
+            "city": "Dublin",
+            "country": "Ireland"
+          },
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-05-12",
+          "endDate": "2025-05-14",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          },
+          "isOnline": true
+        }
       ]
     },
     {

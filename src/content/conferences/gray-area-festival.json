@@ -9,6 +9,16 @@
       "subjects": [
         "creative-coding",
         "generative-art"
+      ],
+      "editions": [
+        {
+          "startDate": "2025-09-11",
+          "endDate": "2025-09-14",
+          "location": {
+            "city": "San Francisco",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

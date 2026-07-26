@@ -10,6 +10,16 @@
         "information-design",
         "data-visualization",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-08-25",
+          "endDate": "2026-08-28",
+          "location": {
+            "city": "Tallinn",
+            "country": "Estonia"
+          }
+        }
       ]
     }
   ]

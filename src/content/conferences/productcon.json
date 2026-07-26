@@ -9,6 +9,16 @@
       "subjects": [
         "product-design",
         "ux"
+      ],
+      "editions": [
+        {
+          "startDate": "2021-04-08",
+          "endDate": "2021-04-08",
+          "location": {
+            "city": "San Francisco, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

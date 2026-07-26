@@ -9,6 +9,16 @@
         "creative-coding",
         "generative-art",
         "data-visualization"
+      ],
+      "editions": [
+        {
+          "startDate": "2017-06-26",
+          "endDate": "2017-06-29",
+          "location": {
+            "city": "Minneapolis, MN",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

@@ -91,6 +91,7 @@ const COUNTRY_ALIASES = new Map<string, string>([
   ["holland", "NL"],
   ["czech republic", "CZ"],
   ["south korea", "KR"],
+  ["korea", "KR"],
   ["north korea", "KP"],
   ["turkiye", "TR"],
   ["myanmar", "MM"],
@@ -117,9 +118,24 @@ const COUNTRY_ALIASES = new Map<string, string>([
 const CITY_ALIASES = new Map<string, string>([
   ["bengaluru", "bangalore"],
   ["freiburg", "freiburg im breisgau"],
+  ["st. leon-rot", "sankt leon-rot"],
+  ["torino", "turin"],
   ["bombay", "mumbai"],
   ["calcutta", "kolkata"],
   ["saigon", "ho chi minh city"],
+])
+
+/**
+ * Manual coordinates for places that are missing from the SimpleMaps
+ * Basic tier (small towns, venues). Keyed by "normalized city|iso2".
+ */
+const CITY_OVERRIDES = new Map<string, { lat: number; lng: number }>([
+  // Park City, Utah — ski town, too small for the Basic dataset
+  ["park city|US", { lat: 40.6461, lng: -111.498 }],
+  // Nürburgring race track (JavaLand venue), near the village of Nürburg
+  ["nurburgring|DE", { lat: 50.3356, lng: 6.9475 }],
+  // Eastnor Castle / EMF Camp site (near Ledbury, Herefordshire)
+  ["eastnor|GB", { lat: 52.0331, lng: -2.3836 }],
 ])
 
 /** US state abbreviations -> full names, to disambiguate "City, ST" input. */
@@ -267,6 +283,14 @@ export function lookupLocation(
   if (country) {
     const iso2 = resolveCountry(country)
     if (!iso2) return null
+    const override = CITY_OVERRIDES.get(`${cityKey}|${iso2}`)
+    if (override) {
+      return {
+        latitude: override.lat,
+        longitude: override.lng,
+        timezone: tzLookup(override.lat, override.lng),
+      }
+    }
     candidates = byCityAndCountry.get(`${cityKey}|${iso2}`)
   } else {
     candidates = byCity.get(cityKey)

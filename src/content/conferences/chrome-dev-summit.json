@@ -11,6 +11,15 @@
         "frontend",
         "performance",
         "javascript"
+      ],
+      "editions": [
+        {
+          "startDate": "2021-11-03",
+          "endDate": "2021-11-03",
+          "isOnline": true,
+          "timezone": "America/Chicago",
+          "notes": "Online schedule 09:00–11:00 America/Los_Angeles; midday matches America/Chicago (UTC-5 on this date). 9to5Google / Google: public keynote+AMA livestream 9 a.m. PT for two hours."
+        }
       ]
     }
   ]

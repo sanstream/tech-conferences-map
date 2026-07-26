@@ -10,6 +10,21 @@
         "performance",
         "web",
         "frontend"
+      ],
+      "editions": [
+        {
+          "startDate": "2024-10-14",
+          "endDate": "2024-10-16",
+          "isOnline": true
+        },
+        {
+          "startDate": "2025-10-13",
+          "endDate": "2025-10-15",
+          "location": {
+            "city": "Barcelona",
+            "country": "Spain"
+          }
+        }
       ]
     }
   ]

@@ -11,6 +11,16 @@
         "generative-art",
         "3d",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2019-07-28",
+          "endDate": "2019-08-01",
+          "location": {
+            "city": "Los Angeles, CA",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

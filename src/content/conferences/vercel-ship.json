@@ -11,6 +11,48 @@
         "frontend",
         "javascript",
         "react"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-06-17",
+          "endDate": "2026-06-17",
+          "location": {
+            "city": "London",
+            "country": "U.K."
+          }
+        },
+        {
+          "startDate": "2026-06-25",
+          "endDate": "2026-06-25",
+          "location": {
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        {
+          "startDate": "2026-06-30",
+          "endDate": "2026-06-30",
+          "location": {
+            "city": "New York, NY",
+            "country": "U.S.A."
+          }
+        },
+        {
+          "startDate": "2026-07-30",
+          "endDate": "2026-07-30",
+          "location": {
+            "city": "Sydney",
+            "country": "Australia"
+          }
+        },
+        {
+          "startDate": "2026-10-15",
+          "endDate": "2026-10-15",
+          "location": {
+            "city": "San Francisco",
+            "country": "U.S.A."
+          }
+        }
       ]
     }
   ]

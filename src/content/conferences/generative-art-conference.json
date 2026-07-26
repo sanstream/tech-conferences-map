@@ -9,6 +9,16 @@
         "generative-art",
         "creative-coding",
         "research"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-12-15",
+          "endDate": "2026-12-17",
+          "location": {
+            "city": "Cagliari",
+            "country": "Italy"
+          }
+        }
       ]
     }
   ]

@@ -9,6 +9,16 @@
       "subjects": [
         "ui-design",
         "creative-coding"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-05-24",
+          "endDate": "2018-05-26",
+          "location": {
+            "city": "Sydney",
+            "country": "Australia"
+          }
+        }
       ]
     }
   ]

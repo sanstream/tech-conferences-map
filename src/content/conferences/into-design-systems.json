@@ -10,6 +10,13 @@
         "design-systems",
         "ux",
         "ui-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2026-03-19",
+          "endDate": "2026-03-20",
+          "isOnline": true
+        }
       ]
     }
   ]

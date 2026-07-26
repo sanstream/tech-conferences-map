@@ -10,6 +10,16 @@
         "ux",
         "information-design",
         "product-design"
+      ],
+      "editions": [
+        {
+          "startDate": "2018-02-23",
+          "endDate": "2018-02-24",
+          "location": {
+            "city": "Zurich",
+            "country": "Switzerland"
+          }
+        }
       ]
     }
   ]
