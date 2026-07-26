@@ -3,15 +3,26 @@
   "orgType": "for-profit",
   "instances": [
     {
+      "id": "frontmania",
+      "name": "Frontmania",
+      "url": "https://frontmania.com",
+      "subjects": ["javascript", "frontend", "web", "typescript"],
+      "editions": [
+        {
+          "startDate": "2026-10-5",
+          "endDate": "2026-10-07",
+          "location": {
+            "city": "Utrecht",
+            "country": "Netherlands"
+          }
+        }
+      ]
+    },
+    {
       "id": "ijs-london",
       "name": "International JavaScript Conference London",
       "url": "https://javascript-conference.com/london",
-      "subjects": [
-        "javascript",
-        "frontend",
-        "web",
-        "typescript"
-      ],
+      "subjects": ["javascript", "frontend", "web", "typescript"],
       "editions": [
         {
           "startDate": "2026-05-11",
@@ -28,12 +39,7 @@
       "id": "ijs-munich",
       "name": "International JavaScript Conference Munich",
       "url": "https://javascript-conference.com/munich",
-      "subjects": [
-        "javascript",
-        "frontend",
-        "web",
-        "typescript"
-      ],
+      "subjects": ["javascript", "frontend", "web", "typescript"],
       "editions": [
         {
           "startDate": "2026-10-26",
@@ -50,12 +56,7 @@
       "id": "ijs-new-york",
       "name": "International JavaScript Conference New York",
       "url": "https://javascript-conference.com/new-york",
-      "subjects": [
-        "javascript",
-        "frontend",
-        "web",
-        "typescript"
-      ],
+      "subjects": ["javascript", "frontend", "web", "typescript"],
       "editions": [
         {
           "startDate": "2026-09-28",
@@ -72,12 +73,7 @@
       "id": "ijs-san-diego",
       "name": "International JavaScript Conference San Diego",
       "url": "https://javascript-conference.com/san-diego",
-      "subjects": [
-        "javascript",
-        "frontend",
-        "web",
-        "typescript"
-      ],
+      "subjects": ["javascript", "frontend", "web", "typescript"],
       "editions": [
         {
           "startDate": "2026-06-01",
