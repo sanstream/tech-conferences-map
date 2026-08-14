@@ -6,6 +6,7 @@ export type MapMarker = {
 
 type EditionWithId = ConferenceEntry["data"]["editions"][number] & {
   id: string
+  conferenceId: string
   conferenceName: string
 }
 
@@ -23,9 +24,18 @@ function coordinateKey(latitude: number, longitude: number): string {
   return `${latitude.toFixed(4)},${longitude.toFixed(4)}`
 }
 
+/** True if `candidate` starts (or, if tied, ends) later than `current`. */
+function isLaterEdition(candidate: EditionWithId, current: EditionWithId): boolean {
+  if (candidate.startDate !== current.startDate) {
+    return candidate.startDate > current.startDate
+  }
+  return candidate.endDate > current.endDate
+}
+
 /**
  * Group conference editions that have coordinates into map markers.
  * Editions without lat/lng (online-only or unresolved lookups) are skipped.
+ * At a given location, only the latest edition of each conference is kept.
  */
 export function getConferenceMapMarkers(
   conferences: ConferenceEntry[],
@@ -41,16 +51,29 @@ export function getConferenceMapMarkers(
       }
 
       const id = coordinateKey(latitude, longitude)
-      const editionId = entry.id + entry.data.name
+      const nextEdition: EditionWithId = {
+        ...edition,
+        id: `${entry.id}-${edition.startDate}`,
+        conferenceId: entry.id,
+        conferenceName: entry.data.name,
+      }
       const existing = groups.get(id)
       if (existing) {
-        existing.count += 1
-        existing.names.add(entry.data.name)
-        existing.editionsInLocation.push({
-          id: editionId,
-          conferenceName: entry.data.name,
-          ...edition,
-        })
+        const sameConferenceIndex = existing.editionsInLocation.findIndex(
+          grouped => grouped.conferenceId === entry.id,
+        )
+        if (sameConferenceIndex === -1) {
+          existing.editionsInLocation.push(nextEdition)
+          existing.names.add(entry.data.name)
+          existing.count += 1
+        } else if (
+          isLaterEdition(
+            nextEdition,
+            existing.editionsInLocation[sameConferenceIndex],
+          )
+        ) {
+          existing.editionsInLocation[sameConferenceIndex] = nextEdition
+        }
       } else {
         groups.set(id, {
           longitude: Number(longitude.toFixed(4)),
@@ -59,9 +82,7 @@ export function getConferenceMapMarkers(
           names: new Set([entry.data.name]),
           cityName: edition.location?.city ?? "",
           countryName: edition.location?.country ?? "",
-          editionsInLocation: [
-            { id: editionId, conferenceName: entry.data.name, ...edition },
-          ],
+          editionsInLocation: [nextEdition],
         })
       }
     }
