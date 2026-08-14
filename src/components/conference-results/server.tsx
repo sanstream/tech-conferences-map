@@ -1,21 +1,25 @@
+import ConferenceMapMarker from "@/components/conference-results/conference-map-marker"
+
+import "@/components/conference-results/conference-map.css"
+import "@/components/conference-results/index.css"
+import type { MapMarker } from "@/lib/conference-map"
 import { geoGraticule, geoMercator, geoPath } from "d3-geo"
 import type { FeatureCollection, Geometry } from "geojson"
 import type { ComponentProps } from "react"
 import { feature } from "topojson-client"
 import type { GeometryCollection, Topology } from "topojson-specification"
 import landTopology from "world-atlas/land-110m.json"
-import type { MapMarker } from "../lib/conference-map"
-import ConferenceMapMarker from "./conference-map-marker"
-import "./conference-map.css"
 
-export type ConferenceMapProps = ComponentProps<"svg"> & {
+export type ConferenceResultsProps = ComponentProps<"div"> & {
   markers: MapMarker[]
   /** Astro passes `class`; React uses `className`. Accept both. */
   class?: string
 }
 
-const WIDTH = 960
-const HEIGHT = 500
+// width is based on var(--page-max-content-width) - 2 * var(--page-min-x-padding)
+// TODO: this needs to be value from a
+const WIDTH = 1152
+const HEIGHT = 648
 // Cut off the map at the latitudes no conferences are ever held (the north pole and Antarctica).
 const LAT_MIN = -60
 const LAT_MAX = 70
@@ -57,48 +61,53 @@ const parallels = geoGraticule()
     [180, LAT_MAX],
   ])()
 
-const ConferenceMap = ({
+const ConferenceResults = ({
   markers,
   className,
   class: classProp,
   ...props
-}: ConferenceMapProps) => {
+}: ConferenceResultsProps) => {
   return (
-    <svg
-      className={["conference-map", className, classProp]
-        .filter(Boolean)
-        .join(" ")}
-      viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-      role="img"
-      aria-label="World map of tech conferences"
+    <div
+      className="conferences-results-container"
+      data-width={WIDTH}
+      data-height={HEIGHT}
       {...props}
     >
-      <path
-        className="conference-map-parallels"
-        d={path(parallels) ?? undefined}
-      />
-      <path
-        className="conference-map-land"
-        d={path(land) ?? undefined}
-      />
-      <g className="conference-map-markers">
+      <svg
+        role="presentation"
+        className={["conference-map", className, classProp]
+          .filter(Boolean)
+          .join(" ")}
+        viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+        aria-label="World map of tech conferences"
+      >
+        <path
+          className="conference-map-parallels"
+          d={path(parallels) ?? undefined}
+        />
+        <path className="conference-map-land" d={path(land) ?? undefined} />
+      </svg>
+
+      <ul className="conference-map-markers-list">
         {markers.map(marker => {
           const projected = projection([marker.longitude, marker.latitude])
           if (!projected) return null
-          const [x, y] = projected
           return (
             <ConferenceMapMarker
               key={marker.id}
-              x={x}
-              y={y}
-              count={marker.count}
+              data-x={projected[0]}
+              data-y={projected[1]}
+              data-radius={marker.count > 1 ? 10 : 5}
               aria-label={marker.label}
-            />
+            >
+              {marker.count > 1 ? marker.count : ""}
+            </ConferenceMapMarker>
           )
         })}
-      </g>
-    </svg>
+      </ul>
+    </div>
   )
 }
 
-export default ConferenceMap
+export default ConferenceResults

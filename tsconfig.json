@@ -3,8 +3,18 @@
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"],
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     // Scripts run directly via `node` using native type stripping,
     // which only supports erasable TypeScript syntax (no enums etc.).
     "erasableSyntaxOnly": true

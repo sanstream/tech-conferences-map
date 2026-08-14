@@ -1,9 +1,9 @@
 ---
-import ConferenceMap from "../components/conference-map.tsx"
-import Placeholder from "../components/placeholder.astro"
-import Layout from "../layouts/Layout.astro"
-import { getConferenceMapMarkers } from "../lib/conference-map"
-import { getAllConferences } from "../lib/conferences"
+import ConferenceResults from "@/components/conference-results/server"
+import Placeholder from "@/components/placeholder.astro"
+import Layout from "@/layouts/Layout.astro"
+import { getConferenceMapMarkers } from "@/lib/conference-map"
+import { getAllConferences } from "@/lib/conferences"
 
 const conferences = await getAllConferences()
 const markers = getConferenceMapMarkers(conferences)
@@ -20,7 +20,7 @@ const markers = getConferenceMapMarkers(conferences)
       <Placeholder class="filters-field3">Placeholder field</Placeholder>
     </header>
     <div class="main-content-results">
-      <ConferenceMap markers={markers} />
+      <ConferenceResults markers={markers} />
     </div>
   </main>
 </Layout>

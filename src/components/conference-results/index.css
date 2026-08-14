@@ -1,0 +1,30 @@
+@layer components {
+  .conferences-results-container {
+    position: relative;
+
+    & .conference-map {
+      position: relative;
+    }
+
+    .conference-map-markers-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      & .conference-map-marker {
+        position: absolute;
+        z-index: 1;
+        height: attr(data-radius px);
+        width: attr(data-radius px);
+        top: calc(attr(data-y px) - (attr(data-radius px) / 2));
+        left: calc(attr(data-x px) - (attr(data-radius px) / 2));
+      }
+    }
+  }
+}
