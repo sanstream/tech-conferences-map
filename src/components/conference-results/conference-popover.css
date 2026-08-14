@@ -1,0 +1,5 @@
+@layer components {
+  .conference-map-marker-popover {
+    /* Popover positioning/styling can be expanded here. */
+  }
+}
