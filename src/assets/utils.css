@@ -6,44 +6,6 @@
     font-weight: 500;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--colour-heading-text);
-    margin-bottom: 1em;
-    font-family: "Armata", "Helvetica", sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 1em;
-  }
-
-  h1,
-  .h1-heading {
-    font-size: 2rem;
-  }
-
-  h2,
-  .h2-heading {
-    font-size: 1.7rem;
-  }
-
-  h3,
-  .h3-heading {
-    font-size: 1.25rem;
-  }
-
-  a {
-    color: var(--colour-link-text);
-    transition: color 0.05s ease-out;
-  }
-
-  a:hover {
-    color: var(--colour-link-text-hover);
-  }
-
   .page-level-container {
     --page-min-x-padding: 1.5rem;
     --page-max-content-width: 75rem;

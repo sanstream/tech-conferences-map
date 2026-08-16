@@ -9,6 +9,19 @@ import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
 <!doctype html>
 <html lang="en">
   <head>
+    <style is:inline type="text/css">
+      /*
+      Sequence of CSS layers.
+      - tokens: serves a basis for the the whole design system.
+      - defaults: sets up the default styles for html elements.
+      - components: styles for the individual components.
+      - utils: utility classes, which can be used to customise styles.
+      
+      NOTE: Defined here to ensure that it is used
+      by all css loaded subsequently. 
+      */
+      @layer tokens, defaults, components, utils;
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
