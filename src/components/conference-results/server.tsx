@@ -95,7 +95,7 @@ const ConferenceResults = ({
           const projected = projection([marker.longitude, marker.latitude])
           if (!projected) return null
           const popoverId = marker.id + "popover"
-          const radius = marker.count > 1 ? 10 : 5
+          const radius = marker.count > 1 ? 20 : 10
           const [x, y] = projected
           return (
             <li
