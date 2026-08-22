@@ -1,6 +1,5 @@
 @layer utils {
   .body-text {
-    background-color: var(--colour-main-bg);
     color: var(--colour-body-text);
     font-family: "Montserrat", serif;
     font-weight: 500;
