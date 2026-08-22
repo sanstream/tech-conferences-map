@@ -1,11 +1,15 @@
+import Badge from "@/components/badge"
 import "@/components/conference-results/conference-popover.css"
+import type { MapMarker } from "@/lib/conference-map"
 import type { ComponentProps } from "react"
 
 export type ConferencePopoverProps = Omit<ComponentProps<"div">, "id"> & {
   id: string
+  markerInfo: MapMarker
 }
 
 const ConferencePopover = ({
+  markerInfo,
   id,
   className,
   children,
@@ -20,7 +24,26 @@ const ConferencePopover = ({
       popover="auto"
       {...props}
     >
-      {children}
+      <h4>
+        {markerInfo.cityName}, {markerInfo.countryName} ({markerInfo.count})
+      </h4>
+      <ul>
+        {markerInfo.editionsInLocation.map(edition => (
+          <li key={edition.id}>
+            {edition.conferenceName}<br/>
+            <ul>
+              <Badge purpose="location">
+                {edition.isOnline && edition.location ? "Hybrid" : edition. ? "Hybrid" : "In-person"}
+              </Badge>
+            </ul>
+            <br />
+            <time dateTime={`${edition.startDate}/${edition.endDate}`}>
+              {edition.startDate} &ndash; {edition.endDate}
+            </time>
+            {edition.notes && <p>{edition.notes}</p>}
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

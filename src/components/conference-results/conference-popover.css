@@ -34,6 +34,19 @@
     & > *:first-child {
       margin-top: 0;
     }
+
+    & > ul {
+      padding: 0;
+      margin: 0 0 0 1rem;
+
+      & > li {
+        margin-bottom: 0.5rem;
+
+        & > time {
+          color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
+        }
+      }
+    }
     & > h4 {
       color: light-dark(var(--colour-green-800), var(--colour-mustard-300));
     }
