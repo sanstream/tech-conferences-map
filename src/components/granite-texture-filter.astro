@@ -14,29 +14,24 @@ export const graniteTextureKnobs = {
   },
   turbulence: {
     type: "fractalNoise" as const,
-    /** Lower = larger speckles; higher = finer grain. */
-    baseFrequency: 0.4,
-    /** Fewer octaves = less fine detail layered on top. */
-    numOctaves: 2,
+    /** Lower = larger, further apart blobs; higher = finer grain. */
+    baseFrequency: 0.05,
+    /** 1 keeps blob outlines smooth; more octaves adds ragged detail. */
+    numOctaves: 3,
   },
+  /** Blur in px applied before the cutoff, to round off blob outlines. */
+  blobSmoothing: 4,
   /**
-   * Count of `0` steps before `1` in the discrete threshold.
-   * Higher = sparser speckles (more plain background visible).
+   * Cutoff that turns the smooth noise field into discrete blobs.
+   * `level` sets density (higher = fewer and smaller blobs),
+   * `sharpness` sets edge crispness (higher = harder edge).
    */
-  sparsity: 8,
-  /** Expands each speckle dot (objectBoundingBox units). Higher = wider dots. */
-  dilateRadius: 0.005,
-  /** 0–1 opacity of each speckle layer. */
+  blobCutoff: { level: 0.77, sharpness: 12 },
+  /** 0–1 alpha of each speckle (1 = fully opaque colour). */
   speckleOpacity: 1,
   /** Different seeds place each colour's speckles at separate positions. */
   channelSeeds: { r: 33, g: 27, b: 43 },
 } as const
-
-function discreteThreshold(sparsity: number): string {
-  return `${"0 ".repeat(sparsity).trim()} 1`
-}
-
-const discreteTableValues = discreteThreshold(graniteTextureKnobs.sparsity)
 
 /**
  * sRGB hex derived from OKLCH tokens in tokens.css (manual sync when tokens change).
@@ -75,8 +70,17 @@ const filters: FilterProps[] = [
 
 const channels: ChannelKey[] = ["r", "g", "b"]
 
-const { filterRegion, turbulence, dilateRadius, speckleOpacity, channelSeeds } =
-  graniteTextureKnobs
+const {
+  filterRegion,
+  turbulence,
+  blobSmoothing,
+  blobCutoff,
+  speckleOpacity,
+  channelSeeds,
+} = graniteTextureKnobs
+
+/** Shifts the cutoff ramp so it crosses half alpha exactly at `level`. */
+const blobCutoffIntercept = 0.5 - blobCutoff.sharpness * blobCutoff.level
 ---
 
 <svg
@@ -96,7 +100,6 @@ const { filterRegion, turbulence, dilateRadius, speckleOpacity, channelSeeds } =
           width={filterRegion.width}
           height={filterRegion.height}
           filterUnits="objectBoundingBox"
-          primitiveUnits="objectBoundingBox"
         >
           {channels.map(channel => (
             <>
@@ -107,26 +110,27 @@ const { filterRegion, turbulence, dilateRadius, speckleOpacity, channelSeeds } =
                 numOctaves={turbulence.numOctaves}
                 result={`${channel}RawNoise`}
               />
-              <feComponentTransfer
-                in={`${channel}RawNoise`}
-                result={`${channel}SharpNoise`}
-              >
-                <feFuncR type="discrete" tableValues={discreteTableValues} />
-                <feFuncG type="discrete" tableValues={discreteTableValues} />
-                <feFuncB type="discrete" tableValues={discreteTableValues} />
-              </feComponentTransfer>
-              <feMorphology
-                in={`${channel}SharpNoise`}
-                operator="dilate"
-                radius={dilateRadius}
-                result={`${channel}FatNoise`}
-              />
               <feColorMatrix
-                in={`${channel}FatNoise`}
+                in={`${channel}RawNoise`}
                 type="matrix"
-                values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 1 1 0 0"
-                result={`${channel}Mask`}
+                values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0"
+                result={`${channel}NoiseAlpha`}
               />
+              <feGaussianBlur
+                in={`${channel}NoiseAlpha`}
+                stdDeviation={blobSmoothing}
+                result={`${channel}SmoothAlpha`}
+              />
+              <feComponentTransfer
+                in={`${channel}SmoothAlpha`}
+                result={`${channel}Mask`}
+              >
+                <feFuncA
+                  type="linear"
+                  slope={blobCutoff.sharpness}
+                  intercept={blobCutoffIntercept}
+                />
+              </feComponentTransfer>
               <feFlood
                 flood-color={speckles[channel]}
                 result={`${channel}Color`}

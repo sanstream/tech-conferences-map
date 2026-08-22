@@ -9,6 +9,7 @@
     inset: 0;
     z-index: 0;
     pointer-events: none;
+    background-color: var(--colour-main-bg);
     /* Must match GRANITE_TEXTURE_FILTER_*_ID in granite-texture-filter.astro */
     filter: url(#granite-texture-light);
   }
