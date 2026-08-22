@@ -3,8 +3,8 @@ import "@fontsource/armata/400.css"
 import "@fontsource/fira-code/400.css"
 import "@fontsource/montserrat/500.css"
 import "../assets/index.css"
-import { speckleBackgroundCss } from "../lib/speckle-background.ts"
 import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
+import GraniteTextureFilter from "../components/granite-texture-filter.astro"
 ---
 
 <!doctype html>
@@ -23,13 +23,13 @@ import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
       */
       @layer tokens, defaults, components, utils;
     </style>
-    <style is:global set:html={speckleBackgroundCss}></style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>Tech Conferences Map</title>
+    <GraniteTextureFilter />
   </head>
   <body class="body-text">
     <header class="page-header page-level-container">

@@ -101,20 +101,6 @@
 
     --shadow-sm: 0 1px 2px 0 var(--colour-shadow);
     --shadow-md: 0 4px 6px -1px var(--colour-shadow);
-
-    /* Page background speckles (layered radial gradients on body::before) */
-    --bg-speckle-1: light-dark(
-      var(--colour-blue-100),
-      var(--colour-flamingo-800)
-    );
-    --bg-speckle-2: light-dark(
-      var(--colour-green-200),
-      var(--colour-green-800)
-    );
-    --bg-speckle-3: light-dark(
-      var(--colour-mustard-200),
-      var(--colour-mustard-800)
-    );
   }
 
   /* color-scheme logic */
