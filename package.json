@@ -12,8 +12,7 @@
     "astro": "astro",
     "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,mjs,cjs,md,mdx,json}\" \"scripts/**/*.{ts,mjs,js}\" astro.config.ts tsconfig.json .prettierrc package.json",
     "lint": "astro check",
-    "conferences:validate": "node scripts/validate-conferences.ts",
-    "speckle:generate": "node scripts/generate-speckle-background.ts"
+    "conferences:validate": "node scripts/validate-conferences.ts"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.1",
