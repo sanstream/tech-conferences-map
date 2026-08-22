@@ -39,15 +39,15 @@ export const graniteTextureKnobs = {
  * Dark: mustard-800, green-800, flamingo-800
  */
 const lightSpeckles = {
-  r: "#e7f4ff", // --colour-blue-100
-  g: "#e0e5cb", // --colour-green-200
-  b: "#f1e4bf", // --colour-mustard-200
+  r: "oklch(0.85 0.09 243)", // --colour-blue-300
+  g: "oklch(0.86 0.055 115.6)", // --colour-green-300
+  b: "oklch(0.71 0.14 90)", // --colour-mustard-300
 } as const
 
 const darkSpeckles = {
-  r: "#5f4600", // --colour-mustard-800
-  g: "#545935", // --colour-green-800
-  b: "#793945", // --colour-flamingo-800
+  r: "oklch(0.52 0.12 90)", // --colour-mustard-700
+  g: "oklch(0.6 0.07 115.6)", // --colour-green-700
+  b: "oklch(0.55 0.11 9.8)", // --colour-flamingo-700
 } as const
 
 type SpeckleColors = {
