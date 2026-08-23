@@ -161,19 +161,11 @@ const ConferenceResults = ({
               >
                 {marker.count > 1 ? marker.count : ""}
               </ConferenceMapMarker>
-              <ConferencePopover key={popoverId} id={popoverId}>
-                <h4>
-                  {marker.cityName}, {marker.countryName} ({marker.count})
-                </h4>
-                <ul>
-                  {marker.editionsInLocation.map(edition => (
-                    <li key={edition.id}>
-                      {edition.conferenceName} ({edition.startDate} -{" "}
-                      {edition.endDate})
-                    </li>
-                  ))}
-                </ul>
-              </ConferencePopover>
+              <ConferencePopover
+                key={popoverId}
+                id={popoverId}
+                markerInfo={marker}
+              />
             </li>
           )
         })}
