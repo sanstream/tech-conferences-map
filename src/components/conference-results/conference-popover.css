@@ -40,7 +40,21 @@
       margin: 0 0 0 1rem;
 
       & > li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+
+        & .conference-popover-header {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
+
+          & > ul {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0;
+          }
+        }
 
         & > time {
           color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));

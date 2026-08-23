@@ -30,13 +30,18 @@ const ConferencePopover = ({
       <ul>
         {markerInfo.editionsInLocation.map(edition => (
           <li key={edition.id}>
-            {edition.conferenceName}<br/>
-            <ul>
-              <Badge purpose="location">
-                {edition.isOnline && edition.location ? "Hybrid" : edition. ? "Hybrid" : "In-person"}
-              </Badge>
-            </ul>
-            <br />
+            <header className="conference-popover-header">
+              {edition.conferenceName}
+              <ul>
+                <Badge purpose="location">
+                  {edition.isOnline && edition.location
+                    ? "Hybrid"
+                    : edition.isOnline
+                      ? "Online"
+                      : "In-person"}
+                </Badge>
+              </ul>
+            </header>
             <time dateTime={`${edition.startDate}/${edition.endDate}`}>
               {edition.startDate} &ndash; {edition.endDate}
             </time>
