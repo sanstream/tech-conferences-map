@@ -4,7 +4,7 @@ import "@fontsource/fira-code/400.css"
 import "@fontsource/montserrat/500.css"
 import "../assets/index.css"
 import ColorSchemeSwitch from "../components/color-scheme-switch.tsx"
-import GraniteTextureFilter from "../components/granite-texture-filter.astro"
+import SpecklesBackground from "../components/speckles-background.astro"
 ---
 
 <!doctype html>
@@ -29,9 +29,9 @@ import GraniteTextureFilter from "../components/granite-texture-filter.astro"
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>Tech Conferences Map</title>
-    <GraniteTextureFilter />
   </head>
   <body class="body-text">
+    <SpecklesBackground />
     <header class="page-header page-level-container">
       <h1 class="h2-heading">
         Tech Conferences Map
@@ -71,14 +71,15 @@ import GraniteTextureFilter from "../components/granite-texture-filter.astro"
     width: 100%;
     height: 100%;
     min-height: 100dvh;
-  }
-
-  body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: relative;
     isolation: isolate;
     background-color: var(--colour-main-bg);
+  }
+
+  body > * {
+    z-index: 1;
   }
 
   .page-header {
