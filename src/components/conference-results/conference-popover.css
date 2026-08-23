@@ -1,0 +1,41 @@
+@layer components {
+  .conference-map-marker-popover {
+    box-shadow: var(--shadow-md);
+    background-color: var(--colour-main-bg);
+    border: 1px solid
+      light-dark(var(--colour-green-500), var(--colour-mustard-300));
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    min-width: 10rem;
+    max-width: 100svw;
+    max-height: 100svh;
+    overflow-y: auto;
+    opacity: 0; /* effectively used as the exit style. */
+    transform: scale(0.8); /* effectively used as the exit style. */
+    transition:
+      /* transition display too, but to a later time
+      as the other transitions,so they can be used
+      as an exit transition too. */
+      opacity 0.3s ease-out,
+      transform 0.3s ease-out,
+      display 0.4s;
+    transition-behavior: allow-discrete;
+
+    &:popover-open {
+      opacity: 1;
+      transform: scale(1);
+
+      @starting-style {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+    & > h4 {
+      color: light-dark(var(--colour-green-800), var(--colour-mustard-300));
+    }
+  }
+}

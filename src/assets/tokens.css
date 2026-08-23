@@ -63,27 +63,27 @@
     --black: oklch(0 0 0);
 
     /* semantic token mapping */
-    --colour-main-bg: light-dark(var(--white), var(--colour-blue-1000));
+    --colour-main-bg: light-dark(
+      var(--colour-flamingo-100),
+      var(--colour-blue-1000)
+    );
 
     --colour-section-bg: light-dark(
-      var(--colour-flamingo-100),
+      var(--colour-flamingo-150),
       var(--colour-blue-900)
     );
 
     --colour-land-bg: light-dark(
-      var(--colour-flamingo-200),
+      var(--colour-flamingo-400),
       var(--colour-blue-800)
     );
 
     --colour-land-contour: light-dark(
-      var(--colour-flamingo-400),
+      var(--colour-flamingo-500),
       var(--colour-blue-700)
     );
 
-    --colour-body-text: light-dark(
-      var(--colour-flamingo-1000),
-      var(--colour-blue-100)
-    );
+    --colour-body-text: light-dark(var(--black), var(--white));
     --colour-heading-text: light-dark(
       var(--colour-blue-800),
       var(--colour-flamingo-300)

@@ -17,13 +17,32 @@
       height: 100%;
       z-index: 1;
 
-      & .conference-map-marker {
+      & > li {
         position: absolute;
+        overflow: visible;
         z-index: 1;
-        height: attr(data-radius px);
-        width: attr(data-radius px);
-        top: calc(attr(data-y px) - (attr(data-radius px) / 2));
-        left: calc(attr(data-x px) - (attr(data-radius px) / 2));
+        /*
+         * Fallback for browsers without typed attr() (Firefox, Safari, older Chrome).
+         * --marker-x, --marker-y, --marker-r are set inline in server.tsx.
+         */
+        left: calc(var(--marker-x) * 1px - var(--marker-r) * 0.5px);
+        top: calc(var(--marker-y) * 1px - var(--marker-r) * 0.5px);
+        width: calc(var(--marker-r) * 1px);
+        height: calc(var(--marker-r) * 1px);
+      }
+
+      @supports (left: attr(data-x px)) {
+        & > li {
+          left: calc(attr(data-x px) - (attr(data-radius px) / 2));
+          top: calc(attr(data-y px) - (attr(data-radius px) / 2));
+          width: attr(data-radius px);
+          height: attr(data-radius px);
+        }
+      }
+
+      & .conference-map-marker {
+        width: 100%;
+        height: 100%;
       }
     }
   }

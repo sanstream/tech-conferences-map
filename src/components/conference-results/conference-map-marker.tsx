@@ -1,7 +1,7 @@
 import "@/components/conference-results/conference-map-marker.css"
 import type { ComponentProps } from "react"
 
-export type ConferenceMapMarkerProps = ComponentProps<"li">
+export type ConferenceMapMarkerProps = ComponentProps<"button">
 
 const ConferenceMapMarker = ({
   className,
@@ -9,12 +9,12 @@ const ConferenceMapMarker = ({
   ...props
 }: ConferenceMapMarkerProps) => {
   return (
-    <li
+    <button
       className={["conference-map-marker", className].filter(Boolean).join(" ")}
       {...props}
     >
       {children}
-    </li>
+    </button>
   )
 }
 

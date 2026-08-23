@@ -1,11 +1,12 @@
 import ConferenceMapMarker from "@/components/conference-results/conference-map-marker"
+import ConferencePopover from "@/components/conference-results/conference-popover"
 
 import "@/components/conference-results/conference-map.css"
 import "@/components/conference-results/index.css"
 import type { MapMarker } from "@/lib/conference-map"
 import { geoGraticule, geoMercator, geoPath } from "d3-geo"
 import type { FeatureCollection, Geometry } from "geojson"
-import type { ComponentProps } from "react"
+import type { ComponentProps, CSSProperties } from "react"
 import { feature } from "topojson-client"
 import type { GeometryCollection, Topology } from "topojson-specification"
 import landTopology from "world-atlas/land-110m.json"
@@ -46,6 +47,9 @@ const mapExtent = {
   ],
 }
 
+/** 0-1 opacity of the grain multiplied over the land fill. */
+const DARK_LAND_STRENGTH = 0.55
+
 const projection = geoMercator()
   .fitSize([WIDTH, HEIGHT], mapExtent)
   .clipExtent([
@@ -82,27 +86,95 @@ const ConferenceResults = ({
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         aria-label="World map of tech conferences"
       >
+        <defs>
+          <filter id="paper-texture-filter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency={0.04}
+              numOctaves={4}
+              stitchTiles="stitch"
+              result="noise"
+            />
+            {/* Use the noise as a mask only, so it adds no colour of its own. */}
+            <feColorMatrix
+              in="noise"
+              type="matrix"
+              values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0"
+              result="noiseMask"
+            />
+            <feComponentTransfer in="noiseMask" result="grainMask">
+              <feFuncA type="linear" slope={0.6} intercept="0" />
+            </feComponentTransfer>
+            {/* A darkened copy of the land, so the grain keeps the land's own colour. */}
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values={`${DARK_LAND_STRENGTH} 0 0 0 0  0 ${DARK_LAND_STRENGTH} 0 0 0  0 0 ${DARK_LAND_STRENGTH} 0 0  0 0 0 1 0`}
+              result="darkLand"
+            />
+            <feComposite
+              in="darkLand"
+              in2="grainMask"
+              operator="in"
+              result="darkGrain"
+            />
+            {/* atop fades between plain and darkened land, clipped to the landmasses. */}
+            <feComposite in="darkGrain" in2="SourceGraphic" operator="atop" />
+          </filter>
+        </defs>
         <path
           className="conference-map-parallels"
           d={path(parallels) ?? undefined}
         />
-        <path className="conference-map-land" d={path(land) ?? undefined} />
+        <path
+          className="conference-map-land"
+          filter="url(#paper-texture-filter)"
+          d={path(land) ?? undefined}
+        />
       </svg>
 
       <ul className="conference-map-markers-list">
         {markers.map(marker => {
           const projected = projection([marker.longitude, marker.latitude])
           if (!projected) return null
+          const popoverId = marker.id + "popover"
+          const radius = marker.count > 1 ? 20 : 10
+          const [x, y] = projected
           return (
-            <ConferenceMapMarker
+            <li
               key={marker.id}
-              data-x={projected[0]}
-              data-y={projected[1]}
-              data-radius={marker.count > 1 ? 10 : 5}
-              aria-label={marker.label}
+              data-x={x}
+              data-y={y}
+              data-radius={radius}
+              style={
+                {
+                  "--marker-x": x,
+                  "--marker-y": y,
+                  "--marker-r": radius,
+                } as CSSProperties
+              }
             >
-              {marker.count > 1 ? marker.count : ""}
-            </ConferenceMapMarker>
+              <ConferenceMapMarker
+                key={marker.id}
+                popoverTarget={popoverId}
+                aria-label={`${marker.cityName}, ${marker.countryName}`}
+              >
+                {marker.count > 1 ? marker.count : ""}
+              </ConferenceMapMarker>
+              <ConferencePopover key={popoverId} id={popoverId}>
+                <h4>
+                  {marker.cityName}, {marker.countryName} ({marker.count})
+                </h4>
+                <ul>
+                  {marker.editionsInLocation.map(edition => (
+                    <li key={edition.id}>
+                      {edition.conferenceName} ({edition.startDate} -{" "}
+                      {edition.endDate})
+                    </li>
+                  ))}
+                </ul>
+              </ConferencePopover>
+            </li>
           )
         })}
       </ul>
