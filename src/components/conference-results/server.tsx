@@ -47,6 +47,9 @@ const mapExtent = {
   ],
 }
 
+/** 0-1 opacity of the grain multiplied over the land fill. */
+const DARK_LAND_STRENGTH = 0.55
+
 const projection = geoMercator()
   .fitSize([WIDTH, HEIGHT], mapExtent)
   .clipExtent([
@@ -83,11 +86,51 @@ const ConferenceResults = ({
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         aria-label="World map of tech conferences"
       >
+        <defs>
+          <filter id="paper-texture-filter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency={0.04}
+              numOctaves={4}
+              stitchTiles="stitch"
+              result="noise"
+            />
+            {/* Use the noise as a mask only, so it adds no colour of its own. */}
+            <feColorMatrix
+              in="noise"
+              type="matrix"
+              values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0"
+              result="noiseMask"
+            />
+            <feComponentTransfer in="noiseMask" result="grainMask">
+              <feFuncA type="linear" slope={0.6} intercept="0" />
+            </feComponentTransfer>
+            {/* A darkened copy of the land, so the grain keeps the land's own colour. */}
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values={`${DARK_LAND_STRENGTH} 0 0 0 0  0 ${DARK_LAND_STRENGTH} 0 0 0  0 0 ${DARK_LAND_STRENGTH} 0 0  0 0 0 1 0`}
+              result="darkLand"
+            />
+            <feComposite
+              in="darkLand"
+              in2="grainMask"
+              operator="in"
+              result="darkGrain"
+            />
+            {/* atop fades between plain and darkened land, clipped to the landmasses. */}
+            <feComposite in="darkGrain" in2="SourceGraphic" operator="atop" />
+          </filter>
+        </defs>
         <path
           className="conference-map-parallels"
           d={path(parallels) ?? undefined}
         />
-        <path className="conference-map-land" d={path(land) ?? undefined} />
+        <path
+          className="conference-map-land"
+          filter="url(#paper-texture-filter)"
+          d={path(land) ?? undefined}
+        />
       </svg>
 
       <ul className="conference-map-markers-list">
