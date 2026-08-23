@@ -24,15 +24,18 @@ const ConferencePopover = ({
       popover="auto"
       {...props}
     >
-      <h4>
-        {markerInfo.cityName}, {markerInfo.countryName} ({markerInfo.count})
-      </h4>
-      <ul>
+      <h2>
+        {markerInfo.count} {markerInfo.count > 1 ? "conferences" : "conference"}{" "}
+        in {markerInfo.cityName}, {markerInfo.countryName}
+      </h2>
+      <ul className="conference-popover-editions">
         {markerInfo.editionsInLocation.map(edition => (
           <li key={edition.id}>
             <header className="conference-popover-header">
-              {edition.conferenceName}
-              <ul>
+              <a href={edition.url} target="_blank" rel="noopener noreferrer">
+                {edition.conferenceName}
+              </a>
+              <ul className="inline-list">
                 <Badge purpose="location">
                   {edition.isOnline && edition.location
                     ? "Hybrid"
@@ -45,6 +48,13 @@ const ConferencePopover = ({
             <time dateTime={`${edition.startDate}/${edition.endDate}`}>
               {edition.startDate} &ndash; {edition.endDate}
             </time>
+            <ul className="conference-popover-subjects inline-list">
+              {edition.subjects.map(subject => (
+                <li key={subject}>
+                  <Badge purpose="conferenceSubject">{subject}</Badge>
+                </li>
+              ))}
+            </ul>
             {edition.notes && <p>{edition.notes}</p>}
           </li>
         ))}

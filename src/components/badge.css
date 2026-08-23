@@ -1,0 +1,32 @@
+@layer components {
+  .tmap-badge {
+    background-color: var(--colour-main-bg);
+    border: 1px solid var(--colour-main-bg);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+
+    white-space: nowrap;
+
+    &.tmap-badge-location {
+      background-color: light-dark(
+        var(--colour-flamingo-100),
+        var(--colour-blue-900)
+      );
+      border: 1px solid
+        light-dark(var(--colour-flamingo-200), var(--colour-blue-800));
+
+      color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
+    }
+
+    &.tmap-badge-conference-subject {
+      background-color: light-dark(
+        var(--colour-mustard-100),
+        var(--colour-mustard-900)
+      );
+      border: 1px solid
+        light-dark(var(--colour-mustard-200), var(--colour-mustard-800));
+
+      color: light-dark(var(--colour-mustard-800), var(--colour-mustard-200));
+    }
+  }
+}

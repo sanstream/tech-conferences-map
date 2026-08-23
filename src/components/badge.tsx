@@ -1,3 +1,4 @@
+import "@/components/badge.css"
 import { cva, type VariantProps } from "class-variance-authority"
 import clsx from "clsx"
 import type { ComponentProps } from "react"
@@ -15,6 +16,7 @@ export const rootClassName = cva("tmap-badge", {
       default: "tmap-badge",
       // maps onto a city location, hybrid and fully online
       location: "tmap-badge tmap-badge-location",
+      conferenceSubject: "tmap-badge tmap-badge-conference-subject",
     },
   },
   defaultVariants,

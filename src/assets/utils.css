@@ -23,4 +23,11 @@
     --page-y-padding: 1rem;
     padding: var(--page-y-padding) var(--page-x-padding);
   }
+
+  .inline-list {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
 }

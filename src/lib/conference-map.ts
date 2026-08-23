@@ -8,6 +8,8 @@ type EditionWithId = ConferenceEntry["data"]["editions"][number] & {
   id: string
   conferenceId: string
   conferenceName: string
+  subjects: string[]
+  url: string
 }
 
 type MarkerGroup = {
@@ -25,7 +27,10 @@ function coordinateKey(latitude: number, longitude: number): string {
 }
 
 /** True if `candidate` starts (or, if tied, ends) later than `current`. */
-function isLaterEdition(candidate: EditionWithId, current: EditionWithId): boolean {
+function isLaterEdition(
+  candidate: EditionWithId,
+  current: EditionWithId,
+): boolean {
   if (candidate.startDate !== current.startDate) {
     return candidate.startDate > current.startDate
   }
@@ -56,6 +61,8 @@ export function getConferenceMapMarkers(
         id: `${entry.id}-${edition.startDate}`,
         conferenceId: entry.id,
         conferenceName: entry.data.name,
+        subjects: entry.data.subjects,
+        url: entry.data.url,
       }
       const existing = groups.get(id)
       if (existing) {
