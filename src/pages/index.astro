@@ -3,10 +3,12 @@ import ConferenceResults from "@/components/conference-results/server"
 import Placeholder from "@/components/placeholder.astro"
 import Layout from "@/layouts/Layout.astro"
 import { getConferenceMapMarkers } from "@/lib/conference-map"
-import { getAllConferences } from "@/lib/conferences"
+import { getAllConferences, getSubjectIndex } from "@/lib/conferences"
+import ConferenceFilters from "@/components/conference-filters"
 
 const conferences = await getAllConferences()
 const markers = getConferenceMapMarkers(conferences)
+const subjects = getSubjectIndex(conferences)
 ---
 
 <Layout>
@@ -15,9 +17,7 @@ const markers = getConferenceMapMarkers(conferences)
       <h2 class="h3-heading filters-heading">
         Filter the map using these option:
       </h2>
-      <Placeholder class="filters-field1">Placeholder field</Placeholder>
-      <Placeholder class="filters-field2">Placeholder field</Placeholder>
-      <Placeholder class="filters-field3">Placeholder field</Placeholder>
+      <ConferenceFilters client:load subjects={subjects} />
     </header>
     <div class="main-content-results">
       <ConferenceResults markers={markers} />
