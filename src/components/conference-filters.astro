@@ -1,0 +1,13 @@
+---
+import "@/components/conference-filters.css"
+
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<div class:list={["tmap-conference-filters", className]}>
+  <slot />
+</div>

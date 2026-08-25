@@ -17,11 +17,11 @@ export function filterConferences(
   all: ConferenceEntry[],
   filters: ConferenceFilters,
 ): ConferenceEntry[] {
-  return all.filter((entry) => {
+  return all.filter(entry => {
     const { data } = entry
 
     if (filters.subjects?.length) {
-      const hasSubject = filters.subjects.some((subject) =>
+      const hasSubject = filters.subjects.some(subject =>
         data.subjects.includes(subject),
       )
       if (!hasSubject) return false
@@ -31,7 +31,9 @@ export function filterConferences(
 
     if (filters.query) {
       const q = filters.query.toLowerCase()
-      const haystack = [data.name, data.brand, data.id, entry.id].join(" ").toLowerCase()
+      const haystack = [data.name, data.brand, data.id, entry.id]
+        .join(" ")
+        .toLowerCase()
       if (!haystack.includes(q)) return false
     }
 
@@ -55,7 +57,9 @@ export function groupByBrand(
     list.sort((a, b) => a.data.name.localeCompare(b.data.name, "en"))
   }
 
-  return new Map([...groups.entries()].sort(([a], [b]) => a.localeCompare(b, "en")))
+  return new Map(
+    [...groups.entries()].sort(([a], [b]) => a.localeCompare(b, "en")),
+  )
 }
 
 export function getSubjectIndex(all: ConferenceEntry[]): string[] {
@@ -68,6 +72,18 @@ export function getSubjectIndex(all: ConferenceEntry[]): string[] {
   return [...subjects].sort((a, b) => a.localeCompare(b, "en"))
 }
 
+export function getLocationIndex(all: ConferenceEntry[]): string[] {
+  const locations = new Set<string>()
+  for (const entry of all) {
+    for (const edition of entry.data.editions) {
+      const { city, country } = edition.location ?? {}
+      if (!city && !country) continue
+      locations.add(`${city}, ${country}`)
+    }
+  }
+  return [...locations].sort((a, b) => a.localeCompare(b, "en"))
+}
+
 export type ConferenceIndexEntry = {
   id: string
   brand: string
@@ -75,9 +91,11 @@ export type ConferenceIndexEntry = {
   subjects: string[]
 }
 
-export function toConferenceIndex(all: ConferenceEntry[]): ConferenceIndexEntry[] {
+export function toConferenceIndex(
+  all: ConferenceEntry[],
+): ConferenceIndexEntry[] {
   return all
-    .map((entry) => ({
+    .map(entry => ({
       id: entry.id,
       brand: entry.data.brand,
       name: entry.data.name,

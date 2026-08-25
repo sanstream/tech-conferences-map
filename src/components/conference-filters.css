@@ -1,6 +1,8 @@
 @layer components {
   .tmap-conference-filters {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     & .filter-option-layout {
       flex: 1 0 auto;

@@ -30,4 +30,28 @@
     padding: 0;
     list-style: none;
   }
+
+  .tmap-badge-subject-colour {
+    background-color: light-dark(
+      var(--colour-mustard-100),
+      var(--colour-mustard-900)
+    );
+    border-color: light-dark(
+      var(--colour-mustard-200),
+      var(--colour-mustard-800)
+    );
+    color: light-dark(var(--colour-mustard-800), var(--colour-mustard-200));
+  }
+
+  .tmap-badge-location-colour {
+    background-color: light-dark(
+      var(--colour-blue-100),
+      var(--colour-flamingo-900)
+    );
+    border-color: light-dark(
+      var(--colour-blue-200),
+      var(--colour-flamingo-800)
+    );
+    color: light-dark(var(--colour-blue-800), var(--colour-flamingo-200));
+  }
 }
