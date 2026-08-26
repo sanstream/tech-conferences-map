@@ -35,7 +35,14 @@
       margin-top: 0;
     }
 
-    & > .conference-popover-editions {
+    & .conference-popover-section-heading {
+      margin: 1.25rem 0 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: light-dark(var(--colour-green-800), var(--colour-mustard-300));
+    }
+
+    & .conference-popover-editions {
       padding: 0;
       margin: 0;
       list-style: none;
@@ -69,9 +76,6 @@
           color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
         }
       }
-    }
-    & > h4 {
-      color: light-dark(var(--colour-green-800), var(--colour-mustard-300));
     }
   }
 }

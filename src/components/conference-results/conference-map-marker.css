@@ -12,5 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .conference-map-marker[data-match="false"] {
+    background-color: var(--colour-land-bg);
+    color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
+    border-color: light-dark(
+      var(--colour-land-contour),
+      var(--colour-land-contour)
+    );
+    z-index: 2;
   }
 }

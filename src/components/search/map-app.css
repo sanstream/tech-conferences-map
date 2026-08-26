@@ -1,0 +1,27 @@
+@layer components {
+  .main-content-filters {
+    display: grid;
+    grid-template-areas:
+      "heading"
+      "fields";
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 1rem;
+
+    & .tmap-conference-filters {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .filters-heading {
+    margin: 0;
+  }
+
+  .main-content-results {
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+}

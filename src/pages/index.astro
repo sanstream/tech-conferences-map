@@ -1,12 +1,12 @@
 ---
-import ConferenceResults from "@/components/conference-results/server"
-import Placeholder from "@/components/placeholder.astro"
+import MapApp from "@/components/search/map-app"
 import Layout from "@/layouts/Layout.astro"
 import { getConferenceMapMarkers } from "@/lib/conference-map"
-import { getAllConferences, getLocationIndex, getSubjectIndex } from "@/lib/conferences"
-import ConferenceFilters from "@/components/conference-filters.astro"
-import FilterbySubjects from "@/components/filters/subjects"
-import FilterByLocations from "@/components/filters/locations"
+import {
+  getAllConferences,
+  getLocationIndex,
+  getSubjectIndex,
+} from "@/lib/conferences"
 
 const conferences = await getAllConferences()
 const markers = getConferenceMapMarkers(conferences)
@@ -16,22 +16,16 @@ const locations = getLocationIndex(conferences)
 
 <Layout>
   <main class="main-content">
-    <header class="main-content-filters">
-      <h2 class="h3-heading filters-heading">
-        Filter the map using these option:
-      </h2>
-      <ConferenceFilters>
-        <FilterbySubjects client:load subjects={subjects} />
-        <FilterByLocations client:load locations={locations} />
-      </ConferenceFilters>
-    </header>
-    <div class="main-content-results">
-      <ConferenceResults markers={markers} />
-    </div>
+    <MapApp
+      client:load
+      markers={markers}
+      subjects={subjects}
+      locations={locations}
+    />
   </main>
 </Layout>
 
-<style>
+<style is:global>
   .main-content {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -42,37 +36,15 @@ const locations = getLocationIndex(conferences)
       "results";
   }
 
-  .main-content-filters {
+  .main-content .main-content-filters {
     grid-area: filters;
-    display: grid;
-    grid-template-areas:
-      "heading heading heading"
-      "field1 field2 field3";
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 1rem;
-
-    & .filters-heading {
-      grid-area: heading;
-      margin: 0;
-    }
-
-    & .filters-field1 {
-      grid-area: field1;
-    }
-    & .filters-field2 {
-      grid-area: field2;
-    }
-    & .filters-field3 {
-      grid-area: field3;
-    }
   }
 
-  .main-content-results {
+  .main-content .filters-heading {
+    grid-area: heading;
+  }
+
+  .main-content .main-content-results {
     grid-area: results;
-    overflow-x: auto;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
   }
 </style>

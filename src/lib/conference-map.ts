@@ -1,10 +1,6 @@
 import type { ConferenceEntry } from "./conferences"
 
-export type MapMarker = {
-  id: string
-} & MarkerGroup
-
-type EditionWithId = ConferenceEntry["data"]["editions"][number] & {
+export type MapEdition = ConferenceEntry["data"]["editions"][number] & {
   id: string
   conferenceId: string
   conferenceName: string
@@ -12,25 +8,24 @@ type EditionWithId = ConferenceEntry["data"]["editions"][number] & {
   url: string
 }
 
-type MarkerGroup = {
+export type MapMarker = {
+  id: string
   longitude: number
   latitude: number
   count: number
-  names: Set<string>
   cityName: string
   countryName: string
-  editionsInLocation: EditionWithId[]
+  editionsInLocation: MapEdition[]
 }
+
+type MarkerGroup = Omit<MapMarker, "id">
 
 function coordinateKey(latitude: number, longitude: number): string {
   return `${latitude.toFixed(4)},${longitude.toFixed(4)}`
 }
 
 /** True if `candidate` starts (or, if tied, ends) later than `current`. */
-function isLaterEdition(
-  candidate: EditionWithId,
-  current: EditionWithId,
-): boolean {
+function isLaterEdition(candidate: MapEdition, current: MapEdition): boolean {
   if (candidate.startDate !== current.startDate) {
     return candidate.startDate > current.startDate
   }
@@ -56,7 +51,7 @@ export function getConferenceMapMarkers(
       }
 
       const id = coordinateKey(latitude, longitude)
-      const nextEdition: EditionWithId = {
+      const nextEdition: MapEdition = {
         ...edition,
         id: `${entry.id}-${edition.startDate}`,
         conferenceId: entry.id,
@@ -71,7 +66,6 @@ export function getConferenceMapMarkers(
         )
         if (sameConferenceIndex === -1) {
           existing.editionsInLocation.push(nextEdition)
-          existing.names.add(entry.data.name)
           existing.count += 1
         } else if (
           isLaterEdition(
@@ -86,7 +80,6 @@ export function getConferenceMapMarkers(
           longitude: Number(longitude.toFixed(4)),
           latitude: Number(latitude.toFixed(4)),
           count: 1,
-          names: new Set([entry.data.name]),
           cityName: edition.location?.city ?? "",
           countryName: edition.location?.country ?? "",
           editionsInLocation: [nextEdition],
@@ -101,4 +94,10 @@ export function getConferenceMapMarkers(
       ...group,
     }))
     .sort((a, b) => a.id.localeCompare(b.id, "en"))
+}
+
+export function formatEditionLocation(edition: MapEdition): string {
+  const city = edition.location?.city ?? ""
+  const country = edition.location?.country ?? ""
+  return `${city}, ${country}`
 }

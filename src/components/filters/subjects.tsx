@@ -10,15 +10,20 @@ import {
   ComboboxValue,
   useComboboxAnchor,
 } from "@/components/combobox"
+import { searchParamsParsers } from "@/lib/search-params"
 import clsx from "clsx"
-import { useState, type ComponentProps } from "react"
+import { useQueryState } from "nuqs"
+import type { ComponentProps } from "react"
 
 export type FilterBySubjectsProps = ComponentProps<"div"> & {
   subjects: string[]
 }
 
 const FilterbySubjects = ({ className, subjects }: FilterBySubjectsProps) => {
-  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([])
+  const [selectedSubjects, setSelectedSubjects] = useQueryState(
+    "subjects",
+    searchParamsParsers.subjects,
+  )
   const anchor = useComboboxAnchor()
   return (
     <div className={clsx("filter-option-layout", className)}>
@@ -28,7 +33,9 @@ const FilterbySubjects = ({ className, subjects }: FilterBySubjectsProps) => {
         items={subjects}
         multiple
         value={selectedSubjects}
-        onValueChange={setSelectedSubjects}
+        onValueChange={value => {
+          void setSelectedSubjects(value)
+        }}
       >
         <ComboboxChips ref={anchor}>
           <ComboboxValue>

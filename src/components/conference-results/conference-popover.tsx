@@ -1,11 +1,44 @@
 import Badge from "@/components/badge"
 import "@/components/conference-results/conference-popover.css"
-import type { MapMarker } from "@/lib/conference-map"
+import type { MapEdition } from "@/lib/conference-map"
+import type { SearchAwareMarker } from "@/lib/marker-search"
 import type { ComponentProps } from "react"
 
 export type ConferencePopoverProps = Omit<ComponentProps<"div">, "id"> & {
   id: string
-  markerInfo: MapMarker
+  markerInfo: SearchAwareMarker
+}
+
+function EditionRow({ edition }: { edition: MapEdition }) {
+  return (
+    <li>
+      <header className="conference-popover-header">
+        <a href={edition.url} target="_blank" rel="noopener noreferrer">
+          {edition.conferenceName}
+        </a>
+        <ul className="inline-list">
+          <Badge purpose="location">
+            {edition.isOnline && edition.location
+              ? "Hybrid"
+              : edition.isOnline
+                ? "Online"
+                : "In-person"}
+          </Badge>
+        </ul>
+      </header>
+      <time dateTime={`${edition.startDate}/${edition.endDate}`}>
+        {edition.startDate} &ndash; {edition.endDate}
+      </time>
+      <ul className="conference-popover-subjects inline-list">
+        {edition.subjects.map(subject => (
+          <li key={subject}>
+            <Badge purpose="conferenceSubject">{subject}</Badge>
+          </li>
+        ))}
+      </ul>
+      {edition.notes && <p>{edition.notes}</p>}
+    </li>
+  )
 }
 
 const ConferencePopover = ({
@@ -15,6 +48,21 @@ const ConferencePopover = ({
   children,
   ...props
 }: ConferencePopoverProps) => {
+  const {
+    displayCount,
+    cityName,
+    countryName,
+    searchActive,
+    matchingEditions,
+    nonMatchingEditions,
+    editionsInLocation,
+  } = markerInfo
+
+  const showSplit =
+    searchActive &&
+    matchingEditions.length > 0 &&
+    nonMatchingEditions.length > 0
+
   return (
     <div
       id={id}
@@ -25,40 +73,38 @@ const ConferencePopover = ({
       {...props}
     >
       <h2>
-        {markerInfo.count} {markerInfo.count > 1 ? "conferences" : "conference"}{" "}
-        in {markerInfo.cityName}, {markerInfo.countryName}
+        {displayCount}{" "}
+        {displayCount === 1 ? "conference" : "conferences"} in {cityName},{" "}
+        {countryName}
       </h2>
-      <ul className="conference-popover-editions">
-        {markerInfo.editionsInLocation.map(edition => (
-          <li key={edition.id}>
-            <header className="conference-popover-header">
-              <a href={edition.url} target="_blank" rel="noopener noreferrer">
-                {edition.conferenceName}
-              </a>
-              <ul className="inline-list">
-                <Badge purpose="location">
-                  {edition.isOnline && edition.location
-                    ? "Hybrid"
-                    : edition.isOnline
-                      ? "Online"
-                      : "In-person"}
-                </Badge>
-              </ul>
-            </header>
-            <time dateTime={`${edition.startDate}/${edition.endDate}`}>
-              {edition.startDate} &ndash; {edition.endDate}
-            </time>
-            <ul className="conference-popover-subjects inline-list">
-              {edition.subjects.map(subject => (
-                <li key={subject}>
-                  <Badge purpose="conferenceSubject">{subject}</Badge>
-                </li>
-              ))}
-            </ul>
-            {edition.notes && <p>{edition.notes}</p>}
-          </li>
-        ))}
-      </ul>
+
+      {showSplit ? (
+        <>
+          <h3 className="conference-popover-section-heading">Matching</h3>
+          <ul className="conference-popover-editions">
+            {matchingEditions.map(edition => (
+              <EditionRow key={edition.id} edition={edition} />
+            ))}
+          </ul>
+          <h3 className="conference-popover-section-heading">Other</h3>
+          <ul className="conference-popover-editions">
+            {nonMatchingEditions.map(edition => (
+              <EditionRow key={edition.id} edition={edition} />
+            ))}
+          </ul>
+        </>
+      ) : (
+        <ul className="conference-popover-editions">
+          {(searchActive
+            ? matchingEditions.length > 0
+              ? matchingEditions
+              : nonMatchingEditions
+            : editionsInLocation
+          ).map(edition => (
+            <EditionRow key={edition.id} edition={edition} />
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
