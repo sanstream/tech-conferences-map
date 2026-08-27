@@ -73,20 +73,29 @@ const ConferencePopover = ({
       {...props}
     >
       <h2>
-        {displayCount}{" "}
-        {displayCount === 1 ? "conference" : "conferences"} in {cityName},{" "}
-        {countryName}
+        {!showSplit ? (
+          <>
+            {displayCount} {displayCount === 1 ? "conference" : "conferences"}
+          </>
+        ) : (
+          "Conferences"
+        )}{" "}
+        in {cityName}, {countryName}
       </h2>
 
       {showSplit ? (
         <>
-          <h3 className="conference-popover-section-heading">Matching</h3>
+          <h3 className="conference-popover-section-heading">
+            Matching ({matchingEditions.length})
+          </h3>
           <ul className="conference-popover-editions">
             {matchingEditions.map(edition => (
               <EditionRow key={edition.id} edition={edition} />
             ))}
           </ul>
-          <h3 className="conference-popover-section-heading">Other</h3>
+          <h3 className="conference-popover-section-heading">
+            Other ({nonMatchingEditions.length})
+          </h3>
           <ul className="conference-popover-editions">
             {nonMatchingEditions.map(edition => (
               <EditionRow key={edition.id} edition={edition} />

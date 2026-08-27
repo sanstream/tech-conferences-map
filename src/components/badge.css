@@ -6,7 +6,7 @@
     /* border-radius: 0.5rem; */
     padding: 0.1rem 0.25rem;
     line-height: 1.25;
-    color: light-dark(var(--black), var(--white));
+    color: light-dark(var(--black), var(--colour-mineral-grey));
     white-space: nowrap;
   }
 }

@@ -86,10 +86,7 @@
       var(--colour-green-700)
     );
 
-    --colour-map-bg: light-dark(
-      var(--colour-green-100),
-      var(--colour-green-900)
-    );
+    --colour-map-bg: light-dark(var(--white), var(--black));
 
     --colour-map-parallels: light-dark(
       var(--colour-green-300),
