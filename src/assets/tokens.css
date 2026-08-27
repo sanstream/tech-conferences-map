@@ -60,7 +60,8 @@
     --colour-mustard-900: oklch(0.25 0.06 90);
 
     --white: oklch(1 0 0);
-    --black: oklch(0 0 0);
+    --colour-mineral-grey: oklch(89.415% 0.0177 164.929);
+    --black: oklab(26.448% 0 -0.00003);
 
     /* semantic token mapping */
     --colour-main-bg: light-dark(

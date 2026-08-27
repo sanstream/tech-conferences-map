@@ -1,10 +1,10 @@
 "use client"
 
-import "./combobox.css"
 import { Button } from "@/components/button"
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
 import clsx from "clsx"
 import * as React from "react"
+import "./combobox.css"
 
 function ChevronDownIcon(props: React.ComponentProps<"svg">) {
   return (
@@ -284,7 +284,7 @@ function ComboboxChip({
   return (
     <ComboboxPrimitive.Chip
       data-slot="combobox-chip"
-      className={clsx("tmap-combobox-chip", className)}
+      className={clsx("tmap-badge tmap-combobox-chip", className)}
       {...props}
     >
       {children}
@@ -293,7 +293,7 @@ function ComboboxChip({
           className="tmap-combobox-chip-remove"
           data-slot="combobox-chip-remove"
           render={
-            <Button variant="ghost" size="icon-xs">
+            <Button variant="ghost">
               <XIcon />
             </Button>
           }

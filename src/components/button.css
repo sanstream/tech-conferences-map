@@ -27,7 +27,10 @@
   }
 
   .tmap-button:focus-visible {
-    border-color: light-dark(var(--colour-blue-400), var(--colour-flamingo-400));
+    border-color: light-dark(
+      var(--colour-blue-400),
+      var(--colour-flamingo-400)
+    );
     box-shadow: 0 0 0 3px
       light-dark(
         oklch(from var(--colour-blue-400) l c h / 0.5),
@@ -61,6 +64,8 @@
     flex-shrink: 0;
     width: 1rem;
     height: 1rem;
+    fill: currentColor;
+    stroke: currentColor;
   }
 
   /* sizes */
