@@ -1,7 +1,7 @@
 @layer components {
   .conference-map-marker {
     background-color: light-dark(
-      var(--colour-green-500),
+      var(--colour-mustard-400),
       var(--colour-mustard-500)
     );
     color: light-dark(var(--black), var(--white));
