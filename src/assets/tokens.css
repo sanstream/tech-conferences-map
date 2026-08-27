@@ -96,7 +96,22 @@
       var(--colour-green-800)
     );
 
+    /* field colouring */
+
+    --colour-field-bg: light-dark(var(--white), var(--colour-flamingo-1000));
+
+    --colour-field-contour: light-dark(
+      var(--colour-blue-500),
+      var(--colour-flamingo-400)
     );
+
+    --colour-field-text: light-dark(var(--black), var(--white));
+    --colour-field-placeholder: light-dark(
+      var(--colour-blue-700),
+      var(--colour-flamingo-400)
+    );
+
+    /* text colouring */
 
     --colour-body-text: light-dark(var(--black), var(--white));
     --colour-heading-text: light-dark(
