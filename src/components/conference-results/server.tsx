@@ -146,6 +146,8 @@ const ConferenceResults = ({
               data-x={x}
               data-y={y}
               data-radius={radius}
+              data-match={marker.containsMatches ? "true" : "false"}
+
               style={
                 {
                   "--marker-x": x,
@@ -156,8 +158,8 @@ const ConferenceResults = ({
             >
               <ConferenceMapMarker
                 key={marker.id}
+                data-match={marker.containsMatches ? "true" : "false"}
                 popoverTarget={popoverId}
-                data-match={marker.isHighlighted ? "true" : "false"}
                 aria-label={`${marker.cityName}, ${marker.countryName}`}
               >
                 {marker.displayCount > 1 ? marker.displayCount : ""}

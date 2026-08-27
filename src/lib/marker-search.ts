@@ -3,16 +3,13 @@ import {
   type MapEdition,
   type MapMarker,
 } from "@/lib/conference-map"
-import {
-  isSearchActive,
-  type SearchFilters,
-} from "@/lib/search-params"
+import { isSearchActive, type SearchFilters } from "@/lib/search-params"
 
 export type SearchAwareMarker = MapMarker & {
   matchingEditions: MapEdition[]
   nonMatchingEditions: MapEdition[]
   displayCount: number
-  isHighlighted: boolean
+  containsMatches: boolean
   searchActive: boolean
 }
 
@@ -44,7 +41,7 @@ export function applyMarkerSearch(
         matchingEditions: marker.editionsInLocation,
         nonMatchingEditions: [],
         displayCount: marker.count,
-        isHighlighted: true,
+        containsMatches: true,
         searchActive: false,
       }
     }
@@ -67,7 +64,7 @@ export function applyMarkerSearch(
       matchingEditions,
       nonMatchingEditions,
       displayCount,
-      isHighlighted: displayCount > 0,
+      containsMatches: displayCount > 0,
       searchActive: true,
     }
   })
