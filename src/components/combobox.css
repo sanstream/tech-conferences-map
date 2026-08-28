@@ -12,7 +12,6 @@
     min-width: calc(var(--anchor-width) + 1.75rem);
     transform-origin: var(--transform-origin);
     overflow: hidden;
-    border-radius: 0.5rem;
     background-color: var(--colour-field-bg);
     color: var(--colour-field-text);
     box-shadow: var(--shadow-md);
@@ -152,7 +151,6 @@
     align-items: center;
     gap: 0.25rem;
     border: 1px solid var(--colour-field-contour);
-    border-radius: 0.5rem;
     background-color: var(--colour-field-bg);
     background-clip: padding-box;
     padding: 0.25rem 0.625rem;
@@ -165,8 +163,7 @@
 
   .tmap-combobox-chips:focus-within {
     border-color: var(--colour-field-contour);
-    box-shadow: 0 0 0 3px
-      oklch(from var(--colour-field-contour) l c h / 0.45);
+    box-shadow: 0 0 0 3px oklch(from var(--colour-field-contour) l c h / 0.45);
   }
 
   .tmap-combobox-chips[aria-invalid="true"] {

@@ -99,7 +99,7 @@
 
     --colour-field-contour: light-dark(
       var(--colour-blue-500),
-      var(--colour-flamingo-400)
+      var(--colour-flamingo-600)
     );
 
     --colour-field-text: light-dark(var(--black), var(--white));
