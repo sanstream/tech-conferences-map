@@ -1,0 +1,154 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import "@/assets/tokens-2.css"
+
+const hues = [
+  { slug: "eosine-pink", name: "Eosine Pink" },
+  { slug: "pyrite-yellow", name: "Pyrite Yellow" },
+  { slug: "pale-king-blue", name: "Pale King Blue" },
+  { slug: "calamine-blue", name: "Calamine Blue" },
+] as const
+
+const steps = [100, 200, 300, 400, 500, 600, 700, 800, 900, 950] as const
+---
+
+<Layout>
+  <main class="colors-page">
+    <header class="colors-header">
+      <h2 class="h3-heading">Colour palette</h2>
+      <p>
+        Sanzo Wada combination
+        <a href="https://espectro.dev/combinations/287">287</a>. Each row is a
+        hue; columns share the same tint and shade steps so the sets compare
+        vertically. 500 is the source colour.
+      </p>
+    </header>
+
+    <div class="palette-wrap">
+      <div class="palette">
+        <div class="palette-row palette-steps" aria-hidden="true">
+          <span class="hue-name"></span>
+          {steps.map(step => <span class="step-label">{step}</span>)}
+        </div>
+        {
+          hues.map(hue => (
+            <div class="palette-row">
+              <span class="hue-name">{hue.name}</span>
+              {steps.map(step => (
+                <div
+                  class:list={[
+                    "swatch",
+                    {
+                      "swatch-source": step === 500,
+                      "swatch-on-dark": step >= 800,
+                    },
+                  ]}
+                  style={`--swatch: var(--colour-${hue.slug}-${step})`}
+                  title={`--colour-${hue.slug}-${step}`}
+                  aria-label={`${hue.name} ${step}`}
+                >
+                  <span class="swatch-step">{step}</span>
+                </div>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .colors-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0 2rem;
+  }
+
+  .colors-header {
+    max-width: 42rem;
+
+    & h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    & p {
+      margin: 0;
+      color: var(--colour-body-text);
+    }
+  }
+
+  .palette-wrap {
+    overflow-x: auto;
+  }
+
+  .palette {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 56rem;
+  }
+
+  .palette-row {
+    display: grid;
+    grid-template-columns: 10.5rem repeat(10, minmax(0, 1fr));
+    gap: 0.4rem;
+    align-items: stretch;
+  }
+
+  .palette-steps {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--colour-main-bg);
+    padding-bottom: 0.25rem;
+  }
+
+  .hue-name {
+    display: flex;
+    align-items: center;
+    font-family: "Armata", "Helvetica", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--colour-heading-text);
+  }
+
+  .palette-steps .hue-name {
+    min-height: 0;
+  }
+
+  .step-label {
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-size: 0.75rem;
+    color: var(--colour-body-text);
+  }
+
+  .swatch {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    aspect-ratio: 1;
+    min-height: 3.5rem;
+    padding: 0.35rem;
+    border-radius: 0.25rem;
+    background: var(--swatch);
+    color: var(--black);
+  }
+
+  .swatch-on-dark {
+    color: var(--white);
+  }
+
+  .swatch-source {
+    outline: 2px solid var(--colour-heading-text);
+    outline-offset: 2px;
+  }
+
+  .swatch-step {
+    font-family: "Fira Code", monospace;
+    font-size: 0.6875rem;
+    line-height: 1;
+  }
+</style>
