@@ -1,12 +1,18 @@
 @layer components {
   .tmap-badge {
-    background-color: light-dark(var(--colour-mineral-grey), var(--black));
+    background-color: light-dark(
+      var(--colour-calamine-blue-200),
+      var(--colour-eosine-pink-900)
+    );
     border-bottom: 2px solid
-      light-dark(var(--colour-main-bg), var(--colour-mineral-grey));
+      light-dark(var(--colour-main-bg), var(--colour-eosine-pink-200));
     /* border-radius: 0.5rem; */
     padding: 0.1rem 0.25rem;
     line-height: 1.25;
-    color: light-dark(var(--black), var(--colour-mineral-grey));
+    color: light-dark(
+      var(--colour-eosine-pink-950),
+      var(--colour-eosine-pink-200)
+    );
     white-space: nowrap;
   }
 }

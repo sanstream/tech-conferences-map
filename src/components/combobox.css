@@ -89,10 +89,13 @@
 
   .tmap-combobox-item[data-highlighted] {
     background-color: light-dark(
-      var(--colour-green-300),
-      var(--colour-green-800)
+      var(--colour-pyrite-yellow-300),
+      var(--colour-pyrite-yellow-800)
     );
-    color: light-dark(var(--colour-green-900), var(--colour-green-100));
+    color: light-dark(
+      var(--colour-pyrite-yellow-900),
+      var(--colour-pyrite-yellow-100)
+    );
   }
 
   .tmap-combobox-item[data-disabled] {
@@ -168,13 +171,13 @@
 
   .tmap-combobox-chips[aria-invalid="true"] {
     border-color: light-dark(
-      var(--colour-flamingo-600),
-      var(--colour-flamingo-500)
+      var(--colour-eosine-pink-600),
+      var(--colour-eosine-pink-500)
     );
     box-shadow: 0 0 0 3px
       light-dark(
-        oklch(from var(--colour-flamingo-600) l c h / 0.2),
-        oklch(from var(--colour-flamingo-500) l c h / 0.4)
+        oklch(from var(--colour-eosine-pink-600) l c h / 0.2),
+        oklch(from var(--colour-eosine-pink-500) l c h / 0.4)
       );
   }
 

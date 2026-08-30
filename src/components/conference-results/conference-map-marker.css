@@ -1,11 +1,15 @@
 @layer components {
   .conference-map-marker {
     background-color: light-dark(
-      var(--colour-mustard-400),
-      var(--colour-mustard-500)
+      var(--colour-eosine-pink-300),
+      var(--colour-eosine-pink-700)
     );
-    color: light-dark(var(--black), var(--white));
-    border: 1px solid light-dark(var(--black), var(--white));
+    color: light-dark(
+      var(--colour-eosine-pink-950),
+      var(--colour-eosine-pink-100)
+    );
+    border: 1px solid
+      light-dark(var(--colour-eosine-pink-950), var(--colour-eosine-pink-100));
     font-size: 0.75rem;
     border-radius: 50%;
     padding: 0.25rem;
@@ -18,7 +22,10 @@
 
   .conference-map-marker[data-match="false"] {
     background-color: var(--colour-land-bg);
-    color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
+    color: light-dark(
+      var(--colour-pyrite-yellow-800),
+      var(--colour-pyrite-yellow-200)
+    );
     border-color: light-dark(
       var(--colour-land-contour),
       var(--colour-land-contour)

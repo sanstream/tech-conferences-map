@@ -31,7 +31,6 @@ import SpecklesBackground from "../components/speckles-background.astro"
     <title>Tech Conferences Map</title>
   </head>
   <body class="body-text">
-    <SpecklesBackground />
     <header class="page-header page-level-container">
       <h1 class="h2-heading">
         Tech Conferences Map
@@ -88,13 +87,16 @@ import SpecklesBackground from "../components/speckles-background.astro"
     align-items: center;
     box-shadow: var(--shadow-sm);
     background-color: light-dark(
-      var(--colour-flamingo-200),
-      var(--colour-blue-900)
+      var(--colour-eosine-pink-300),
+      var(--colour-eosine-pink-700)
     );
 
     & h1 {
       margin: 0;
-      color: light-dark(var(--colour-blue-700), var(--colour-flamingo-300));
+      color: light-dark(
+        var(--colour-eosine-pink-800),
+        var(--colour-eosine-pink-200)
+      );
     }
 
     & .subheading {
@@ -118,8 +120,8 @@ import SpecklesBackground from "../components/speckles-background.astro"
     column-gap: 1.5rem;
     box-shadow: var(--shadow-sm);
     background-color: light-dark(
-      var(--colour-flamingo-200),
-      var(--colour-blue-900)
+      var(--colour-calamine-blue-300),
+      var(--colour-calamine-blue-800)
     );
     color: var(--colour-body-text);
 
