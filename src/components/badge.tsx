@@ -15,8 +15,8 @@ export const rootClassName = cva("tmap-badge", {
     purpose: {
       default: "tmap-badge",
       // maps onto a city location, hybrid and fully online
-      location: "tmap-badge tmap-badge-location",
-      conferenceSubject: "tmap-badge tmap-badge-conference-subject",
+      location: "tmap-badge tmap-badge-location-colour",
+      conferenceSubject: "tmap-badge tmap-badge-subject-colour",
     },
   },
   defaultVariants,

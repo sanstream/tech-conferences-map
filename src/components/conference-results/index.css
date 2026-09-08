@@ -15,12 +15,10 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 1;
 
       & > li {
         position: absolute;
         overflow: visible;
-        z-index: 1;
         /*
          * Fallback for browsers without typed attr() (Firefox, Safari, older Chrome).
          * --marker-x, --marker-y, --marker-r are set inline in server.tsx.
@@ -29,6 +27,14 @@
         top: calc(var(--marker-y) * 1px - var(--marker-r) * 0.5px);
         width: calc(var(--marker-r) * 1px);
         height: calc(var(--marker-r) * 1px);
+
+        &[data-match="true"] {
+          z-index: 2;
+        }
+
+        &[data-match="false"] {
+          z-index: 1;
+        }
       }
 
       @supports (left: attr(data-x px)) {

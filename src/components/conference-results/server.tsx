@@ -3,7 +3,7 @@ import ConferencePopover from "@/components/conference-results/conference-popove
 
 import "@/components/conference-results/conference-map.css"
 import "@/components/conference-results/index.css"
-import type { MapMarker } from "@/lib/conference-map"
+import type { SearchAwareMarker } from "@/lib/marker-search"
 import { geoGraticule, geoMercator, geoPath } from "d3-geo"
 import type { FeatureCollection, Geometry } from "geojson"
 import type { ComponentProps, CSSProperties } from "react"
@@ -12,7 +12,7 @@ import type { GeometryCollection, Topology } from "topojson-specification"
 import landTopology from "world-atlas/land-110m.json"
 
 export type ConferenceResultsProps = ComponentProps<"div"> & {
-  markers: MapMarker[]
+  markers: SearchAwareMarker[]
   /** Astro passes `class`; React uses `className`. Accept both. */
   class?: string
 }
@@ -138,7 +138,7 @@ const ConferenceResults = ({
           const projected = projection([marker.longitude, marker.latitude])
           if (!projected) return null
           const popoverId = marker.id + "popover"
-          const radius = marker.count > 1 ? 20 : 10
+          const radius = marker.displayCount > 1 ? 20 : 10
           const [x, y] = projected
           return (
             <li
@@ -146,6 +146,8 @@ const ConferenceResults = ({
               data-x={x}
               data-y={y}
               data-radius={radius}
+              data-match={marker.containsMatches ? "true" : "false"}
+
               style={
                 {
                   "--marker-x": x,
@@ -156,10 +158,11 @@ const ConferenceResults = ({
             >
               <ConferenceMapMarker
                 key={marker.id}
+                data-match={marker.containsMatches ? "true" : "false"}
                 popoverTarget={popoverId}
                 aria-label={`${marker.cityName}, ${marker.countryName}`}
               >
-                {marker.count > 1 ? marker.count : ""}
+                {marker.displayCount > 1 ? marker.displayCount : ""}
               </ConferenceMapMarker>
               <ConferencePopover
                 key={popoverId}

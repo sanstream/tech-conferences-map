@@ -9,7 +9,7 @@
   The palettes in Sanzo Wada's work are balanced in such a way they can be used together in such
   a way that there are not really such things as primary and secondary colours. The app instead
   uses blue's and flamingo's as neutrals, and the mustard and green as accents.
-  
+
   */
 
     /* Blue serves as a neutral on dark mode, and as an accent on light mode */
@@ -60,7 +60,8 @@
     --colour-mustard-900: oklch(0.25 0.06 90);
 
     --white: oklch(1 0 0);
-    --black: oklch(0 0 0);
+    --colour-mineral-grey: oklch(89.415% 0.0177 164.929);
+    --black: oklab(26.448% 0 -0.00003);
 
     /* semantic token mapping */
     --colour-main-bg: light-dark(
@@ -73,15 +74,41 @@
       var(--colour-blue-900)
     );
 
+    /* map colouring */
+
     --colour-land-bg: light-dark(
-      var(--colour-flamingo-400),
-      var(--colour-blue-800)
+      var(--colour-green-500),
+      var(--colour-green-800)
     );
 
     --colour-land-contour: light-dark(
-      var(--colour-flamingo-500),
-      var(--colour-blue-700)
+      var(--colour-green-600),
+      var(--colour-green-700)
     );
+
+    --colour-map-bg: light-dark(var(--white), var(--black));
+
+    --colour-map-parallels: light-dark(
+      var(--colour-green-300),
+      var(--colour-green-800)
+    );
+
+    /* field colouring */
+
+    --colour-field-bg: light-dark(var(--white), var(--colour-flamingo-1000));
+
+    --colour-field-contour: light-dark(
+      var(--colour-blue-500),
+      var(--colour-flamingo-600)
+    );
+
+    --colour-field-text: light-dark(var(--black), var(--white));
+    --colour-field-placeholder: light-dark(
+      var(--colour-blue-700),
+      var(--colour-flamingo-400)
+    );
+
+    /* text colouring */
 
     --colour-body-text: light-dark(var(--black), var(--white));
     --colour-heading-text: light-dark(
