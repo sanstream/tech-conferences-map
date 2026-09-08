@@ -3,7 +3,10 @@
     box-shadow: var(--shadow-md);
     background-color: var(--colour-main-bg);
     border: 1px solid
-      light-dark(var(--colour-green-500), var(--colour-mustard-300));
+      light-dark(
+        var(--colour-pyrite-yellow-500),
+        var(--colour-pyrite-yellow-300)
+      );
     padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     min-width: 10rem;
@@ -39,7 +42,10 @@
       /* margin: 1.25rem 0 0.75rem; */
       padding: 0 0 0.5rem 0;
       border-bottom: 2px solid
-        light-dark(var(--colour-flamingo-200), var(--colour-blue-800));
+        light-dark(
+          var(--colour-pale-king-blue-200),
+          var(--colour-pale-king-blue-800)
+        );
     }
 
     & .conference-popover-editions {
@@ -73,7 +79,10 @@
         }
 
         & > time {
-          color: light-dark(var(--colour-flamingo-800), var(--colour-blue-200));
+          color: light-dark(
+            var(--colour-pale-king-blue-800),
+            var(--colour-pale-king-blue-200)
+          );
         }
       }
     }

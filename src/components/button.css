@@ -27,15 +27,9 @@
   }
 
   .tmap-button:focus-visible {
-    border-color: light-dark(
-      var(--colour-blue-400),
-      var(--colour-flamingo-400)
-    );
+    border-color: var(--colour-calamine-blue-400);
     box-shadow: 0 0 0 3px
-      light-dark(
-        oklch(from var(--colour-blue-400) l c h / 0.5),
-        oklch(from var(--colour-flamingo-400) l c h / 0.5)
-      );
+      oklch(from var(--colour-calamine-blue-400) l c h / 0.5);
   }
 
   .tmap-button:active:not([aria-haspopup]) {
@@ -49,13 +43,13 @@
 
   .tmap-button[aria-invalid="true"] {
     border-color: light-dark(
-      var(--colour-flamingo-600),
-      var(--colour-flamingo-500)
+      var(--colour-eosine-pink-600),
+      var(--colour-eosine-pink-500)
     );
     box-shadow: 0 0 0 3px
       light-dark(
-        oklch(from var(--colour-flamingo-600) l c h / 0.2),
-        oklch(from var(--colour-flamingo-500) l c h / 0.4)
+        oklch(from var(--colour-eosine-pink-600) l c h / 0.2),
+        oklch(from var(--colour-eosine-pink-500) l c h / 0.4)
       );
   }
 
@@ -139,27 +133,24 @@
   /* variants */
   .tmap-button.tmap-button--default {
     background-color: light-dark(
-      var(--colour-mustard-500),
-      var(--colour-mustard-700)
+      var(--colour-calamine-blue-500),
+      var(--colour-calamine-blue-700)
     );
-    color: light-dark(var(--colour-mustard-100), var(--colour-mustard-100));
+    color: var(--colour-calamine-blue-100);
   }
 
   .tmap-button.tmap-button--default:hover {
-    background-color: light-dark(
-      var(--colour-mustard-600),
-      var(--colour-mustard-600)
-    );
+    background-color: var(--colour-calamine-blue-600);
   }
 
   .tmap-button.tmap-button--outline {
     border-color: light-dark(
-      var(--colour-flamingo-200),
-      var(--colour-blue-800)
+      var(--colour-pale-king-blue-200),
+      var(--colour-pale-king-blue-800)
     );
     background-color: light-dark(
-      var(--colour-flamingo-100),
-      oklch(from var(--colour-blue-800) l c h / 0.3)
+      var(--colour-pale-king-blue-100),
+      oklch(from var(--colour-pale-king-blue-800) l c h / 0.3)
     );
     color: var(--colour-body-text);
   }
@@ -167,25 +158,28 @@
   .tmap-button.tmap-button--outline:hover,
   .tmap-button.tmap-button--outline[aria-expanded="true"] {
     background-color: light-dark(
-      var(--colour-flamingo-150),
-      var(--colour-blue-900)
+      var(--colour-pale-king-blue-200),
+      var(--colour-pale-king-blue-900)
     );
     color: var(--colour-body-text);
   }
 
   .tmap-button.tmap-button--secondary {
     background-color: light-dark(
-      var(--colour-green-200),
-      var(--colour-green-800)
+      var(--colour-pyrite-yellow-200),
+      var(--colour-pyrite-yellow-800)
     );
-    color: light-dark(var(--colour-green-800), var(--colour-green-200));
+    color: light-dark(
+      var(--colour-pyrite-yellow-800),
+      var(--colour-pyrite-yellow-200)
+    );
   }
 
   .tmap-button.tmap-button--secondary:hover,
   .tmap-button.tmap-button--secondary[aria-expanded="true"] {
     background-color: light-dark(
-      color-mix(in oklch, var(--colour-green-200), var(--black) 5%),
-      color-mix(in oklch, var(--colour-green-800), var(--white) 5%)
+      color-mix(in oklch, var(--colour-pyrite-yellow-200), black 5%),
+      color-mix(in oklch, var(--colour-pyrite-yellow-800), white 5%)
     );
   }
 
@@ -197,33 +191,39 @@
   .tmap-button.tmap-button--ghost:hover,
   .tmap-button.tmap-button--ghost[aria-expanded="true"] {
     background-color: light-dark(
-      var(--colour-flamingo-150),
-      oklch(from var(--colour-blue-900) l c h / 0.5)
+      var(--colour-pale-king-blue-200),
+      oklch(from var(--colour-pale-king-blue-900) l c h / 0.5)
     );
     color: var(--colour-body-text);
   }
 
   .tmap-button.tmap-button--destructive {
-    background-color: light-dark(var(--black), var(--white));
-    color: light-dark(var(--white), var(--black));
+    background-color: light-dark(
+      var(--colour-pale-king-blue-950),
+      var(--colour-pale-king-blue-100)
+    );
+    color: light-dark(
+      var(--colour-pale-king-blue-100),
+      var(--colour-pale-king-blue-950)
+    );
   }
 
   .tmap-button.tmap-button--destructive:hover {
     background-color: light-dark(
-      color-mix(in oklch, var(--black), var(--white) 15%),
-      color-mix(in oklch, var(--white), var(--black) 10%)
+      color-mix(in oklch, var(--colour-pale-king-blue-950), white 15%),
+      color-mix(in oklch, var(--colour-pale-king-blue-100), black 10%)
     );
   }
 
   .tmap-button.tmap-button--destructive:focus-visible {
     border-color: light-dark(
-      oklch(from var(--colour-flamingo-600) l c h / 0.4),
-      oklch(from var(--colour-flamingo-500) l c h / 0.4)
+      oklch(from var(--colour-eosine-pink-600) l c h / 0.4),
+      oklch(from var(--colour-eosine-pink-500) l c h / 0.4)
     );
     box-shadow: 0 0 0 3px
       light-dark(
-        oklch(from var(--colour-flamingo-600) l c h / 0.2),
-        oklch(from var(--colour-flamingo-500) l c h / 0.4)
+        oklch(from var(--colour-eosine-pink-600) l c h / 0.2),
+        oklch(from var(--colour-eosine-pink-500) l c h / 0.4)
       );
   }
 

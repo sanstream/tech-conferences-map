@@ -32,13 +32,10 @@
   }
 
   .tmap-badge-subject-colour {
-    border-color: var(--colour-mustard-500);
+    border-color: var(--colour-pyrite-yellow-500);
   }
 
   .tmap-badge-location-colour {
-    border-color: light-dark(
-      var(--colour-blue-500),
-      var(--colour-flamingo-500)
-    );
+    border-color: var(--colour-pale-king-blue-500);
   }
 }

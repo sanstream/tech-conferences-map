@@ -13,8 +13,6 @@
 
     & .conference-map-land {
       fill: var(--colour-land-bg);
-      stroke: var(--colour-land-contour);
-      stroke-width: 1px;
     }
   }
 }
