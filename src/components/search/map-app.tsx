@@ -3,10 +3,12 @@ import "@/components/search/map-app.css"
 import ConferenceResults from "@/components/conference-results/server"
 import FilterByLocations from "@/components/filters/locations"
 import FilterbySubjects from "@/components/filters/subjects"
+import FilterByTimezoneRange from "@/components/filters/timezone-range"
 import SearchProviders from "@/components/search/providers"
 import type { MapMarker } from "@/lib/conference-map"
 import { applyMarkerSearch } from "@/lib/marker-search"
 import { searchParamsParsers } from "@/lib/search-params"
+import { buildTimezoneOverlay } from "@/lib/timezone-overlay"
 import { useQuery } from "@tanstack/react-query"
 import { useQueryStates } from "nuqs"
 
@@ -20,9 +22,23 @@ function MapAppContent({ markers, subjects, locations }: MapAppProps) {
   const [filters] = useQueryStates(searchParamsParsers)
 
   const { data: highlightedMarkers = [] } = useQuery({
-    queryKey: ["map-markers", filters.subjects, filters.locations],
+    queryKey: [
+      "map-markers",
+      filters.subjects,
+      filters.locations,
+      filters.timezoneRange,
+    ],
     queryFn: () => applyMarkerSearch(markers, filters),
     initialData: () => applyMarkerSearch(markers, filters),
+    staleTime: Infinity,
+  })
+
+  const { data: timezoneOverlay } = useQuery({
+    queryKey: ["timezone-overlay", filters.timezoneRange],
+    queryFn: () =>
+      buildTimezoneOverlay(filters.timezoneRange as [number, number]),
+    initialData: () =>
+      buildTimezoneOverlay(filters.timezoneRange as [number, number]),
     staleTime: Infinity,
   })
 
@@ -38,7 +54,11 @@ function MapAppContent({ markers, subjects, locations }: MapAppProps) {
         </div>
       </header>
       <div className="main-content-results">
-        <ConferenceResults markers={highlightedMarkers} />
+        <FilterByTimezoneRange />
+        <ConferenceResults
+          markers={highlightedMarkers}
+          timezoneOverlay={timezoneOverlay}
+        />
       </div>
     </>
   )

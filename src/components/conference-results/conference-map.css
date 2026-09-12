@@ -13,6 +13,25 @@
 
     & .conference-map-land {
       fill: var(--colour-land-bg);
+      stroke: var(--colour-land-contour);
+      stroke-width: 1px;
+    }
+
+    & .conference-map-timezone-dim {
+      fill: light-dark(
+        var(--colour-pale-king-blue-100),
+        var(--colour-pale-king-blue-900)
+      );
+      opacity: 0.85;
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+    }
+
+    & .conference-map-timezone-outline {
+      fill: none;
+      stroke: var(--colour-land-contour);
+      stroke-width: 1.5px;
+      pointer-events: none;
     }
   }
 }

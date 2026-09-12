@@ -1,0 +1,23 @@
+@layer components {
+  .tmap-timezone-range-filter {
+    width: calc(var(--page-max-content-width) - 2 * var(--page-min-x-padding));
+    max-width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .tmap-timezone-range-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--colour-field-text);
+  }
+
+  .tmap-timezone-range-readout {
+    /* To make sure that the numbers are shown using numbers using the same letter-width.
+    This prevents the numbers from causing the line to shift as the numbers change. */
+    font-variant-numeric: tabular-nums;
+    color: var(--colour-field-placeholder);
+  }
+}

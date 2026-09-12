@@ -3,8 +3,16 @@ import ConferencePopover from "@/components/conference-results/conference-popove
 
 import "@/components/conference-results/conference-map.css"
 import "@/components/conference-results/index.css"
+import {
+  HEIGHT,
+  LAT_MAX,
+  LAT_MIN,
+  projection,
+  WIDTH,
+} from "@/lib/conference-map-projection"
 import type { SearchAwareMarker } from "@/lib/marker-search"
-import { geoGraticule, geoMercator, geoPath } from "d3-geo"
+import type { TimezoneOverlay } from "@/lib/timezone-overlay"
+import { geoGraticule, geoPath } from "d3-geo"
 import type { FeatureCollection, Geometry } from "geojson"
 import type { ComponentProps, CSSProperties } from "react"
 import { feature } from "topojson-client"
@@ -13,17 +21,10 @@ import landTopology from "world-atlas/land-110m.json"
 
 export type ConferenceResultsProps = ComponentProps<"div"> & {
   markers: SearchAwareMarker[]
+  timezoneOverlay: TimezoneOverlay
   /** Astro passes `class`; React uses `className`. Accept both. */
   class?: string
 }
-
-// width is based on var(--page-max-content-width) - 2 * var(--page-min-x-padding)
-// TODO: this needs to be value from a
-const WIDTH = 1152
-const HEIGHT = 648
-// Cut off the map at the latitudes no conferences are ever held (the north pole and Antarctica).
-const LAT_MIN = -60
-const LAT_MAX = 70
 
 type LandTopology = Topology<{
   land: GeometryCollection
@@ -36,26 +37,9 @@ const land = feature(
   topology.objects.land,
 ) as FeatureCollection<Geometry>
 
-/** GeoJSON bbox feature used to fit the view to [-180, LAT_MIN]…[180, LAT_MAX]. */
-const mapExtent = {
-  type: "MultiPoint" as const,
-  coordinates: [
-    [-180, LAT_MIN],
-    [180, LAT_MIN],
-    [180, LAT_MAX],
-    [-180, LAT_MAX],
-  ],
-}
-
 /** 0-1 opacity of the grain multiplied over the land fill. */
 const DARK_LAND_STRENGTH = 0.55
 
-const projection = geoMercator()
-  .fitSize([WIDTH, HEIGHT], mapExtent)
-  .clipExtent([
-    [0, 0],
-    [WIDTH, HEIGHT],
-  ])
 const path = geoPath(projection)
 /** Parallels every 10° within the visible latitude range (no meridians). */
 const parallels = geoGraticule()
@@ -67,10 +51,12 @@ const parallels = geoGraticule()
 
 const ConferenceResults = ({
   markers,
+  timezoneOverlay,
   className,
   class: classProp,
   ...props
 }: ConferenceResultsProps) => {
+  const inRangePath = path(timezoneOverlay.inRange) ?? undefined
   return (
     <div
       className="conferences-results-container"
@@ -121,6 +107,11 @@ const ConferenceResults = ({
             {/* atop fades between plain and darkened land, clipped to the landmasses. */}
             <feComposite in="darkGrain" in2="SourceGraphic" operator="atop" />
           </filter>
+          {/* White = dimmed; the in-range regions are punched out in black so they show through undimmed. */}
+          <mask id="timezone-range-mask">
+            <rect width={WIDTH} height={HEIGHT} fill="white" />
+            {inRangePath && <path d={inRangePath} fill="black" />}
+          </mask>
         </defs>
         <path
           className="conference-map-parallels"
@@ -131,6 +122,15 @@ const ConferenceResults = ({
           filter="url(#paper-texture-filter)"
           d={path(land) ?? undefined}
         />
+        <rect
+          className="conference-map-timezone-dim"
+          width={WIDTH}
+          height={HEIGHT}
+          mask="url(#timezone-range-mask)"
+        />
+        {inRangePath && (
+          <path className="conference-map-timezone-outline" d={inRangePath} />
+        )}
       </svg>
 
       <ul className="conference-map-markers-list">

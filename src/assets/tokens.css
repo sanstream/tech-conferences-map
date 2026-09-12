@@ -218,12 +218,12 @@
 
     --colour-land-bg: light-dark(
       var(--colour-pyrite-yellow-500),
-      var(--colour-pyrite-yellow-800)
+      var(--colour-pyrite-yellow-700)
     );
 
     --colour-land-contour: light-dark(
       var(--colour-pyrite-yellow-600),
-      var(--colour-pyrite-yellow-700)
+      var(--colour-pyrite-yellow-600)
     );
 
     --colour-map-bg: light-dark(
