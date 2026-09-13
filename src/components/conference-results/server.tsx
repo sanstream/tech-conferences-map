@@ -9,6 +9,7 @@ import {
   LAT_MIN,
   projection,
   WIDTH,
+  WORLD_WIDTH_PX,
 } from "@/lib/conference-map-projection"
 import type { SearchAwareMarker } from "@/lib/marker-search"
 import type { TimezoneOverlay } from "@/lib/timezone-overlay"
@@ -48,6 +49,17 @@ const parallels = geoGraticule()
     [-180, LAT_MIN],
     [180, LAT_MAX],
   ])()
+
+const landPathD = path(land) ?? undefined
+const parallelsPathD = path(parallels) ?? undefined
+
+/**
+ * Draw each background layer 3 times, shifted by a full world-width either
+ * side. Only the hour-margin slivers beyond the real -180..180 map actually
+ * show (the rest falls outside the svg's viewBox and is clipped away), so the
+ * margins read as the map wrapping around rather than empty ocean.
+ */
+const WRAP_OFFSETS_PX = [-WORLD_WIDTH_PX, 0, WORLD_WIDTH_PX]
 
 const ConferenceResults = ({
   markers,
@@ -113,15 +125,23 @@ const ConferenceResults = ({
             {inRangePath && <path d={inRangePath} fill="black" />}
           </mask>
         </defs>
-        <path
-          className="conference-map-parallels"
-          d={path(parallels) ?? undefined}
-        />
-        <path
-          className="conference-map-land"
-          filter="url(#paper-texture-filter)"
-          d={path(land) ?? undefined}
-        />
+        {WRAP_OFFSETS_PX.map(dx => (
+          <path
+            key={dx}
+            className="conference-map-parallels"
+            d={parallelsPathD}
+            transform={dx ? `translate(${dx})` : undefined}
+          />
+        ))}
+        {WRAP_OFFSETS_PX.map(dx => (
+          <path
+            key={dx}
+            className="conference-map-land"
+            filter="url(#paper-texture-filter)"
+            d={landPathD}
+            transform={dx ? `translate(${dx})` : undefined}
+          />
+        ))}
         <rect
           className="conference-map-timezone-dim"
           width={WIDTH}

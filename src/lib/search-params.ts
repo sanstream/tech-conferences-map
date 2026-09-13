@@ -1,7 +1,7 @@
 import { parseAsArrayOf, parseAsInteger, parseAsString } from "nuqs"
 
 /** The timezone-range filter's fixed, artificial bounds (see the filter UI). */
-export const TIMEZONE_RANGE_MIN = -11
+export const TIMEZONE_RANGE_MIN = -12
 export const TIMEZONE_RANGE_MAX = 12
 export const DEFAULT_TIMEZONE_RANGE: [number, number] = [
   TIMEZONE_RANGE_MIN,

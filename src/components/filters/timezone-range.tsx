@@ -17,11 +17,14 @@ import "./timezone-range.css"
 
 export type FilterByTimezoneRangeProps = ComponentProps<"div">
 
-// The slider's usable track is inset to the filter's own -11..+12 bounds,
-// not the map's full -180..180 span, expressed as a % of the map's width so
-// it stays aligned with the meridians on the map below at any viewport size
-// (see src/lib/conference-map-projection.ts) — the map itself is a
-// fixed-viewBox SVG stretched to fit the same responsive container width.
+// The filter's own bounds (-12..+12) are one hour narrower than the map's
+// -13..+13 span on each side, so this insets the track slightly from the
+// edges.
+// This is expressed as a % of the map's width so it stays aligned with the
+// meridians on the map below at any viewport size (see
+// src/lib/conference-map-projection.ts).
+// The map itself is a fixed-viewBox SVG that is stretched to fit the same
+// responsive container width.
 const TRACK_LEFT_PERCENT = (offsetHoursToX(TIMEZONE_RANGE_MIN) / WIDTH) * 100
 const TRACK_WIDTH_PERCENT =
   (offsetHoursToX(TIMEZONE_RANGE_MAX) / WIDTH) * 100 - TRACK_LEFT_PERCENT
