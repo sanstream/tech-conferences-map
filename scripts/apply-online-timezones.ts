@@ -11,7 +11,10 @@
  */
 import { readBrandDir, writeBrandDir } from "./lib/conference-io.ts"
 import { middayTimezone } from "./lib/midday-timezone.ts"
-import { ONLINE_SCHEDULES, type ScheduleFinding } from "./lib/online-schedules.ts"
+import {
+  ONLINE_SCHEDULES,
+  type ScheduleFinding,
+} from "./lib/online-schedules.ts"
 
 function formatOffset(minutes: number): string {
   const sign = minutes < 0 ? "-" : "+"
@@ -36,7 +39,7 @@ function derivationNotes(
 
 function main(): void {
   const byKey = new Map(
-    ONLINE_SCHEDULES.map((s) => [`${s.id}::${s.editionStartDate}`, s] as const),
+    ONLINE_SCHEDULES.map(s => [`${s.id}::${s.editionStartDate}`, s] as const),
   )
 
   const instances = readBrandDir()
@@ -47,7 +50,7 @@ function main(): void {
   for (const inst of instances) {
     for (const ed of inst.editions ?? []) {
       if (!ed.isOnline || ed.location) continue
-      const key = `${inst.id}::${ed.startDate}`
+      const key = `${inst.id}::${ed.startDate}` as const
       const finding = byKey.get(key)
       if (!finding) {
         missing.push(key)
@@ -81,7 +84,9 @@ function main(): void {
   }
 
   if (missing.length) {
-    console.log(`\nOnline editions still without schedule research (${missing.length}):`)
+    console.log(
+      `\nOnline editions still without schedule research (${missing.length}):`,
+    )
     for (const k of missing.sort()) console.log(`  ${k}`)
   }
 }
