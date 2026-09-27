@@ -9,6 +9,7 @@ export const DEFAULT_TIMEZONE_RANGE: [number, number] = [
 ]
 
 export const searchParamsParsers = {
+  name: parseAsString.withDefault(""),
   subjects: parseAsArrayOf(parseAsString).withDefault([]),
   locations: parseAsArrayOf(parseAsString).withDefault([]),
   timezoneRange: parseAsArrayOf(parseAsInteger).withDefault(
@@ -17,6 +18,7 @@ export const searchParamsParsers = {
 }
 
 export type SearchFilters = {
+  name: string
   subjects: string[]
   locations: string[]
   timezoneRange: number[]
@@ -24,6 +26,7 @@ export type SearchFilters = {
 
 export function isSearchActive(filters: SearchFilters): boolean {
   return (
+    filters.name.trim().length > 0 ||
     filters.subjects.length > 0 ||
     filters.locations.length > 0 ||
     filters.timezoneRange[0] !== TIMEZONE_RANGE_MIN ||

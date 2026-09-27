@@ -34,6 +34,11 @@ export function editionMatchesSearch(
   edition: MapEdition,
   filters: SearchFilters,
 ): boolean {
+  const nameQuery = filters.name.trim().toLowerCase()
+  const nameOk =
+    nameQuery.length === 0 ||
+    edition.conferenceName.toLowerCase().includes(nameQuery)
+
   const subjectOk =
     filters.subjects.length === 0 ||
     filters.subjects.some(subject => edition.subjects.includes(subject))
@@ -47,7 +52,7 @@ export function editionMatchesSearch(
     filters.timezoneRange,
   )
 
-  return subjectOk && locationOk && timezoneOk
+  return nameOk && subjectOk && locationOk && timezoneOk
 }
 
 export function applyMarkerSearch(

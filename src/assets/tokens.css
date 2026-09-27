@@ -242,6 +242,10 @@
       var(--colour-pale-king-blue-100),
       var(--colour-pale-king-blue-950)
     );
+    --colour-field-bg-disabled: light-dark(
+      var(--colour-pale-king-blue-200),
+      var(--colour-pale-king-blue-800)
+    );
 
     --colour-field-contour: light-dark(
       var(--colour-pale-king-blue-500),

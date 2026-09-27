@@ -1,9 +1,10 @@
 import "@/components/conference-filters.css"
-import "@/components/search/map-app.css"
 import ConferenceResults from "@/components/conference-results/server"
+import FilterByConferenceName from "@/components/filters/conference-name"
 import FilterByLocations from "@/components/filters/locations"
 import FilterbySubjects from "@/components/filters/subjects"
 import FilterByTimezoneRange from "@/components/filters/timezone-range"
+import "@/components/search/map-app.css"
 import SearchProviders from "@/components/search/providers"
 import type { MapMarker } from "@/lib/conference-map"
 import { applyMarkerSearch } from "@/lib/marker-search"
@@ -24,6 +25,7 @@ function MapAppContent({ markers, subjects, locations }: MapAppProps) {
   const { data: highlightedMarkers = [] } = useQuery({
     queryKey: [
       "map-markers",
+      filters.name,
       filters.subjects,
       filters.locations,
       filters.timezoneRange,
@@ -49,12 +51,13 @@ function MapAppContent({ markers, subjects, locations }: MapAppProps) {
           Filter the map using these option:
         </h2>
         <div className="tmap-conference-filters">
+          <FilterByConferenceName />
           <FilterbySubjects subjects={subjects} />
           <FilterByLocations locations={locations} />
+          <FilterByTimezoneRange />
         </div>
       </header>
       <div className="main-content-results">
-        <FilterByTimezoneRange />
         <ConferenceResults
           markers={highlightedMarkers}
           timezoneOverlay={timezoneOverlay}
