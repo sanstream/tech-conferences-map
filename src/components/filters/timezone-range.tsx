@@ -5,7 +5,11 @@ import {
   SliderThumb,
   SliderTrack,
 } from "@/components/slider"
-import { offsetHoursToX, WIDTH } from "@/lib/conference-map-projection"
+import {
+  mapDistanceToCssLength,
+  offsetHoursToX,
+  WIDTH,
+} from "@/lib/conference-map-projection"
 import {
   searchParamsParsers,
   TIMEZONE_RANGE_MAX,
@@ -18,16 +22,21 @@ import "./timezone-range.css"
 export type FilterByTimezoneRangeProps = ComponentProps<"div">
 
 // The filter's own bounds (-12..+12) are one hour narrower than the map's
-// -13..+13 span on each side, so this insets the track slightly from the
-// edges.
-// This is expressed as a % of the map's width so it stays aligned with the
-// meridians on the map below at any viewport size (see
-// src/lib/conference-map-projection.ts).
-// The map itself is a fixed-viewBox SVG that is stretched to fit the same
-// responsive container width.
-const TRACK_LEFT_PERCENT = (offsetHoursToX(TIMEZONE_RANGE_MIN) / WIDTH) * 100
-const TRACK_WIDTH_PERCENT =
-  (offsetHoursToX(TIMEZONE_RANGE_MAX) / WIDTH) * 100 - TRACK_LEFT_PERCENT
+// -13..+13 span on each side. The bar mirrors that with a disabled section on
+// each side of the active track, exactly as wide as the map's margins, so the
+// UTC-12 and UTC+12 thumb positions sit on the same meridians as the edges of
+// the default timezone frame on the map below.
+// The map is a fixed-viewBox svg rendered at a fixed CSS width, so these are
+// absolute CSS lengths derived from the map (via mapDistanceToCssLength), not
+// a share of the slider's own width. When the viewport is narrower than the
+// map, the map scrolls underneath and no alignment is possible; the sections
+// are dropped there instead (see timezone-range.css).
+const LEFT_EDGE_WIDTH = mapDistanceToCssLength(
+  offsetHoursToX(TIMEZONE_RANGE_MIN),
+)
+const RIGHT_EDGE_WIDTH = mapDistanceToCssLength(
+  WIDTH - offsetHoursToX(TIMEZONE_RANGE_MAX),
+)
 
 function formatOffset(offsetHours: number): string {
   if (offsetHours === 0) return "UTC"
@@ -68,24 +77,31 @@ const FilterByTimezoneRange = ({
           void setTimezoneRange(value as number[])
         }}
       >
-        <SliderControl
-          style={{
-            marginLeft: `${TRACK_LEFT_PERCENT}%`,
-            width: `${TRACK_WIDTH_PERCENT}%`,
-          }}
-        >
-          <SliderTrack>
-            <SliderIndicator />
-            <SliderThumb
-              index={0}
-              getAriaValueText={(_, value) => formatOffset(value)}
-            />
-            <SliderThumb
-              index={1}
-              getAriaValueText={(_, value) => formatOffset(value)}
-            />
-          </SliderTrack>
-        </SliderControl>
+        <div className="tmap-timezone-range-bar">
+          <span
+            aria-hidden="true"
+            className="tmap-timezone-range-edge"
+            style={{ width: LEFT_EDGE_WIDTH }}
+          />
+          <SliderControl className="tmap-timezone-range-control">
+            <SliderTrack className="tmap-timezone-range-track">
+              <SliderIndicator className="tmap-timezone-range-indicator" />
+              <SliderThumb
+                index={0}
+                getAriaValueText={(_, value) => formatOffset(value)}
+              />
+              <SliderThumb
+                index={1}
+                getAriaValueText={(_, value) => formatOffset(value)}
+              />
+            </SliderTrack>
+          </SliderControl>
+          <span
+            aria-hidden="true"
+            className="tmap-timezone-range-edge"
+            style={{ width: RIGHT_EDGE_WIDTH }}
+          />
+        </div>
       </Slider>
     </div>
   )

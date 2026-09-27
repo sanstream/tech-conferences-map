@@ -1,7 +1,11 @@
 import { geoMercator } from "d3-geo"
 
-// width is based on var(--page-max-content-width) - 2 * var(--page-min-x-padding)
-// TODO: this needs to be value from a
+// The svg's viewBox size. It is rendered at the fixed CSS length
+// --conference-map-width (see conference-results/conference-map.css), which
+// at the default 16px root font size is exactly this many px, so viewBox
+// units and CSS px coincide. Anything outside the svg that has to line up
+// with it must be sized via mapDistanceToCssLength below rather than assume
+// that 1:1 ratio.
 export const WIDTH = 1152
 export const HEIGHT = 648
 // Cut off the map at the latitudes no conferences are ever held (the north pole and Antarctica).
@@ -27,7 +31,18 @@ const mapExtent = {
 // from the map's 0..WIDTH edges rather than flush against them. The filter's
 // 24-hour span plus a 1-hour margin on each side add up to 26 hour-widths
 // across WIDTH.
-const HOUR_MARGIN_PX = WIDTH / 26
+export const HOUR_MARGIN_PX = WIDTH / 26
+
+/**
+ * A horizontal distance in the map's viewBox units, as a CSS length at the
+ * map's rendered size. The svg is stretched to --conference-map-width, so a
+ * viewBox distance is that same fraction of it. This is how elements outside
+ * the svg (the timezone-range slider) line up with it: the result is an
+ * absolute length tied to the map, not a share of the element's own width.
+ */
+export function mapDistanceToCssLength(distancePx: number): string {
+  return `calc(var(--conference-map-width) * ${distancePx / WIDTH})`
+}
 
 /**
  * Pixel width of one full 360 degrees trip around the globe at the map's scale,
