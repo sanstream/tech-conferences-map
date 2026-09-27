@@ -1,8 +1,30 @@
 import Badge from "@/components/badge"
+import { Button } from "@/components/button"
 import "@/components/conference-results/conference-popover.css"
 import type { MapEdition } from "@/lib/conference-map"
 import type { SearchAwareMarker } from "@/lib/marker-search"
-import type { ComponentProps } from "react"
+import type { ComponentProps, SVGProps } from "react"
+
+function CloseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
+  )
+}
 
 export type ConferencePopoverProps = Omit<ComponentProps<"div">, "id"> & {
   id: string
@@ -72,7 +94,18 @@ const ConferencePopover = ({
       popover="auto"
       {...props}
     >
-      <h2>
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon-sm"
+        className="conference-popover-close"
+        popoverTarget={id}
+        popoverTargetAction="hide"
+        aria-label="Close results"
+      >
+        <CloseIcon />
+      </Button>
+      <h2 className="conference-popover-title">
         {!showSplit ? (
           <>
             {displayCount} {displayCount === 1 ? "conference" : "conferences"}

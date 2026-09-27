@@ -1,5 +1,6 @@
 @layer components {
   .conference-map-marker-popover {
+    position: relative;
     box-shadow: var(--shadow-md);
     background-color: var(--colour-main-bg);
     border: 1px solid
@@ -34,8 +35,16 @@
       }
     }
 
-    & > *:first-child {
+    & .conference-popover-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      z-index: 1;
+    }
+
+    & .conference-popover-title {
       margin-top: 0;
+      padding-right: 2.25rem;
     }
 
     & .conference-popover-section-heading {
