@@ -4,6 +4,23 @@ import {
   type MapMarker,
 } from "@/lib/conference-map"
 import { isSearchActive, type SearchFilters } from "@/lib/search-params"
+import { getUtcOffsetHours } from "@/lib/timezone-offset"
+
+// Every MapEdition comes from getConferenceMapMarkers, which only keeps
+// editions with resolved coordinates — those always carry a location
+// timezone too (both are derived together, see src/lib/world-cities.ts).
+function editionMatchesTimezoneRange(
+  edition: MapEdition,
+  timezoneRange: number[],
+): boolean {
+  const timezone = edition.location?.timezone
+  if (!timezone) return true
+
+  const offset = getUtcOffsetHours(timezone, edition.startDate)
+  if (offset === null) return true
+
+  return offset >= timezoneRange[0] && offset <= timezoneRange[1]
+}
 
 export type SearchAwareMarker = MapMarker & {
   matchingEditions: MapEdition[]
@@ -17,6 +34,11 @@ export function editionMatchesSearch(
   edition: MapEdition,
   filters: SearchFilters,
 ): boolean {
+  const nameQuery = filters.name.trim().toLowerCase()
+  const nameOk =
+    nameQuery.length === 0 ||
+    edition.conferenceName.toLowerCase().includes(nameQuery)
+
   const subjectOk =
     filters.subjects.length === 0 ||
     filters.subjects.some(subject => edition.subjects.includes(subject))
@@ -25,7 +47,12 @@ export function editionMatchesSearch(
     filters.locations.length === 0 ||
     filters.locations.includes(formatEditionLocation(edition))
 
-  return subjectOk && locationOk
+  const timezoneOk = editionMatchesTimezoneRange(
+    edition,
+    filters.timezoneRange,
+  )
+
+  return nameOk && subjectOk && locationOk && timezoneOk
 }
 
 export function applyMarkerSearch(

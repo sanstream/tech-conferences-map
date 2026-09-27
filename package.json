@@ -15,7 +15,7 @@
     "conferences:validate": "node scripts/validate-conferences.ts"
   },
   "dependencies": {
-    "@astrojs/react": "^6.0.1",
+    "@astrojs/react": "^7.0.0",
     "@base-ui/react": "^1.7.0",
     "@fontsource/armata": "^5.2.8",
     "@fontsource/fira-code": "^5.2.7",
@@ -24,7 +24,7 @@
     "@tanstack/react-query": "^5.102.5",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "astro": "^7.1.0",
+    "astro": "^7.3.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "d3-geo": "^3.1.1",
@@ -35,7 +35,7 @@
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.9",
+    "@astrojs/check": "^0.9.10",
     "@types/d3-geo": "^3.1.0",
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.1.1",

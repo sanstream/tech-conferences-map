@@ -1,0 +1,25 @@
+@layer components {
+  .tmap-conference-name-input {
+    box-sizing: content-box;
+    min-height: 2rem;
+    border: 1px solid var(--colour-field-contour);
+    background-color: var(--colour-field-bg);
+    background-clip: padding-box;
+    padding: 0.25rem 0.625rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: var(--colour-field-text);
+    outline: none;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .tmap-conference-name-input::placeholder {
+    color: var(--colour-field-placeholder);
+  }
+
+  .tmap-conference-name-input:focus-visible {
+    box-shadow: 0 0 0 3px oklch(from var(--colour-field-contour) l c h / 0.45);
+  }
+}

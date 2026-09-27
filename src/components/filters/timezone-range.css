@@ -1,0 +1,89 @@
+@layer components {
+  .tmap-timezone-range-filter {
+    /* Its own full row in the filters flex. */
+    flex: 1 1 100%;
+    max-width: 100%;
+    container: timezone-range-filter / inline-size;
+  }
+
+  .tmap-timezone-range-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .tmap-timezone-range-control {
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  /*
+    Disabled sections either side of the active track, mirroring the map's
+    hour-wide margins beyond UTC-12 / UTC+12. Their widths are set inline
+    from the map projection (see timezone-range.tsx). Sized and bordered to
+    read as one continuous bar with .tmap-slider-track (slider.css).
+  */
+  .tmap-timezone-range-edge {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    height: 0.5rem;
+    border: 1px solid var(--colour-field-contour);
+    background-color: var(--colour-field-bg-disabled);
+    opacity: 0.6;
+
+    &:first-child {
+      border-right: 0;
+      border-radius: 999px 0 0 999px;
+    }
+
+    &:last-child {
+      border-left: 0;
+      border-radius: 0 999px 999px 0;
+    }
+  }
+
+  .tmap-timezone-range-track {
+    border-radius: 0;
+  }
+
+  /*
+    When the filter is narrower than the map, the map scrolls horizontally
+    underneath it and the sections can't line up with anything: drop them and
+    let the active track span the full width.
+    Container queries can't read custom properties; 72rem is
+    --conference-map-width (conference-map.css), with 1px of tolerance for
+    layout rounding.
+  */
+  @container timezone-range-filter (width < calc(72rem - 1px)) {
+    .tmap-timezone-range-edge {
+      display: none;
+    }
+
+    .tmap-timezone-range-track {
+      border-radius: 999px;
+    }
+  }
+
+  .tmap-timezone-range-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--colour-field-text);
+  }
+
+  .tmap-timezone-range-readout {
+    /* To make sure that the numbers are shown using numbers using the same letter-width.
+    This prevents the numbers from causing the line to shift as the numbers change. */
+    font-variant-numeric: tabular-nums;
+    color: var(--colour-field-placeholder);
+  }
+
+  .tmap-timezone-range-indicator {
+    background-color: var(--colour-land-bg);
+    border-radius: 9999px;
+  }
+}
