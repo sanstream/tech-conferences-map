@@ -30,6 +30,17 @@ export type SearchAwareMarker = MapMarker & {
   searchActive: boolean
 }
 
+export function getSubjectWeight(
+  edition: MapEdition,
+  subjects: string[],
+): number {
+  if (edition.subjects.length === 0) return 0
+  const matched = edition.subjects.filter(subject =>
+    subjects.includes(subject),
+  ).length
+  return matched / edition.subjects.length
+}
+
 export function editionMatchesSearch(
   edition: MapEdition,
   filters: SearchFilters,
@@ -82,6 +93,14 @@ export function applyMarkerSearch(
       } else {
         nonMatchingEditions.push(edition)
       }
+    }
+
+    if (filters.subjects.length > 0) {
+      matchingEditions.sort(
+        (a, b) =>
+          getSubjectWeight(b, filters.subjects) -
+          getSubjectWeight(a, filters.subjects),
+      )
     }
 
     const displayCount = matchingEditions.length
