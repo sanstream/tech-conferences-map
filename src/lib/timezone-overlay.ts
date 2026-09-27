@@ -14,15 +14,15 @@
  * markers match) instead uses each edition's own date via
  * src/lib/timezone-offset.ts, so it stays DST-correct.
  */
+import timezoneTopology from "@/data/timezones/timezones-110m.json"
 import type { MultiPolygon } from "geojson"
 import { merge } from "topojson-client"
 import type {
   GeometryCollection,
-  Polygon as TopoPolygon,
   MultiPolygon as TopoMultiPolygon,
+  Polygon as TopoPolygon,
   Topology,
 } from "topojson-specification"
-import timezoneTopology from "@/data/timezones/timezones-110m.json"
 
 type TimezoneProperties = {
   tzid: string
@@ -35,9 +35,14 @@ type TimezoneTopology = Topology<{
 
 const topology = timezoneTopology as unknown as TimezoneTopology
 const timezoneGeometries = topology.objects["combined-with-oceans-1970"]
-  .geometries as Array<TopoPolygon<TimezoneProperties> | TopoMultiPolygon<TimezoneProperties>>
+  .geometries as Array<
+  TopoPolygon<TimezoneProperties> | TopoMultiPolygon<TimezoneProperties>
+>
 
-const EMPTY_MULTI_POLYGON: MultiPolygon = { type: "MultiPolygon", coordinates: [] }
+const EMPTY_MULTI_POLYGON: MultiPolygon = {
+  type: "MultiPolygon",
+  coordinates: [],
+}
 
 export type TimezoneOverlay = {
   /** Dissolved outer boundary of the in-range timezones — no internal borders. */
@@ -50,7 +55,10 @@ export function buildTimezoneOverlay(
   const [min, max] = timezoneRange
   const inRangeGeometries = timezoneGeometries.filter(g => {
     const offset = g.properties?.utcOffsetHours
-    return offset !== undefined && offset >= min && offset <= max
+    // Slider max is a whole hour; include zones up to (but not including) the next
+    // hour so half/quarter-hour offsets count as that hour (e.g. Pacific/Chatham
+    // at UTC+13:45 → 13.75, on New Zealand territory east of the main islands).
+    return offset !== undefined && offset >= min && offset < max + 1
   })
 
   return {
