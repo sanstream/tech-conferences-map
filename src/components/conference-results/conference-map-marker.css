@@ -21,14 +21,17 @@
   }
 
   .conference-map-marker[data-match="false"] {
-    background-color: var(--colour-land-bg);
+    background-color: light-dark(
+      var(--colour-pale-king-blue-200),
+      var(--colour-pale-king-blue-800)
+    );
     color: light-dark(
       var(--colour-pyrite-yellow-800),
       var(--colour-pyrite-yellow-200)
     );
     border-color: light-dark(
-      var(--colour-land-contour),
-      var(--colour-land-contour)
+      var(--colour-pale-king-blue-500),
+      var(--colour-pale-king-blue-600)
     );
     z-index: 2;
   }
